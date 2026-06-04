@@ -1,33 +1,31 @@
-# Nano Banana (Gemini) prompts for "The Tapestry" visualization
+# Nano Banana (Gemini) prompt — "The Tapestry" hero image
 
-Reference images to show Claude Code what the end result should look like.
+A reference image to show Claude Code what the finished visualization should look like.
 Ask for **16:9**, or **21:9** for a more panoramic, tapestry-like sweep.
 
 ---
 
-## 1) MAIN VIEW — the full tapestry (the hero image)
+## HERO IMAGE — the full tapestry
 
-A wide, cinematic 16:9 piece of luminous generative data-art titled "The Tapestry" — an abstract visualization of a single light spreading across two thousand years, with time flowing from left to right on a near-black ground.
+Create a wide, cinematic hero image (16:9) — a single still frame of a luminous, abstract data-visualization artwork called "The Tapestry."
 
-At the far LEFT, a single intensely bright point of golden light — one seed, one origin. From it, one fine golden thread emerges and begins to branch. As the eye moves RIGHTWARD across the centuries, the threads ramify and multiply: one becomes a few, the few become hundreds, the hundreds become an immense, radiant web of countless hair-fine golden filaments, so that the right third of the image blazes like a river delta of light seen from orbit at night — the visual sense of growth "from one to billions."
+WHAT THIS IS A PICTURE OF: an artistic visualization of the entire 2,000-year history of the spread of Christianity across the world — the growth of a faith from a single person around AD 30 to roughly 2.6 billion people today. It is NOT a literal scene, map, or portrait; it contains no crosses, churches, or human figures. Instead it is an abstract "tapestry of light": every human life who has ever lived is one fine thread in a vast dark woven field, and belief is luminous golden light that travels along the threads from person to person and generation to generation.
 
-The background is a deep, dark field — charcoal black washed with the faintest deep indigo and warm umber — and, looked at closely, it is woven from innumerable barely-visible dark threads, like the warp of an enormous tapestry: every human life, unlit. Ten extremely faint horizontal bands run left to right like ghostly lanes (world regions), giving the filaments structure without ever competing with them.
+HOW TO READ IT:
+- Time runs left to right across the frame: the far-LEFT edge is AD 30, the RIGHT edge is the present day — two thousand years from edge to edge.
+- The frame is divided into about ten very faint horizontal bands stacked top to bottom — the ten world regions the faith moves through (the Mediterranean, Europe, the Middle East & North Africa, Sub-Saharan Africa, the Americas, and Asia). They are barely-there lanes, never grid-lines or a chart.
+- The story, told purely through light: at the far left a SINGLE point of golden light ignites — one person, AD 30. From that one seed a single golden thread emerges and begins to branch, person to person. Moving rightward across the centuries it ramifies and multiplies — one becomes a few, the few become thousands, the thousands become an immense radiant web of countless hair-fine golden filaments weaving between the regional bands. By the right third of the frame the light has grown from one to billions: a blazing delta of gold, like the city-lights of the whole earth seen from orbit at night.
 
-The golden threads are self-luminous, rendered with additive glow and soft bloom, like fiber-optic strands or molten gold. Where the light spreads they brighten and thicken; in places they thin, gray, fray, and go dark — resistance, decline, suppression — and a few of those darkened gaps rekindle further to the right, light returning after loss. A handful of threads glow brighter and run farther than the rest: the pivotal lives.
+THE DRAMA IN THE LIGHT: where the faith spreads, the threads brighten and thicken; where it is resisted, persecuted, or fades into secular indifference, the threads thin, gray, fray, and go dark — and in a few of those darkened places the light rekindles further to the right, returning after loss. A handful of threads glow brighter and run farther than all the others: the pivotal lives that carried the light across regions.
 
-Style: elegant, intricate, museum-quality generative/algorithmic art; reverent, sacred, transcendent and quietly hopeful — the feeling of a cathedral made of light. Restrained palette of golds, ambers, and warm whites on a deep blue-black ground. Delicate fine line-work — threads and filaments ONLY, NOT a filled area chart, streamgraph, or bar graph. No text, no labels, no UI, no logos, no human faces or religious figures — pure abstract threads of light. Ultra-detailed, high dynamic range, ethereal, breathtaking.
-
----
-
-## 2) MICRO VIEW — a single life-thread (the zoom-in screen)
-
-A 16:9 intimate close-up of generative light-art on a deep near-black ground: ONE luminous golden thread traveling left to right across the frame, representing a single human life moving through time. The thread begins faint and cool (unexposed), warms and brightens to a steady gold as it joins a small cluster of neighboring threads (belief through social ties), then dims and grays toward the middle — almost going out (doubt, lapse) — before a few nearby glowing threads lean in and rekindle it into its brightest, warmest segment near the right (a late, strong return). A handful of fine companion threads weave alongside it (family and friends), some bright, some dark. Soft additive glow and bloom, fiber-optic delicacy, shallow depth of field with gentle bokeh on the dark background filaments. Reverent, tender, hopeful mood. No text, no labels, no faces — pure abstract threads of light.
+STYLE & RENDERING: elegant, intricate, museum-quality generative / algorithmic light-art. Self-luminous golden threads with additive glow and soft bloom, like fiber-optic strands or molten gold, over a deep near-black ground (charcoal washed with the faintest deep indigo and warm umber). The dark background is itself subtly woven from innumerable unlit threads — the warp of an enormous tapestry. Restrained, sacred palette: golds, ambers, and warm whites on blue-black. Fine, delicate line-work — THREADS AND FILAMENTS ONLY, never a filled area chart, streamgraph, or bar graph. Reverent, transcendent, quietly hopeful — a cathedral made of light, an image meant to evoke the goodness and beauty of that spreading light. No text, no labels, no UI, no logos, no faces, no religious symbols — pure abstract threads of light. Ultra-detailed, high dynamic range, ethereal, breathtaking.
 
 ---
 
-## Iterating
-- "Brighten the single origin point on the left."
-- "Make the right edge denser and more billion-fold."
-- "Add one clearly darkened region-band that frays, then rekindles further right."
-- "More tapestry/woven-cloth texture in the dark background."
-- "Cooler, deeper background; keep the threads pure gold."
+## Iterating (tell Nano Banana things like)
+- "Brighten the single origin point on the far left so it clearly reads as one seed."
+- "Make the right edge denser and more billion-fold; the left should feel sparse and singular."
+- "Add one clearly darkened region-band that frays in the middle, then rekindles further right."
+- "More woven-cloth / tapestry texture in the dark background."
+- "Cooler, deeper blue-black background; keep the threads pure warm gold."
+- "Emphasize a few brighter threads that travel all the way across (the pivotal lives)."
