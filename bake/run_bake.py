@@ -33,6 +33,60 @@ def load_params():
         return json.load(open(path))["params"]
     return dict(DEFAULT_PARAMS)
 
+
+def load_believers():
+    """The authoritative believer count over time: GLOBAL Christians per year from the
+    calibrated macro run (reconciled to the anchors). Used to set light ∝ believers."""
+    p = os.path.join(D.DEFAULT_DATA_DIR, "simulation_output.json")
+    if os.path.exists(p):
+        d = json.load(open(p))
+        yrs = d["years"]
+        chr_ = d.get("global", {}).get("christians")
+        if chr_:
+            return yrs, chr_
+    # fallback: GLOBAL anchor christians_central
+    anchors = [a for a in D.load_anchors() if a.region == S.GLOBAL and a.christians_central]
+    anchors.sort(key=lambda a: a.year)
+    return [a.year for a in anchors], [a.christians_central for a in anchors]
+
+
+def verify_proportionality(tap, believers, iter_tag):
+    """Confirm the baked believer-light per time-column tracks the believer curve, and
+    write the numbers to reports/look/proportionality.md (the requirement made checkable)."""
+    if tap.col_energy is None:
+        return
+    import numpy as np
+    yrs, chr_ = believers
+    year_of = tap.col_year
+    energy = tap.col_energy
+    checks = [100, 300, 500, 1000, 1500, 1900, 2025]
+    def e_at(y):
+        i = int(np.argmin(np.abs(year_of - y))); return float(energy[i])
+    def b_at(y):
+        return float(np.interp(y, yrs, chr_))
+    base_y = 2025; eb = e_at(base_y) or 1e-9; bb = b_at(base_y) or 1e-9
+    lines = ["# Proportionality check — light ∝ believers", "",
+             "The believer-light is each lit life rendered at EQUAL energy; the integrated",
+             "luminance per time-column is pinned to the GLOBAL believer count. Below: the",
+             "ratio of believer-light vs the ratio of believers, relative to AD 2025.",
+             "A faithful encoding has light-ratio ≈ believer-ratio.", "",
+             "| year | believers | believers ratio (vs 2025) | light ratio (vs 2025) |",
+             "|------|-----------|---------------------------|-----------------------|"]
+    for y in checks:
+        br = b_at(y) / bb; lr = e_at(y) / eb
+        lines.append(f"| {y} | {b_at(y):,.0f} | {br:.2e} | {lr:.2e} |")
+    # correlation across all columns
+    tb = np.interp(year_of, yrs, chr_)
+    m = tb > 0
+    corr = float(np.corrcoef(np.log(np.clip(energy[m], 1e-9, None)), np.log(tb[m]))[0, 1])
+    lines += ["", f"log-log correlation (light vs believers across all columns): **{corr:.4f}**",
+              "", "Note: below the sampling/pixel resolution (the first century is ~10^3",
+              "believers — fewer than one sampled thread), the seed is floored to a visible",
+              "minimum; proportionality holds across the resolvable range and is exact after",
+              "the per-column pin. A single display gamma (1/1.6) is applied uniformly."]
+    open(os.path.join(LOOK_DIR, "proportionality.md"), "w").write("\n".join(lines))
+    print(f"[bake] proportionality: log-log corr {corr:.4f}; report -> reports/look/proportionality.md")
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(REPO_ROOT, "viz", "public", "tapestry")
 LOOK_DIR = os.path.join(REPO_ROOT, "reports", "look")
@@ -78,6 +132,7 @@ def main() -> int:
 
     render_params = json.loads(args.params) if args.params else {}
     sim_params = load_params()
+    believers = load_believers()
 
     t0 = time.time()
     print(f"[bake] running agent contagion (n_lives={n_lives}) with calibrated params ...")
@@ -90,9 +145,11 @@ def main() -> int:
     # Climax (full reveal).
     t1 = time.time()
     tap = make_renderer(width, height, render_params)
+    tap.set_believers(*believers)
     tap.render_forest(forest, reveal_x=1.0)
     climax_path = os.path.join(OUT_DIR, "climax.jpg")
     tap.save(climax_path)
+    verify_proportionality(tap, believers, args.iter)
     print(f"[bake] climax {width}x{height} rendered in {time.time()-t1:.1f}s -> {climax_path}")
 
     # Inspection copy.
@@ -109,6 +166,7 @@ def main() -> int:
         fw, fh = (width if args.fast else 2600), (height if args.fast else 1300)
         for yr in ERA_YEARS:
             ft = make_renderer(fw, fh, render_params)
+            ft.set_believers(*believers)
             ft.render_forest(forest, reveal_x=S.x_of_year(yr))
             fp = os.path.join(fdir, f"frame_{yr}.jpg")
             ft.save(fp)

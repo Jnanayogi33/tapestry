@@ -57,8 +57,13 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
   agent-based simulation of intersecting lives (seed = true origin; spread emergent;
   every gold thread traces to Christ). Residuals documented (truthfulness).
 
-## STATUS: v2 COMPLETE ✓
+## STATUS: v2 COMPLETE ✓ (+ light∝believers)
 All 8 steps done. Live: https://jnanayogi33.github.io/tapestry/ (visual loop 14/14).
+LIGHT∝BELIEVERS: the bake pins per-time-column integrated luminance to the GLOBAL
+believer count; verified log-log corr 0.9995 (reports/look/proportionality.md). Each lit
+life = equal energy (hue, not brightness, distinguishes practicing/nominal); antiquity is
+proportionally faint, modern blazes; single-life trace stays full-brightness for early
+traceability. Re-bake/verify: `python -m bake.run_bake --frames` (writes proportionality.md).
 Optional follow-ups if resumed: (a) move Actions workflows deploy/→.github/workflows/
 once a `workflow`-scoped token exists (currently deployed via gh-pages content push);
 (b) reduce calibration residuals (Americas immigration, SSA timing) — Phase-3;

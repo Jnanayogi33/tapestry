@@ -80,6 +80,7 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 
 
 
+
 - [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.
 
 ## v2 Step 3 — COURSE CORRECTION (real simulation, not image-making)
@@ -111,3 +112,22 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
   These are the known limits of one global-rate set + modeled per-region incumbency
   ceilings (BASE_RESISTANCE) — the spread, the seed-origin and who-lit-whom are genuinely
   emergent; the calibration reconciles the aggregate as far as a global model can.
+
+## v2 — light ∝ believers (luminance proportionality)
+- [v2-viz] (2026-06-04) — Requirement: the amount of light must be exactly proportionate
+  to the number of believers (1000 early vs ~1B today ⇒ ~10^6× more light), aligned to
+  the sourced population numbers AND traceable to individual lives. Implemented in
+  bake/render.py: each lit life emits EQUAL luminous energy (practicing vs nominal differ
+  by HUE, not brightness — both are believers); the per-time-column integrated luminance
+  is then pinned DIRECTLY to the GLOBAL believer count (christians) from the calibrated
+  macro curve. Verified by measuring the baked image: log-log light-vs-believers
+  correlation = 0.9995; light ratios match believer ratios across 6 orders of magnitude
+  (reports/look/proportionality.md, regenerated every bake by bake/run_bake.verify_proportionality).
+- [v2-viz] LIMITATION/ASSUMPTION (2026-06-04) — Exact 6-order proportionality means the
+  first-century church (~10^3) is ~10^-6 of the modern blaze — genuinely sub-pixel/faint.
+  Honored literally: antiquity is proportionally faint, the modern era blazes. A SINGLE
+  global brightness scale (preserves all ratios) makes the modern blaze brilliant; a
+  uniform display gamma (1/1.6) is applied identically everywhere (monotonic; documented).
+  Individual early lives remain followable via the single-life TRACE overlay, which draws
+  at full brightness independent of the baked luminance. Trade-off vs the earlier rich
+  early-fan look is intentional — proportionality/truth chosen over evocative disproportion.

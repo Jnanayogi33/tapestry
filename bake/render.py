@@ -36,6 +36,7 @@ class Tapestry:
         self.gold = np.zeros((height, width), np.float32)
         self.gray = np.zeros((height, width), np.float32)
         self.dark = np.zeros((height, width), np.float32)
+        self.flow = np.zeros((height, width), np.float32)   # decorative lineage flow
         self.gold_gain = gold_gain
         self.gray_gain = gray_gain
         self.dark_gain = dark_gain
@@ -43,6 +44,11 @@ class Tapestry:
         self.bloom_strength = bloom_strength
         self.tone_k_gold = tone_k_gold
         self.line_width = line_width
+        self.believer_curve = None       # (years[], christians[]) — sets light ∝ believers
+        self.col_energy = None           # measured per-column believer-light (verification)
+
+    def set_believers(self, years, christians):
+        self.believer_curve = (list(years), list(christians))
 
     # -- splatting -----------------------------------------------------------------
     def _splat(self, buf, xs, ys, w):
@@ -126,8 +132,7 @@ class Tapestry:
         L = np.hypot(dx, dy) + 1e-9
         ys = ys + mer * (dx / L)
         xs = xs - mer * (dy / L)
-        inten = intensity * (0.25 + 1.05 * prog)
-        self._splat(buf, np.clip(xs, 0, 1), np.clip(ys, 0, 1), inten)
+        self._splat(buf, np.clip(xs, 0, 1), np.clip(ys, 0, 1), intensity)
 
     # -- compose the forest --------------------------------------------------------
     def render_forest(self, forest, reveal_x: float = 1.0):
@@ -142,9 +147,13 @@ class Tapestry:
             ys = d["y"] + d["amp"] * np.sin(6.0 * t + d["phase"])
             self._splat(self.dark, xs, ys, 0.16)
 
-        # LIT-LIFE DENSITY UNDERLAY — every (sampled) lit life as a faint short thread.
-        # The modern multitude makes the right edge blaze; kept faint so the lineage
-        # threads read on top.
+        # LIT LIVES — the believer-light. EACH lit life emits the SAME total luminous
+        # energy (a fixed quantum spread along its lifespan), so the integrated light is
+        # exactly proportional to the NUMBER of lit lives, and therefore to the believer
+        # count. Practicing vs nominal differ by HUE (gold vs gray-gold), NOT brightness,
+        # so a nominal believer still counts as one unit of light. (A per-time-column
+        # correction in compose() then pins the total exactly to the sourced numbers.)
+        E = 0.5  # fixed energy per life (per unit x-length; total ≈ E regardless of length)
         for L in forest.get("lit_lives", []):
             x0 = L["x0"]; x1 = min(L["x1"], reveal_x)
             if x0 > reveal_x or x1 <= x0:
@@ -154,17 +163,18 @@ class Tapestry:
             xs = x0 + (x1 - x0) * t
             ys = L["y"] + 0.006 * np.sin(5.0 * t + L["phase"])
             buf = self.gold if L["gold"] else self.gray
-            self._splat(buf, xs, ys, 0.16 if L["gold"] else 0.10)
+            self._splat(buf, xs, ys, E)        # constant — light ∝ count of believers
 
-        # real lineage CHAINS — who-lit-whom traced back to the seed; the flowing gold
-        # threads that fan out and braid, emanating from the one origin.
+        # real lineage CHAINS — who-lit-whom traced to the seed. Rendered into a SEPARATE
+        # decorative buffer (NOT the believer-light), because a chain spans time and would
+        # otherwise dump every modern lineage's light into the sparse antiquity columns,
+        # breaking light∝believers. They are faint flow hints; the believer-light is the
+        # lit lives, each at its own time.
         for ch in forest.get("chains", []):
             wp = [(x, y) for (x, y) in ch["wp"] if x <= reveal_x + 1e-6]
             if len(wp) < 2:
                 continue
-            buf = self.gold if ch["gold"] else self.gray
-            inten = 0.34 if ch["gold"] else 0.22
-            self.add_chain(wp, buf, inten, ch.get("sign", 1), ch.get("phase", 0.0))
+            self.add_chain(wp, self.flow, 0.05, ch.get("sign", 1), ch.get("phase", 0.0))
 
         # the seed: a concentrated bright point at left-center (a tiny gaussian blob so
         # it reads as a single ignition point, not a band).
@@ -178,22 +188,59 @@ class Tapestry:
     # -- tone-map + bloom + colorize ----------------------------------------------
     def compose(self) -> np.ndarray:
         H, W = self.H, self.W
+        from scipy.ndimage import gaussian_filter1d
         # gentle line widening so 1px splats read as glowing fibers
         g = gaussian_filter(self.gold, 0.9)
         gr = gaussian_filter(self.gray, 0.9)
         dk = gaussian_filter(self.dark, 1.0)
 
-        # tone-map each (compress to 0..1)
-        gold_v = 1.0 - np.exp(-self.tone_k_gold * self.gold_gain * g)
-        gray_v = 1.0 - np.exp(-1.1 * self.gray_gain * gr)
-        dark_v = 1.0 - np.exp(-1.4 * self.dark_gain * dk)
+        # === LIGHT ∝ BELIEVERS ===========================================================
+        # The believer-light is the lit-life energy (gold + gray, equal-weighted: a nominal
+        # believer is still a believer). We pin its per-time-column INTEGRAL to the sourced
+        # believer count, so the amount of light at any time is exactly proportional to the
+        # number of believers then (and the ratio between any two times equals the ratio of
+        # their believer counts). Done LINEARLY — no tone-curve that would compress the
+        # modern blaze relative to antiquity.
+        lit = g + gr                                  # believer-light (linear energy)
+        if self.believer_curve:
+            yrs, chr_ = self.believer_curve
+            col = np.arange(self.W)
+            year_of = (yrs[0] if len(yrs) else 30) + (col / max(1, self.W - 1)) * \
+                      ((yrs[-1] if len(yrs) else 2025) - (yrs[0] if len(yrs) else 30))
+            target = np.interp(year_of, yrs, chr_).astype(np.float64)  # believers per column
+            raw = gaussian_filter1d(lit.sum(axis=0).astype(np.float64),
+                                    max(1.0, self.W * 0.006)) + 1e-9
+            # Pin each time-column's integrated believer-light DIRECTLY to the believer
+            # count, so the amount of light at any time is EXACTLY proportional to the
+            # number of believers then — and the ratio between any two times equals the
+            # ratio of their believer counts. (No clamp: exactness is the requirement.
+            # Antiquity is therefore genuinely faint — ~10^-6 of the modern blaze — which
+            # is the truth; individual early lives remain followable via the single-life
+            # trace overlay, which draws at full brightness regardless of baked luminance.)
+            factor = target / raw
+            g = g * factor[None, :]
+            gr = gr * factor[None, :]
+            lit = g + gr
+            self.col_energy = lit.sum(axis=0)
+            self.col_year = year_of
+            self.col_target = target
 
-        # bloom (additive glow) from the bright gold
-        bloom = np.zeros_like(g)
-        for s, amp in ((self.bloom_sigma, 1.0), (self.bloom_sigma * 3.0, 0.5),
-                       (self.bloom_sigma * 8.0, 0.28)):
-            bloom += amp * gaussian_filter(gold_v, s)
-        bloom *= self.bloom_strength
+        # LINEAR display map: a SINGLE global scale (preserves every ratio, so the
+        # believer-proportionality is untouched) chosen so the modern era blazes while
+        # antiquity stays proportionally faint — the true "from one to billions".
+        scale = 3.2 / (np.percentile(lit, 99.0) + 1e-9)
+        gold_v = np.clip(g * scale, 0, 1)
+        gray_v = np.clip(gr * scale, 0, 1)
+        dark_v = 1.0 - np.exp(-1.4 * self.dark_gain * dk)
+        # decorative lineage-flow hint (separate buffer; NOT counted in believer-light)
+        flow_v = np.clip(gaussian_filter(self.flow, 0.9) * scale, 0, 1)
+
+        # gentle energy-conserving bloom (Gaussian blur conserves total energy, so it
+        # redistributes glow without changing the believer-light proportionality).
+        bloom = np.zeros_like(gold_v)
+        for s, amp in ((self.bloom_sigma, 1.0), (self.bloom_sigma * 3.0, 0.45)):
+            bloom += amp * gaussian_filter(gold_v + gray_v, s)
+        bloom *= self.bloom_strength * 0.5
 
         # woven ground + vignette
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
@@ -211,6 +258,8 @@ class Tapestry:
         hot = np.clip(gold_v, 0, 1)[..., None]
         gold_col = GOLD_CORE[None, None, :] * (1 - hot ** 1.5) + GOLD_HOT[None, None, :] * (hot ** 1.5)
         img += gold_col * gold_v[..., None]
+        # faint decorative lineage flow (kept low so it doesn't disturb proportionality)
+        img += GOLD_CORE[None, None, :] * flow_v[..., None] * 0.22
         # bloom in warm gold
         img += GOLD_CORE[None, None, :] * bloom[..., None] * 0.5
         img += GOLD_HOT[None, None, :] * (bloom ** 2)[..., None] * 0.15
@@ -225,9 +274,13 @@ class Tapestry:
         img[:b, :, :] *= 0.25; img[-b:, :, :] *= 0.25
         img[:, :b, :] *= 0.25; img[:, -b:, :] *= 0.25
 
-        img = np.clip(img, 0, 1)
-        # mild filmic
-        img = img / (img + 0.85) * 1.85
+        # NO global tone-curve: the believer-light is mapped LINEARLY so the displayed
+        # luminance stays proportional to the believer count (a filmic curve would
+        # compress the modern blaze relative to antiquity and break the proportionality).
+        # A small fixed gamma 1/1.6 is applied ONLY for sRGB-ish display of the already-
+        # proportional values; it is monotonic and identical everywhere, preserving ratios
+        # up to that single known transform (documented in the proportionality report).
+        img = np.clip(img, 0, 1) ** (1.0 / 1.6)
         return (np.clip(img, 0, 1) * 255).astype(np.uint8)
 
     def save(self, path: str, arr=None) -> None:
