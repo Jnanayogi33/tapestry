@@ -10,7 +10,11 @@ Christianity from **AD 30 to today**, rendered as a zoomable, luminous web. It h
 (individual lives moving through belief over a lifetime), and a **visualization** that
 turns both into something a person can see and move through.
 
-**Live visualization:** _set after first GitHub Pages deploy — see step 10._
+**Live visualization:** **https://jnanayogi33.github.io/tapestry/**
+
+(Published from the `gh-pages` branch. The Actions-based deploy lives in `deploy/` and
+moves to `.github/workflows/` once a `workflow`-scoped token is available — see
+BLOCKERS.md step 10.)
 
 ---
 
