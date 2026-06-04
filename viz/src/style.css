@@ -32,7 +32,9 @@ button { font-family: inherit; cursor: pointer; color: var(--ink);
 button:hover { background: rgba(255, 206, 122, 0.16); border-color: var(--gold); color: #fff; }
 
 #nav-toggle { position: absolute; top: 22px; right: 26px; z-index: 12; }
-#about-toggle { position: absolute; top: 22px; right: 156px; z-index: 12; width: 34px;
+#geo-toggle { position: absolute; top: 22px; right: 150px; z-index: 12; }
+#geo-toggle.off { opacity: 0.5; }
+#about-toggle { position: absolute; top: 22px; right: 290px; z-index: 12; width: 34px;
   height: 34px; padding: 0; font-style: italic; }
 
 #nav-drawer { position: absolute; top: 70px; right: 26px; z-index: 12; width: min(360px, 86vw);

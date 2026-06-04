@@ -25,6 +25,8 @@ let sources = [];        // [{year, url, idx}]
 let curIdx = 0;
 let playing = false, playRAF = 0;
 let activeLife = null;
+let geoRegions = [];     // [{region, y, branch}] — the distance-from-Judaea axis
+let showGeo = true;      // geographic reference frame on by default
 
 async function main() {
   manifest = await loadJSON("tapestry/manifest.json");
@@ -43,7 +45,54 @@ async function main() {
   buildViewer();
   buildTimeline();
   buildNav();
+  buildGeo();
   wireChrome();
+}
+
+// ---- geographic reference (distance-from-Judaea axis) ----
+function buildGeo() {
+  const by = {};
+  (nav.places || []).forEach((p) => {
+    (by[p.parent_macro_region] = by[p.parent_macro_region] || []).push(p);
+  });
+  geoRegions = Object.entries(by).map(([region, ps]) => ({
+    region,
+    y: ps.reduce((a, b) => a + b.y, 0) / ps.length,
+    branch: ps[0].branch,
+  })).sort((a, b) => a.y - b.y);
+}
+
+function drawGeo(ctx, cv) {
+  if (!showGeo || !geoRegions.length || !viewer.world.getItemCount()) return;
+  const W = cv.width, H = cv.height;
+  // faint region guides + labels, tracking the viewport
+  ctx.save();
+  ctx.font = "12px Georgia";
+  let lastY = -99;
+  for (const g of geoRegions) {
+    const pt = viewer.viewport.pixelFromPoint(new OpenSeadragon.Point(0.5, g.y * aspect), true);
+    const sy = pt.y;
+    if (sy < 4 || sy > H - 4) continue;
+    ctx.strokeStyle = "rgba(255,206,122,0.08)";
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0, sy); ctx.lineTo(W, sy); ctx.stroke();
+    // avoid label pile-up
+    const ly = sy < lastY + 15 ? lastY + 15 : sy;
+    lastY = ly;
+    const arrow = g.branch === "West" ? "↑ " : g.branch === "East-South" ? "↓ " : "• ";
+    ctx.fillStyle = "rgba(20,22,32,0.55)";
+    const label = arrow + g.region;
+    const w = ctx.measureText(label).width;
+    ctx.fillRect(8, ly - 12, w + 12, 16);
+    ctx.fillStyle = "rgba(228,222,212,0.9)";
+    ctx.fillText(label, 14, ly);
+  }
+  // compass note pinned to the bottom of the canvas (out of the way of the labels)
+  ctx.fillStyle = "rgba(20,22,32,0.5)"; ctx.fillRect(8, H - 26, 350, 18);
+  ctx.fillStyle = "rgba(255,206,122,0.65)";
+  ctx.font = "italic 11px Georgia";
+  ctx.fillText("Y = distance from Judaea   (West ↑ · Judaea • · East & South ↓)", 14, H - 13);
+  ctx.restore();
 }
 
 function buildViewer() {
@@ -75,8 +124,8 @@ function buildViewer() {
   });
   curIdx = sources.length - 1;
 
-  // life-trace overlay redraws with the viewport
-  const redraw = () => drawLifeOverlay();
+  // overlay (geography axis + life trace) redraws with the viewport
+  const redraw = () => drawOverlay();
   viewer.addHandler("update-viewport", redraw);
   viewer.addHandler("animation", redraw);
   viewer.addHandler("resize", redraw);
@@ -242,16 +291,17 @@ function traceLife(life) {
     <p>${life.summary || ""}</p>
     <p class="arc">${arcStr}</p>
     <div class="actions"><button data-clearlife>← back to the whole</button></div>`;
-  drawLifeOverlay();
+  drawOverlay();
 }
 
-function drawLifeOverlay() {
+function drawOverlay() {
   const cv = $("#life-overlay");
   const r = viewer.viewport.getContainerSize();
   if (cv.width !== r.x) cv.width = r.x;
   if (cv.height !== r.y) cv.height = r.y;
   const ctx = cv.getContext("2d");
   ctx.clearRect(0, 0, cv.width, cv.height);
+  drawGeo(ctx, cv);
   if (!activeLife || !(activeLife.path || []).length) return;
   const pts = activeLife.path;
   const px = pts.map((q) => {
@@ -280,12 +330,15 @@ function drawLifeOverlay() {
   });
 }
 
-function clearLife() { activeLife = null; drawLifeOverlay(); }
+function clearLife() { activeLife = null; drawOverlay(); }
 
 // ---- chrome wiring ----
 function wireChrome() {
   $("#nav-toggle").addEventListener("click", () => $("#nav-drawer").classList.toggle("hidden"));
   $("#about-toggle").addEventListener("click", () => $("#about").classList.toggle("hidden"));
+  $("#geo-toggle").addEventListener("click", (e) => {
+    showGeo = !showGeo; e.target.classList.toggle("off", !showGeo); drawOverlay();
+  });
   document.addEventListener("click", (e) => {
     const c = e.target.getAttribute && e.target.getAttribute("data-close");
     if (c) $("#" + c).classList.add("hidden");
