@@ -7,15 +7,15 @@ A faithful encoding has light-ratio ≈ believer-ratio.
 
 | year | believers | believers ratio (vs 2025) | light ratio (vs 2025) |
 |------|-----------|---------------------------|-----------------------|
-| 100 | 7,169,663 | 1.95e-03 | 1.71e-03 |
-| 300 | 3,588,056 | 9.77e-04 | 8.45e-04 |
-| 500 | 5,482,141 | 1.49e-03 | 1.32e-03 |
-| 1000 | 18,294,649 | 4.98e-03 | 4.31e-03 |
-| 1500 | 50,217,628 | 1.37e-02 | 1.19e-02 |
-| 1900 | 487,352,950 | 1.33e-01 | 1.13e-01 |
-| 2025 | 3,671,871,892 | 1.00e+00 | 1.00e+00 |
+| 100 | 800,000 | 3.10e-04 | 1.46e-04 |
+| 300 | 6,000,000 | 2.33e-03 | 1.16e-03 |
+| 500 | 24,000,000 | 9.30e-03 | 4.48e-03 |
+| 1000 | 56,000,000 | 2.17e-02 | 1.05e-02 |
+| 1500 | 90,000,000 | 3.49e-02 | 1.72e-02 |
+| 1900 | 558,000,000 | 2.16e-01 | 1.05e-01 |
+| 2025 | 2,580,000,000 | 1.00e+00 | 1.00e+00 |
 
-log-log correlation (light vs believers across all columns): **0.9995**
+log-log correlation (light vs believers across all columns): **0.9997**
 
 Note: below the sampling/pixel resolution (the first century is ~10^3
 believers — fewer than one sampled thread), the seed is floored to a visible

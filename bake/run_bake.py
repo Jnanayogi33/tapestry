@@ -35,18 +35,26 @@ def load_params():
 
 
 def load_believers():
-    """The authoritative believer count over time: GLOBAL Christians per year from the
-    calibrated macro run (reconciled to the anchors). Used to set light ∝ believers."""
+    """The authoritative believer count over time = the SOURCED GLOBAL christians_central
+    from the anchors (the Notion repo's real numbers). Light is pinned to THESE, so the
+    graphics align with the actual population figures. We log-interpolate between the 14
+    anchor years (the count spans ~6 orders of magnitude). Falls back to the calibrated
+    macro curve only if anchors are unavailable."""
+    anchors = [a for a in D.load_anchors() if a.region == S.GLOBAL and a.christians_central]
+    anchors.sort(key=lambda a: a.year)
+    if len(anchors) >= 2:
+        import numpy as np
+        ay = [a.year for a in anchors]
+        ac = [max(1.0, a.christians_central) for a in anchors]
+        # dense yearly curve, log-interpolated for a smooth ramp across the huge range
+        yrs = list(range(ay[0], ay[-1] + 1, 5))
+        chr_ = list(np.exp(np.interp(yrs, ay, np.log(ac))))
+        return yrs, chr_
     p = os.path.join(D.DEFAULT_DATA_DIR, "simulation_output.json")
     if os.path.exists(p):
         d = json.load(open(p))
-        yrs = d["years"]
-        chr_ = d.get("global", {}).get("christians")
-        if chr_:
-            return yrs, chr_
-    # fallback: GLOBAL anchor christians_central
-    anchors = [a for a in D.load_anchors() if a.region == S.GLOBAL and a.christians_central]
-    anchors.sort(key=lambda a: a.year)
+        if d.get("global", {}).get("christians"):
+            return d["years"], d["global"]["christians"]
     return [a.year for a in anchors], [a.christians_central for a in anchors]
 
 
