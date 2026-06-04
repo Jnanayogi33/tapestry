@@ -1,0 +1,15 @@
+{
+  "root_page":      "37528b5e-e27a-81ec-9078-f0791d6a01e3",
+  "build_log_page": "37528b5e-e27a-8147-b993-ff3023aa70ec",
+  "regions":        "6a458332-aa0a-4610-b0b9-07267b0369cf",
+  "anchors":        "a87a94ba-308b-4b72-8210-9f7123d26d48",
+  "events":         "cd601218-e4c5-4b8a-8d22-9412aa205083",
+  "strands":        "f6b38a7a-5ebc-4421-90fd-2d84c75d79bf",
+  "lives_page":     "37528b5e-e27a-8146-b19d-dc2bcb353734",
+  "data_sources": {
+    "regions": "9d388067-bb13-4d63-9c44-e5d5b9a72f47",
+    "anchors": "ce75fece-26b6-4056-9c91-684eb52202d5",
+    "events":  "fe3ea96f-0425-4384-8181-cc2381521930",
+    "strands": "67347f3c-2b74-4b0d-83f9-03a946cf15b7"
+  }
+}
