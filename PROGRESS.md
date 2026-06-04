@@ -47,18 +47,23 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
   nav menu (strands/events/places/lives/seed from nav_index.json) flying the camera +
   info panels + single-life overlay tracing a REAL trajectory (Lyudmila gold→dark→gold
   with drivers). Old PixiJS arcs/bands/dots deleted. Builds clean; 0 console errors.
-- [~] **6. Deploy** to Pages (Vite base `/tapestry/`); verify live URL.
-- [ ] **7. Visual iteration loop** — re-score on the deployed page.
-- [ ] **8. Done** only when deployed AND visual loop converged (≥12/14, no zeros).
+- [x] **6. Deploy** — DONE. Built `viz/dist`, published to `gh-pages` (content push,
+  no `workflow` scope needed). LIVE: https://jnanayogi33.github.io/tapestry/ — all
+  assets (JS/CSS/climax.jpg/frames/nav) return 200 under the `/tapestry/` base path.
+- [x] **7. Visual iteration loop** — CONVERGED. Final deployed scoring 14/14, no zeros
+  (reports/look/i13-deployed.md). Iterations i01 (imposed/wrong spirit) → i12/iF (real
+  contagion, faithful) logged under reports/look/.
+- [x] **8. DONE** — site deployed AND visual loop converged, AND it is a genuine
+  agent-based simulation of intersecting lives (seed = true origin; spread emergent;
+  every gold thread traces to Christ). Residuals documented (truthfulness).
 
-## EXACT NEXT ACTION — DEPLOY (step 6)
-Build `viz/` and publish `viz/dist` to the `gh-pages` branch (content push — no
-`workflow` scope needed), Vite base `/tapestry/`. Then fetch
-https://jnanayogi33.github.io/tapestry/ and confirm a non-empty HTML body + the #osd
-root. If blank/404, check the base path. Then step 7: screenshot the LIVE page and
-re-score against the reference criteria; if ≥12/14 with no zeros, mark step 8 done.
-(The Actions workflows remain parked in `deploy/`; move to `.github/workflows/` once a
-`workflow`-scoped token exists.)
+## STATUS: v2 COMPLETE ✓
+All 8 steps done. Live: https://jnanayogi33.github.io/tapestry/ (visual loop 14/14).
+Optional follow-ups if resumed: (a) move Actions workflows deploy/→.github/workflows/
+once a `workflow`-scoped token exists (currently deployed via gh-pages content push);
+(b) reduce calibration residuals (Americas immigration, SSA timing) — Phase-3;
+(c) DZI tiling for true gigapixel deep-zoom (Phase-2). To re-bake & redeploy:
+`python -m bake.run_bake --frames` then rebuild viz and push viz/dist to gh-pages.
 
 --- old step-4 note (kept for history) ---
 Step 4 (offline bake): create `bake/` — `bake/render.py` builds the gigapixel CLIMAX

@@ -5,10 +5,18 @@
 > dimming where it is resisted and rekindling after.
 
 The Tapestry is a self-calibrating historical simulation of the spread and decline of
-Christianity from **AD 30 to today**, rendered as a zoomable, luminous web. It has a
-**macro** layer (10 world regions, cohort belief-state dynamics) and a **micro** layer
-(individual lives moving through belief over a lifetime), and a **visualization** that
-turns both into something a person can see and move through.
+Christianity from **AD 30 to today**, rendered as a zoomable, luminous tapestry.
+
+**v2 (current):** the primitive is a **sampled human life**. A genuine agent-based
+spatio-temporal **contagion** runs ~300k lives on a real network (family + spatial +
+named-strand mission bridges); the seed — Christ, Judaea, AD 30 — is the only life lit
+a priori, and belief spreads *only* where a lit life touches a dark one, or where a
+named missionary ignites a place. **Every gold thread traces, through who-lit-whom,
+back to the one seed** — the fan, the outward spread and the modern blaze all *emerge*.
+The image is **baked offline** (additive bloom over a dark woven ground) and the browser
+navigates it. X is time; Y is distance-from-Judaea (the Latin West fans up, the Orthodox
+East and Global South fan down). A v1 **macro** cohort model (10 regions, Mesa) provides
+the calibrated aggregate the contagion is reconciled to.
 
 **Live visualization:** **https://jnanayogi33.github.io/tapestry/**
 
@@ -25,9 +33,11 @@ BLOCKERS.md step 10.)
 | `config/` | `notion_ids.json` — the Knowledge Base database/page IDs (read by ID, never by name). |
 | `data/` | Generated snapshots the sim reads: `regions/anchors/events/strands.csv`, `lives.csv`, plus `simulation_output.json` and `example_lives.json`. |
 | `pipeline/` | `make_fixtures.py` (synthetic data matching the real schema), `sync_from_notion.py` (real pull, gated on `NOTION_TOKEN`), `validate.py` (hard/soft checks), `schema.py` (canonical enums & regions). |
-| `sim/macro/` | Cohort model in Mesa: 10 regions, multi-state belief, inter-region contagion, named-strand mechanisms; `calibrate.py` auto-fits 8 parameters. |
-| `sim/micro/` | Individual-agent model: 1k–5k agents, social network, complex contagion; emits **real** agent life-histories. |
-| `viz/` | PixiJS/WebGL single-page zoomable app (Vite). Gold threads on dark ground. |
+| `sim/macro/` | v1 cohort model in Mesa: 10 regions, multi-state belief, named-strand mechanisms; `calibrate.py` auto-fits 8 parameters. Provides the calibrated aggregate target. |
+| `sim/micro/` | v1 individual-agent model: social network, complex contagion; emits **real** agent life-histories (the Lyudmila arc). |
+| `sim/threads/` | **v2 agent contagion** (`agents.py`): ~300k sampled lives on a real spatio-temporal network; `calibrate.py` fits 8 global rates to the anchors; `embedding.py` maps each life to (x=time, y=distance-from-Judaea). |
+| `bake/` | **Offline bake** (`render.py`, `run_bake.py`): the real forest → gigapixel climax + era frames (additive bloom over a dark woven ground). |
+| `viz/` | **OpenSeadragon** deep-zoom app (Vite) over the baked image: timeline scrub/play, searchable nav menu, single-life trace. |
 | `reports/` | `calibration_report.md` and other derived reports. |
 | `BLOCKERS.md` | Every assumption / warning / blocker, with the action taken. |
 

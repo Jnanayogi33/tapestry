@@ -55,8 +55,9 @@ function buildViewer() {
     animationTime: 0.9,
     springStiffness: 7,
     maxZoomPixelRatio: 2.2,
-    minZoomImageRatio: 0.9,
-    visibilityRatio: 1,
+    minZoomImageRatio: 0.7,
+    visibilityRatio: 0.5,           // fit the whole seed->blaze sweep (panorama), allow
+                                    // panning into the letterbox margins
     constrainDuringPan: true,
     gestureSettingsMouse: { clickToZoom: false, dblClickToZoom: true },
   });
