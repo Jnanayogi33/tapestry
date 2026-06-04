@@ -24,6 +24,7 @@ from typing import Iterable
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pipeline import schema as S  # noqa: E402
+from pipeline import fixtures_v2 as V2  # noqa: E402
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 
@@ -207,7 +208,7 @@ def build_anchor_rows() -> list[dict]:
         conf = CONFIDENCE_BY_YEAR[year]
         low, high = _band(central, conf)
         pct = round(100.0 * central / pop, 3)
-        rows.append({
+        grow = {
             "label": f"GLOBAL — {year}",
             "region": S.GLOBAL,
             "year": year,
@@ -217,11 +218,16 @@ def build_anchor_rows() -> list[dict]:
             "total_population": pop,
             "christians_pct_central": pct,
             "practicing_pct": "",
+            "nominal_pct": "",
+            "lapsed_pct": "",
+            "unaffiliated_pct": "",
             "source": SYN,
             "source_url": SYN_URL,
             "confidence": conf,
             "notes": "Global total across all regions.",
-        })
+        }
+        V2.enrich_global_anchor(grow)  # populate the belief composition
+        rows.append(grow)
     # 40 regional rows, only for covered cells.
     for region, year_map in REGIONAL_ANCHORS.items():
         for year in S.REGIONAL_COVERAGE[region]:
@@ -241,7 +247,13 @@ def build_anchor_rows() -> list[dict]:
                 "christians_high": high,
                 "total_population": pop,
                 "christians_pct_central": pct,
+                # Regional composition intentionally null -> DERIVED at sim time
+                # (schema.derive_composition). Only practicing_pct is populated where
+                # the v1 data had it.
                 "practicing_pct": "" if practicing is None else practicing,
+                "nominal_pct": "",
+                "lapsed_pct": "",
+                "unaffiliated_pct": "",
                 "source": SYN,
                 "source_url": SYN_URL,
                 "confidence": conf,
@@ -311,7 +323,7 @@ EVENTS = [
 def build_event_rows() -> list[dict]:
     rows = []
     for name, ytext, ysort, regions, effect, mech, desc in EVENTS:
-        rows.append({
+        row = {
             "Event Name": name,
             "year": ytext,
             "year_sort": ysort,
@@ -321,7 +333,9 @@ def build_event_rows() -> list[dict]:
             "mechanism": mech,
             "source": SYN,
             "source_url": SYN_URL,
-        })
+        }
+        row.update(V2.event_v2_fields(regions, effect, mech, ytext, ysort))
+        rows.append(row)
     return rows
 
 
@@ -479,7 +493,7 @@ def build_strand_rows() -> list[dict]:
         for (name, birth, death, primary, role, mech, affected,
              ws, we, strength, conf) in items:
             is_filler = role in {t[1] for t in FILLER_TEMPLATES} and "Regional" in name
-            rows.append({
+            srow = {
                 "name": name,
                 "birth_year": "" if birth is None else birth,
                 "death_year": "" if death is None else death,
@@ -493,7 +507,9 @@ def build_strand_rows() -> list[dict]:
                 "depth_tier": tier,
                 "confidence": conf,
                 "sources": (SYN + " — filler") if is_filler else SYN,
-            })
+            }
+            srow.update(V2.strand_v2_fields(name, primary, strength, mech))
+            rows.append(srow)
     return rows
 
 
@@ -597,12 +613,16 @@ def main() -> int:
     events = build_event_rows()
     strands = build_strand_rows()
     lives = build_lives_rows()
+    places = V2.build_places_rows()
+    archetypes = V2.build_archetype_rows()
 
     _write_csv(os.path.join(DATA_DIR, "regions.csv"), S.REGIONS_COLUMNS, regions)
     _write_csv(os.path.join(DATA_DIR, "anchors.csv"), S.ANCHORS_COLUMNS, anchors)
     _write_csv(os.path.join(DATA_DIR, "events.csv"), S.EVENTS_COLUMNS, events)
     _write_csv(os.path.join(DATA_DIR, "strands.csv"), S.STRANDS_COLUMNS, strands)
     _write_csv(os.path.join(DATA_DIR, "lives.csv"), S.LIVES_COLUMNS, lives)
+    _write_csv(os.path.join(DATA_DIR, "places.csv"), S.PLACES_COLUMNS, places)
+    _write_csv(os.path.join(DATA_DIR, "archetypes.csv"), S.ARCHETYPES_COLUMNS, archetypes)
 
     # Sanity assertions matching the spec's fixture requirements.
     global_years = sorted(r["year"] for r in anchors if r["region"] == S.GLOBAL)
@@ -615,13 +635,38 @@ def main() -> int:
     mechs = {r["mechanism_template"] for r in strands}
     assert mechs == set(S.STRAND_MECHANISM_ENUM), f"missing mechanism_templates: {set(S.STRAND_MECHANISM_ENUM) - mechs}"
     assert len(lives) >= 6, "need >= 6 lives"
+    # v2 assertions.
+    assert len(places) == 49, f"expected 49 places, got {len(places)}"
+    assert len(archetypes) == 36, f"expected 36 archetypes, got {len(archetypes)}"
+    assert all(p["branch"] in S.BRANCH_ENUM for p in places), "bad branch enum"
+    assert all(isinstance(p["distance_km"], (int, float)) for p in places), "non-numeric distance_km"
+    # every region's primary place must exist among places (region->place fallback).
+    place_names = {p["name"] for p in places}
+    for reg, pl in S.REGION_PRIMARY_PLACE.items():
+        assert pl in place_names, f"primary place '{pl}' for {reg} missing from places"
+    # every strand's place must be a real Place.
+    for srow in strands:
+        assert srow["place"] in place_names, f"strand place '{srow['place']}' not in places"
+    # GLOBAL composition sums to ~100.
+    for a in anchors:
+        if a["region"] == S.GLOBAL:
+            tot = float(a["practicing_pct"]) + float(a["nominal_pct"]) + float(a["lapsed_pct"]) + float(a["unaffiliated_pct"])
+            assert abs(tot - 100.0) < 0.2, f"GLOBAL {a['year']} composition sums to {tot}"
+    # archetype enums.
+    for ar in archetypes:
+        assert ar["end_state"] in S.END_STATE_ENUM
+        assert ar["start_disposition"] in S.DISPOSITION_ENUM
+        assert all(d in S.DRIVERS_ENUM for d in S.load_multiselect(ar["drivers"]))
+        assert all(t in S.PATTERN_TAGS_ENUM for t in S.load_multiselect(ar["pattern_tags"]))
 
     print(f"Fixtures written to {DATA_DIR}/")
-    print(f"  regions.csv : {len(regions)} rows")
-    print(f"  anchors.csv : {len(anchors)} rows ({len(global_years)} GLOBAL + {len(anchors)-len(global_years)} regional)")
-    print(f"  events.csv  : {len(events)} rows")
-    print(f"  strands.csv : {len(strands)} rows  {tier_counts}")
-    print(f"  lives.csv   : {len(lives)} rows")
+    print(f"  regions.csv    : {len(regions)} rows")
+    print(f"  anchors.csv    : {len(anchors)} rows ({len(global_years)} GLOBAL + {len(anchors)-len(global_years)} regional)")
+    print(f"  events.csv     : {len(events)} rows")
+    print(f"  strands.csv    : {len(strands)} rows  {tier_counts}")
+    print(f"  lives.csv      : {len(lives)} rows")
+    print(f"  places.csv     : {len(places)} rows (Core/West/East-South branches)")
+    print(f"  archetypes.csv : {len(archetypes)} rows")
     return 0
 
 

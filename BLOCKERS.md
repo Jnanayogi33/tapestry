@@ -78,4 +78,4 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 
 <!-- VALIDATION:END -->
 
-
+- [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.

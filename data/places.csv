@@ -1,0 +1,50 @@
+name,parent_macro_region,branch,lat,lon,distance_km,distance_norm,era_note,notes
+Judaea,Roman/Mediterranean,Core,31.78,35.21,1.3,0.01,AD 30 — the seed,"Jerusalem; Christ enters here. x=0, y=0.5."
+Galilee,Roman/Mediterranean,Core,32.8,35.5,117.8,0.92,1st c.,Where the first disciples are called.
+Antioch,Roman/Mediterranean,Core,36.2,36.16,500.4,3.91,1st c.,Believers first called 'Christians'; mission base.
+Cyprus,Roman/Mediterranean,Core,35.0,33.0,413.9,3.23,1st c.,Barnabas & Paul's first journey.
+Asia Minor (Ephesus),Roman/Mediterranean,Core,37.94,27.34,992.8,7.75,1st-2nd c.,Pauline & Johannine churches.
+Rome,Roman/Mediterranean,West,41.9,12.5,2303.8,17.99,1st c.+,Capital; Peter & Paul. Roman/Mediterranean primary place.
+Carthage,Roman/Mediterranean,West,36.85,10.32,2347.9,18.34,2nd-5th c.,"Latin African church: Tertullian, Cyprian, Augustine."
+Iberia (Toledo),Western Europe,West,39.86,-4.02,3619.3,28.27,4th c.+,Visigothic & medieval Spain.
+Gaul (Lyon),Western Europe,West,45.76,4.83,3032.2,23.68,2nd c.+,Irenaeus; the Frankish church. Western Europe primary place.
+Britain (Canterbury),Western Europe,West,51.28,1.08,3523.1,27.52,597+,Augustine of Canterbury; English church.
+Ireland (Armagh),Western Europe,West,54.35,-6.65,4133.1,32.28,5th c.,Patrick; insular monasticism.
+Germania (Mainz),Western Europe,West,50.0,8.27,3009.7,23.51,8th c.,"Boniface, apostle of the Germans."
+Scandinavia (Uppsala),Western Europe,West,59.86,17.64,3383.4,26.43,9th-11th c.,Anskar; late northern conversion.
+Wittenberg,Western Europe,West,51.87,12.65,2889.5,22.57,1517,Luther; the Reformation.
+Geneva,Western Europe,West,46.2,6.14,2955.7,23.09,16th c.,Calvin's reform.
+New England,North America,West,42.36,-71.06,8862.9,69.23,17th c.+,Puritans; the Great Awakenings. North America primary place.
+Chesapeake (Virginia),North America,West,37.54,-77.43,9617.1,75.12,17th c.+,Anglican colonial settlement.
+West Coast (Los Angeles),North America,West,34.05,-118.24,12186.4,95.19,1906,Azusa Street; modern Pentecostalism.
+Mexico (Tenochtitlan),Latin America,West,19.43,-99.13,12527.3,97.85,1524+,Twelve Apostles of Mexico.
+Bahia (Brazil),Latin America,West,-12.97,-38.51,9279.4,72.48,16th c.+,Portuguese mission. Latin America primary place.
+Andes (Lima),Latin America,West,-12.05,-77.04,12802.7,100.0,16th c.+,Spanish viceregal church.
+Caribbean (Hispaniola),Latin America,West,18.47,-69.9,10284.5,80.33,1492+,First contact.
+Greece (Corinth),Roman/Mediterranean,East-South,37.94,22.93,1312.5,10.25,1st c.+,Greek-speaking churches; Orthodoxy's root.
+Constantinople,Eastern Europe & Russia,East-South,41.01,28.98,1168.5,9.13,330+,New Rome; Byzantine center.
+Balkans (Thessalonica),Eastern Europe & Russia,East-South,40.64,22.94,1475.8,11.53,9th c.,Cyril & Methodius' mission base.
+Kiev,Eastern Europe & Russia,East-South,50.45,30.52,2113.1,16.51,988,Baptism of the Rus. Eastern Europe & Russia primary place.
+Moscow,Eastern Europe & Russia,East-South,55.75,37.62,2673.3,20.88,15th c.+,'Third Rome'; later Soviet suppression.
+Armenia (Etchmiadzin),Middle East & North Africa,East-South,40.16,44.29,1238.7,9.68,301,First Christian state.
+Alexandria,Middle East & North Africa,East-South,31.2,29.92,505.9,3.95,1st c.+,Mark; Athanasius; great school. MENA primary place.
+Egypt (Thebaid),Middle East & North Africa,East-South,26.0,32.0,713.5,5.57,3rd c.+,Desert monasticism (Anthony).
+Mesopotamia (Ctesiphon),Middle East & North Africa,East-South,33.09,44.58,891.0,6.96,3rd c.+,Church of the East.
+Persia (Nisibis),Middle East & North Africa,East-South,37.07,41.21,805.9,6.29,4th c.+,Nestorian school of theology.
+Arabia (Najran),Middle East & North Africa,East-South,17.49,44.13,1823.7,14.24,5th-6th c.,Pre-Islamic Christian community.
+Aksum (Ethiopia),Sub-Saharan Africa,East-South,14.13,38.72,1993.5,15.57,4th c.+,Ethiopian church; never extinguished.
+Nubia,Sub-Saharan Africa,East-South,18.0,31.0,1588.4,12.41,6th-14th c.,Medieval Christian kingdoms.
+Yorubaland (West Africa),Sub-Saharan Africa,East-South,7.38,3.9,4226.0,33.01,19th c.+,Crowther; explosive modern growth. Sub-Saharan Africa primary place.
+Kongo,Sub-Saharan Africa,East-South,-6.0,14.0,4764.1,37.21,1500+,Kingdom of Kongo's conversion.
+East Africa (Uganda),Sub-Saharan Africa,East-South,0.35,32.58,3504.5,27.37,20th c.,The East African Revival.
+Southern Africa,Sub-Saharan Africa,East-South,-26.2,28.04,6490.6,50.7,19th-20th c.,Mission and settler churches.
+Malabar Coast,South Asia,East-South,9.93,76.27,4865.6,38.0,ancient+,Thomas Christians of Kerala. South Asia primary place.
+North India (Goa),South Asia,East-South,15.5,73.83,4299.3,33.58,16th c.+,Xavier; de Nobili.
+Ceylon,South Asia,East-South,6.93,79.85,5380.5,42.03,16th c.+,Portuguese & later missions.
+Tang Chang'an,East Asia,East-South,34.27,108.95,6721.4,52.5,635+,Alopen; the Nestorian stele.
+Shanghai (China coast),East Asia,East-South,31.23,121.47,7929.4,61.94,19th c.+,Protestant missions; modern house church. East Asia primary place.
+Korea (Seoul),East Asia,East-South,37.57,126.98,8064.7,62.99,19th-20th c.,Rapid modern growth.
+Japan (Nagasaki),East Asia,East-South,32.75,129.87,8550.1,66.78,16th c.+,Xavier; the hidden Christians.
+Manila (Philippines),Southeast Asia,East-South,14.6,120.98,8767.3,68.48,1565+,Spanish Catholic mission. Southeast Asia primary place.
+Vietnam (Tonkin),Southeast Asia,East-South,21.03,105.85,7019.2,54.83,17th c.+,Alexandre de Rhodes.
+Java (Indonesia),Southeast Asia,East-South,-6.2,106.85,8663.4,67.67,19th-20th c.,Dutch-era and indigenous churches.

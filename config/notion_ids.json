@@ -5,11 +5,15 @@
   "anchors":        "a87a94ba-308b-4b72-8210-9f7123d26d48",
   "events":         "cd601218-e4c5-4b8a-8d22-9412aa205083",
   "strands":        "f6b38a7a-5ebc-4421-90fd-2d84c75d79bf",
+  "places":         "f5680a00-979f-499d-8ef2-8c890392d39a",
+  "archetypes":     "9a703ed0-8a20-406a-933a-4164670bc896",
   "lives_page":     "37528b5e-e27a-8146-b19d-dc2bcb353734",
   "data_sources": {
-    "regions": "9d388067-bb13-4d63-9c44-e5d5b9a72f47",
-    "anchors": "ce75fece-26b6-4056-9c91-684eb52202d5",
-    "events":  "fe3ea96f-0425-4384-8181-cc2381521930",
-    "strands": "67347f3c-2b74-4b0d-83f9-03a946cf15b7"
+    "regions":    "9d388067-bb13-4d63-9c44-e5d5b9a72f47",
+    "anchors":    "ce75fece-26b6-4056-9c91-684eb52202d5",
+    "events":     "fe3ea96f-0425-4384-8181-cc2381521930",
+    "strands":    "67347f3c-2b74-4b0d-83f9-03a946cf15b7",
+    "places":     "fc3f41df-01f7-4804-a406-0896e7d0814a",
+    "archetypes": "9e8d984e-1fef-445a-86e1-5ca44f82ff4b"
   }
 }

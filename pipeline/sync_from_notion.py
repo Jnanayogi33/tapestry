@@ -148,7 +148,11 @@ def map_anchor(props) -> dict:
         "christians_high": _number(props.get("christians_high")),
         "total_population": _number(props.get("total_population")),
         "christians_pct_central": _number(props.get("christians_pct_central")),
+        # v2 belief composition (GLOBAL populated; regional null -> derived downstream).
         "practicing_pct": _number(props.get("practicing_pct")),
+        "nominal_pct": _number(props.get("nominal_pct")),
+        "lapsed_pct": _number(props.get("lapsed_pct")),
+        "unaffiliated_pct": _number(props.get("unaffiliated_pct")),
         "source": _plain(props.get("source")),
         "source_url": _url(props.get("source_url")),
         "confidence": _select(props.get("confidence")),
@@ -165,6 +169,11 @@ def map_event(props) -> dict:
         "description": _plain(props.get("description")),
         "effect": _select(props.get("effect")),
         "mechanism": _select(props.get("mechanism")),
+        # v2 localized perturbation
+        "places": _plain(props.get("places")),
+        "rate_effect": _plain(props.get("rate_effect")),
+        "reach": _number(props.get("reach")),
+        "duration_years": _number(props.get("duration_years")),
         "source": _plain(props.get("source")),
         "source_url": _url(props.get("source_url")),
     }
@@ -182,9 +191,42 @@ def map_strand(props) -> dict:
         "effect_window_start": _number(props.get("effect_window_start")),
         "effect_window_end": _number(props.get("effect_window_end")),
         "strength": _number(props.get("strength")),
+        # v2 local igniter geometry
+        "place": _plain(props.get("place")),
+        "ignition_radius": _number(props.get("ignition_radius")),
+        "effect_decay": _number(props.get("effect_decay")),
         "depth_tier": _select(props.get("depth_tier")),
         "confidence": _select(props.get("confidence")),
         "sources": _plain(props.get("sources")),
+    }
+
+
+def map_place(props) -> dict:
+    return {
+        "name": _title(props.get("name")),
+        "parent_macro_region": _select(props.get("parent_macro_region")) or _plain(props.get("parent_macro_region")),
+        "branch": _select(props.get("branch")) or _plain(props.get("branch")),
+        "lat": _number(props.get("lat")),
+        "lon": _number(props.get("lon")),
+        "distance_km": _number(props.get("distance_km")),
+        "distance_norm": _number(props.get("distance_norm")),
+        "era_note": _plain(props.get("era_note")),
+        "notes": _plain(props.get("notes")),
+    }
+
+
+def map_archetype(props) -> dict:
+    return {
+        "name": _title(props.get("name")),
+        "era": _plain(props.get("era")) or _select(props.get("era")),
+        "region": _select(props.get("region")) or _plain(props.get("region")),
+        "start_disposition": _select(props.get("start_disposition")) or _plain(props.get("start_disposition")),
+        "belief_path": _plain(props.get("belief_path")),
+        "end_state": _select(props.get("end_state")) or _plain(props.get("end_state")),
+        "weight": _number(props.get("weight")),
+        "drivers": _multiselect(props.get("drivers")),
+        "pattern_tags": _multiselect(props.get("pattern_tags")),
+        "summary": _plain(props.get("summary")),
     }
 
 
@@ -193,6 +235,9 @@ DB_SPECS = {
     "anchors": (S.ANCHORS_COLUMNS, map_anchor),
     "events": (S.EVENTS_COLUMNS, map_event),
     "strands": (S.STRANDS_COLUMNS, map_strand),
+    # v2 tables
+    "places": (S.PLACES_COLUMNS, map_place),
+    "archetypes": (S.ARCHETYPES_COLUMNS, map_archetype),
 }
 
 

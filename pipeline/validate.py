@@ -51,6 +51,9 @@ REQUIRED = {
         "effect_window_start", "effect_window_end", "strength", "depth_tier",
         "confidence",
     ],
+    # v2 tables
+    "places": ["name", "parent_macro_region", "branch", "distance_km"],
+    "archetypes": ["name", "region", "start_disposition", "end_state", "weight"],
 }
 
 
@@ -171,6 +174,69 @@ def check_strands(rows: list[dict], rep: Report) -> None:
             rep.warning(f"[strands] row {i+1} ({row.get('name')}): strength {strv} outside 1..5")
 
 
+def check_global_composition(rows: list[dict], rep: Report) -> None:
+    """v2: for GLOBAL anchors, practicing+nominal+lapsed ≈ christians_pct_central and
+    the four composition fields sum to ~100 (±0.2). Regional composition is DERIVED,
+    so it is not required to be present."""
+    for i, row in enumerate(rows):
+        if row.get("region") != S.GLOBAL:
+            continue
+        comp = [as_float(row.get(k)) for k in
+                ("practicing_pct", "nominal_pct", "lapsed_pct", "unaffiliated_pct")]
+        if any(v is None for v in comp):
+            rep.warning(f"[anchors] GLOBAL {row.get('year')}: incomplete belief composition "
+                        f"(practicing/nominal/lapsed/unaffiliated) — expected populated")
+            continue
+        p, n, l, u = comp
+        total = p + n + l + u
+        if abs(total - 100.0) > 0.2:
+            rep.fail(f"[anchors] GLOBAL {row.get('year')}: composition sums to {total:.2f}, not ~100")
+        cpc = as_float(row.get("christians_pct_central"))
+        if cpc is not None and abs((p + n + l) - cpc) > 0.5:
+            rep.fail(f"[anchors] GLOBAL {row.get('year')}: practicing+nominal+lapsed "
+                     f"({p+n+l:.2f}) != christians_pct_central ({cpc:.2f})")
+
+
+def check_places(rows: list[dict], rep: Report) -> None:
+    """v2: every Place has a numeric distance_km and a valid branch."""
+    for i, row in enumerate(rows):
+        br = row.get("branch", "")
+        if not is_null(br) and br not in S.BRANCH_ENUM:
+            rep.fail(f"[places] row {i+1} ({row.get('name')}): branch '{br}' not in {S.BRANCH_ENUM}")
+        if as_float(row.get("distance_km")) is None:
+            rep.fail(f"[places] row {i+1} ({row.get('name')}): distance_km is not numeric")
+        reg = row.get("parent_macro_region", "")
+        if not is_null(reg) and reg not in set(S.REGIONS):
+            rep.fail(f"[places] row {i+1} ({row.get('name')}): parent_macro_region '{reg}' not a canonical region")
+    # every region's primary place must exist
+    names = {r.get("name") for r in rows}
+    for reg, pl in S.REGION_PRIMARY_PLACE.items():
+        if pl not in names:
+            rep.warning(f"[places] primary place '{pl}' for region '{reg}' is missing")
+
+
+def check_archetypes(rows: list[dict], rep: Report) -> None:
+    """v2: drivers/pattern_tags/end_state/start_disposition in their enums; region valid."""
+    for i, row in enumerate(rows):
+        es = row.get("end_state", "")
+        if not is_null(es) and es not in S.END_STATE_ENUM:
+            rep.fail(f"[archetypes] row {i+1} ({row.get('name')}): end_state '{es}' not in {S.END_STATE_ENUM}")
+        disp = row.get("start_disposition", "")
+        if not is_null(disp) and disp not in S.DISPOSITION_ENUM:
+            rep.fail(f"[archetypes] row {i+1}: start_disposition '{disp}' not in {S.DISPOSITION_ENUM}")
+        reg = row.get("region", "")
+        if not is_null(reg) and reg not in REGIONS_SET:
+            rep.fail(f"[archetypes] row {i+1}: region '{reg}' not in canonical regions/GLOBAL")
+        for d in S.load_multiselect(row.get("drivers")):
+            if d not in S.DRIVERS_ENUM:
+                rep.fail(f"[archetypes] row {i+1} ({row.get('name')}): driver '{d}' not in DRIVERS_ENUM")
+        for t in S.load_multiselect(row.get("pattern_tags")):
+            if t not in S.PATTERN_TAGS_ENUM:
+                rep.fail(f"[archetypes] row {i+1} ({row.get('name')}): pattern_tag '{t}' not in PATTERN_TAGS_ENUM")
+        if as_float(row.get("weight")) is None:
+            rep.fail(f"[archetypes] row {i+1} ({row.get('name')}): weight is not numeric")
+
+
 def check_reconciliation(anchors: list[dict], rep: Report) -> None:
     """Regional sum vs GLOBAL central — WARNING only, by design."""
     # GLOBAL central by year.
@@ -271,8 +337,12 @@ def main() -> int:
     data_dir = args.data_dir
 
     rep = Report()
+    # v1 core tables (hard-fail if missing).
     files = {n: read_csv(os.path.join(data_dir, f"{n}.csv"))
              for n in ("regions", "anchors", "events", "strands")}
+    # v2 tables (warn if missing — sim derives gracefully, but real v2 snapshots have them).
+    v2files = {n: read_csv(os.path.join(data_dir, f"{n}.csv"))
+               for n in ("places", "archetypes")}
 
     for name, rows in files.items():
         if not rows:
@@ -280,13 +350,24 @@ def main() -> int:
         else:
             check_required(rows, name, rep)
 
+    for name, rows in v2files.items():
+        if not rows:
+            rep.warning(f"[{name}] no rows found at {data_dir}/{name}.csv (v2 table)")
+        else:
+            check_required(rows, name, rep)
+
     if files["anchors"]:
         check_anchors(files["anchors"], rep)
         check_reconciliation(files["anchors"], rep)
+        check_global_composition(files["anchors"], rep)
     if files["events"]:
         check_events(files["events"], rep)
     if files["strands"]:
         check_strands(files["strands"], rep)
+    if v2files["places"]:
+        check_places(v2files["places"], rep)
+    if v2files["archetypes"]:
+        check_archetypes(v2files["archetypes"], rep)
 
     report_md = render_report(rep, data_dir)
     os.makedirs(os.path.join(REPO_ROOT, "reports"), exist_ok=True)
