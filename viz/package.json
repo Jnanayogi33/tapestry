@@ -10,7 +10,8 @@
     "dev": "vite",
     "dev:local": "VITE_BASE=/ vite --port 5180 --strictPort",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve:prod": "VITE_BASE=/ vite build && VITE_BASE=/ vite preview --port 5181 --strictPort"
   },
   "dependencies": {
     "papaparse": "^5.4.1",

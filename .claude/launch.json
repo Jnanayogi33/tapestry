@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["--prefix", "viz", "run", "dev:local"],
       "port": 5180
+    },
+    {
+      "name": "tapestry-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "viz", "run", "serve:prod"],
+      "port": 5181
     }
   ]
 }
