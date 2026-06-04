@@ -52,6 +52,10 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
   affords far more than the ~50-eval threshold; we cap maxfev at 2000. Objective fell
   ~13.6 -> ~1.25; mean absolute anchor residual ≈ 11-12 percentage points.
 
+
+## Step 9 — Notion sync
+- [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.
+
 <!-- VALIDATION:START -->
 
 ## Validation (latest run, auto-managed)
@@ -59,3 +63,4 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 - (no warnings)
 
 <!-- VALIDATION:END -->
+
