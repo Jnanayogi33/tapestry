@@ -28,6 +28,30 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 - [2] INFO (2026-06-03) — `requirements.txt` now uses version floors (not exact pins)
   so CI / other Python versions resolve to whatever wheels exist there.
 
+## Steps 5-6 — Macro model & calibration
+- [5] INFO (2026-06-03) — Macro dynamics use a bistable complex-contagion CAPACITY
+  model: conversion relaxes toward a per-region, per-time capacity K(drive) (Hill
+  function) where drive = internal prevalence (self-sustain, gated by external support)
+  + additive Christian-neighbor contact + strand push. This reproduces the historical
+  pattern — the faith locks in where it becomes the mutually-reinforcing social fabric
+  (Europe/Americas) and stays a minority where isolated — with NO per-region constants.
+  A durable "rival incumbency" term (from SUPPRESSION strands + persecution events)
+  captures Islam de-Christianizing MENA and Soviet atheism dipping Eastern Europe.
+- [6] ASSUMPTION/LIMITATION (2026-06-03) — A symmetric 8-GLOBAL-parameter model cannot
+  separate two cases the input data labels identically: settler-colonial
+  Christianization (Latin America, North America — Christian populations transplanted,
+  reach ~90%) vs mission-field contact among entrenched non-Christian incumbencies
+  (East/South/Southeast Asia — Hinduism/Buddhism/Confucianism/Islam, stay <10%). The
+  calibrated model therefore OVERESTIMATES modern East/South Asia Christian share
+  (~30-55% vs anchored ~4-8%). Documented, not hidden — residuals are in
+  reports/calibration_report.md. Phase-2 fix: per-region incumbency priors and
+  ABC-SMC calibration (both already on the deferred list).
+- [6] INFO (2026-06-03) — Calibration: 1 run/eval (model is deterministic, so the
+  spec's "average 3 seeded runs" is a no-op), multi-restart Nelder-Mead, wall-clock +
+  maxfev hard stops. A single full macro run is ~25-30 ms, so the default 60-min budget
+  affords far more than the ~50-eval threshold; we cap maxfev at 2000. Objective fell
+  ~13.6 -> ~1.25; mean absolute anchor residual ≈ 11-12 percentage points.
+
 <!-- VALIDATION:START -->
 
 ## Validation (latest run, auto-managed)

@@ -94,6 +94,17 @@ APOSTOLIC_PLANT = 0.012    # ...and directly PLANT a small church (U->A), the sp
 DRIVE_INSTITUTIONAL = 1.2  # institutions AMPLIFY the existing church (× inst_factor)
 INST_FACTOR_HALF = 0.12    # prevalence at which institutional effect is half-strength
 CONTACT_SCALE = 1.0   # neighbor contact contribution to drive
+CONTACT_NORM = 2.5    # contact normalizer: ADDITIVE over Christian neighbors, so a
+                      # region with several Christian neighbors (the European bloc) is
+                      # reinforced far more than one with a single distant one (East Asia)
+CONTACT_MAX = 1.2
+# Internal self-sustain is CONTINGENT on external support: an established church holds
+# only where the surrounding society reinforces it (Christian neighbors or active
+# strands). Isolated mission churches among other dominant faiths fade — the historical
+# reason Christianity became the social fabric of Europe/the Americas but stayed a
+# minority across much of Asia, with NO per-region constants.
+BASE_AUTONOMY = 0.30  # a church's intrinsic self-sustain with no external support
+SUPPORT_GAIN = 2.2    # how much external support strengthens self-sustain
 FADE_REL = 0.30       # downward relaxation when drive is insufficient (faith fades)
 RIVAL_DECAY = 0.93    # per-decade persistence of rival incumbency (slow fade)
 RIVAL_GAIN = 0.9      # how strongly suppression builds durable rival incumbency
@@ -285,7 +296,7 @@ class MacroModel(mesa.Model):
                     elif mt == "INSTITUTIONAL":
                         # GLOBAL institutional figures (John Paul II, Mother Teresa,
                         # Ignatius) work through the EXISTING church -> amplify channel
-                        # (modulated by prevalence). Regionally-targeted rulers
+                        # (modulated by prevalence). Regionally-targeted figures
                         # (Constantine, Vladimir, Charlemagne) impose top-down on their
                         # realm -> full channel (works even at ~0 prevalence).
                         is_global = ("GLOBAL" in st.regions_affected) or len(regions) >= 8
@@ -372,9 +383,10 @@ class MacroModel(mesa.Model):
                 weights[a] = weights.get(a, 0.0) + w
         if not weights:
             return 0.0
-        total_w = sum(weights.values())
-        pull = sum(w * self.cohorts[n].prevalence for n, w in weights.items()) / total_w
-        return (1.0 - decay) * pull
+        # ADDITIVE over neighbors (normalized by a fixed degree, not the neighbor
+        # count): more Christian neighbors -> more reinforcement, up to a cap.
+        total = sum(w * self.cohorts[n].prevalence for n, w in weights.items())
+        return (1.0 - decay) * min(total / CONTACT_NORM, CONTACT_MAX)
 
     # -- one decadal step ------------------------------------------------------------
     def step(self) -> None:
@@ -420,7 +432,13 @@ class MacroModel(mesa.Model):
             # a GLOBAL institutional figure (e.g. John Paul II) strengthens the church
             # where it already exists rather than mass-converting non-Christian regions.
             inst_factor = prevalence / (prevalence + INST_FACTOR_HALF)
-            drive = (DRIVE_INTERNAL * prevalence + CONTACT_SCALE * external
+            # Internal self-sustain is gated by external support (Christian neighbors +
+            # active strands): a planted church among other dominant faiths cannot hold.
+            strand_activity = (slot["conv_seed"][r] + slot["institutional"][r]
+                               + slot["institutional_global"][r] + slot["revival"][r])
+            support = external + 0.5 * strand_activity
+            support_factor = min(1.0, BASE_AUTONOMY + SUPPORT_GAIN * support)
+            drive = (DRIVE_INTERNAL * prevalence * support_factor + CONTACT_SCALE * external
                      + DRIVE_APOSTOLIC * slot["conv_seed"][r]
                      + DRIVE_INSTITUTIONAL * slot["institutional"][r]
                      + DRIVE_INSTITUTIONAL * slot["institutional_global"][r] * inst_factor) * mart
