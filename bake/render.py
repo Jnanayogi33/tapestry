@@ -46,6 +46,8 @@ class Tapestry:
         self.line_width = line_width
         self.believer_curve = None       # (years[], christians[]) — sets light ∝ believers
         self.col_energy = None           # measured per-column believer-light (verification)
+        self.fixed_scale = None          # shared display scale across frames (proportional reveal)
+        self.last_scale = None
 
     def set_believers(self, years, christians):
         self.believer_curve = (list(years), list(christians))
@@ -228,7 +230,8 @@ class Tapestry:
         # LINEAR display map: a SINGLE global scale (preserves every ratio, so the
         # believer-proportionality is untouched) chosen so the modern era blazes while
         # antiquity stays proportionally faint — the true "from one to billions".
-        scale = 3.2 / (np.percentile(lit, 99.0) + 1e-9)
+        scale = self.fixed_scale if self.fixed_scale else 3.2 / (np.percentile(lit, 99.0) + 1e-9)
+        self.last_scale = scale
         gold_v = np.clip(g * scale, 0, 1)
         gray_v = np.clip(gr * scale, 0, 1)
         dark_v = 1.0 - np.exp(-1.4 * self.dark_gain * dk)

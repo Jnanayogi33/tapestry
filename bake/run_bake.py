@@ -167,6 +167,7 @@ def main() -> int:
         for yr in ERA_YEARS:
             ft = make_renderer(fw, fh, render_params)
             ft.set_believers(*believers)
+            ft.fixed_scale = tap.last_scale       # shared scale -> the reveal grows proportionally
             ft.render_forest(forest, reveal_x=S.x_of_year(yr))
             fp = os.path.join(fdir, f"frame_{yr}.jpg")
             ft.save(fp)
