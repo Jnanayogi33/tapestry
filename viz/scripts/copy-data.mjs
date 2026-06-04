@@ -10,8 +10,9 @@ const srcDir = join(repoRoot, "data");
 const outDir = join(here, "..", "public", "data");
 
 const FILES = [
-  "simulation_output.json",
+  "nav_index.json",
   "example_lives.json",
+  "simulation_output.json",
   "strands.csv",
   "events.csv",
   "anchors.csv",

@@ -1,7 +1,7 @@
 {
   "name": "tapestry-viz",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "copy-data": "node scripts/copy-data.mjs",
@@ -14,8 +14,7 @@
     "serve:prod": "VITE_BASE=/ vite build && VITE_BASE=/ vite preview --port 5181 --strictPort"
   },
   "dependencies": {
-    "papaparse": "^5.4.1",
-    "pixi.js": "^8.6.0"
+    "openseadragon": "^4.1.1"
   },
   "devDependencies": {
     "vite": "^5.4.0"

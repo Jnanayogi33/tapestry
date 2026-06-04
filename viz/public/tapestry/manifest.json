@@ -1,7 +1,27 @@
 {
- "climax": "tapestry/climax.png",
- "width": 2200,
- "height": 1100,
- "frames": [],
- "era_years": []
+ "climax": "tapestry/climax.jpg",
+ "width": 6400,
+ "height": 3200,
+ "frames": [
+  "tapestry/frames/frame_100.jpg",
+  "tapestry/frames/frame_313.jpg",
+  "tapestry/frames/frame_500.jpg",
+  "tapestry/frames/frame_1000.jpg",
+  "tapestry/frames/frame_1517.jpg",
+  "tapestry/frames/frame_1800.jpg",
+  "tapestry/frames/frame_1900.jpg",
+  "tapestry/frames/frame_1970.jpg",
+  "tapestry/frames/frame_2025.jpg"
+ ],
+ "era_years": [
+  100,
+  313,
+  500,
+  1000,
+  1517,
+  1800,
+  1900,
+  1970,
+  2025
+ ]
 }

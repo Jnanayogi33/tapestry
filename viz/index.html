@@ -4,46 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Tapestry — light from one to billions</title>
-    <meta name="description" content="A self-calibrating historical simulation of the spread of Christianity, AD 30 to today, rendered as a luminous web of golden threads." />
+    <meta name="description" content="A self-calibrating agent-based simulation of the spread of Christianity, AD 30 to today, rendered as a luminous tapestry of golden life-threads — every gold thread traced, through who-lit-whom, back to a single seed." />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <div id="app">
-      <canvas id="stage"></canvas>
+      <div id="osd"></div>
+      <canvas id="life-overlay"></canvas>
 
       <header id="titlebar">
         <h1>The&nbsp;Tapestry</h1>
-        <p class="subtitle">light from one to billions &middot; AD&nbsp;30&ndash;<span id="endyear">2025</span></p>
+        <p class="subtitle">light from one to billions &middot; AD&nbsp;30&ndash;2025</p>
       </header>
+
+      <button id="nav-toggle" title="Search people, events, places, lives">☰ Navigate</button>
+      <button id="about-toggle" title="About this work">i</button>
+
+      <aside id="nav-drawer" class="hidden" aria-label="Navigation">
+        <input id="nav-search" type="search" placeholder="Search a person, event, place, life…" autocomplete="off" />
+        <div id="nav-results"></div>
+      </aside>
+
+      <section id="panel" class="hidden" aria-live="polite"></section>
+
+      <section id="about" class="hidden">
+        <button class="close" data-close="about">×</button>
+        <h2>The Tapestry</h2>
+        <p>A vast field of dark threads — every human life — into which a single golden
+          thread enters at <strong>AD&nbsp;30</strong> and, over two thousand years,
+          kindles light from one to billions, dimming where it is resisted and
+          rekindling after.</p>
+        <p>Each thread is one <strong>sampled human life</strong>. The picture is a real
+          agent-based simulation: the seed (Christ, Judaea) is the only life lit at the
+          start; belief spreads only where a lit life touches a dark one, or where a
+          named missionary ignites a place. <strong>Every gold thread traces, through
+          who-lit-whom, back to the one seed.</strong> The horizontal axis is time; the
+          vertical axis is distance from Judaea — the Latin West fans up, the Orthodox
+          East and Global South fan down.</p>
+        <p class="fine">Gold&nbsp;= practicing · gray-gold&nbsp;= nominal / fraying ·
+          dark&nbsp;= unreached or fallen away. ~300,000 sampled lives stand for the
+          billions. Region levels are calibrated to sourced historical anchors; some
+          quantities (per-place detail, incumbency, the practicing/nominal split) are
+          modeled estimates — see the repository's BLOCKERS and calibration report.</p>
+      </section>
 
       <div id="controls">
         <button id="play" title="Play / pause the time reveal">► Play</button>
-        <input id="timeline" type="range" min="0" max="1000" value="1000" step="1" />
+        <input id="timeline" type="range" min="0" max="8" value="8" step="1" />
         <span id="yearlabel" class="yearlabel">2025</span>
-        <button id="reset" title="Reset view">⟲ View</button>
-        <button id="toggle-micro" title="Open the micro view: one life over time">A&nbsp;single&nbsp;life ›</button>
+        <button id="reset" title="Reset the view">⟲ View</button>
       </div>
 
       <div id="legend">
-        <span class="dot seed"></span> Christ (the seed)
-        <span class="dot apostolic"></span> apostolic journeys
-        <span class="dot revival"></span> revival
-        <span class="dot suppression"></span> suppression
-        <span class="hint">scroll to zoom · drag to pan · click a thread</span>
+        <span><i class="sw gold"></i>practicing</span>
+        <span><i class="sw gray"></i>nominal · fraying</span>
+        <span><i class="sw dark"></i>unreached · fallen</span>
       </div>
 
-      <aside id="info" class="hidden"></aside>
-
-      <section id="micro" class="hidden">
-        <div class="micro-head">
-          <h2>A single life</h2>
-          <select id="micro-select"></select>
-          <button id="micro-close" title="Back to the tapestry">✕</button>
-        </div>
-        <div id="micro-body"></div>
-      </section>
-
-      <div id="loading">kindling the threads…</div>
+      <div id="loading">kindling the tapestry…</div>
     </div>
     <script type="module" src="./src/main.js"></script>
   </body>

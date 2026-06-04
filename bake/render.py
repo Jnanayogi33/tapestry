@@ -230,7 +230,11 @@ class Tapestry:
         img = img / (img + 0.85) * 1.85
         return (np.clip(img, 0, 1) * 255).astype(np.uint8)
 
-    def save(self, path: str) -> None:
+    def save(self, path: str, arr=None) -> None:
         from PIL import Image
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        Image.fromarray(self.compose(), "RGB").save(path)
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        im = Image.fromarray(self.compose() if arr is None else arr, "RGB")
+        if path.lower().endswith((".jpg", ".jpeg")):
+            im.save(path, quality=88, optimize=True)
+        else:
+            im.save(path)

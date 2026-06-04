@@ -71,8 +71,8 @@ def main() -> int:
         n_lives = args.budget_lit or 120_000
         max_lit, max_links, max_dark = 90_000, 30_000, 45_000
     else:
-        width = args.width or 7000
-        height = args.height or 3500
+        width = args.width or 6400
+        height = args.height or 3200
         n_lives = args.budget_lit or 300_000
         max_lit, max_links, max_dark = 220_000, 70_000, 110_000
 
@@ -91,7 +91,7 @@ def main() -> int:
     t1 = time.time()
     tap = make_renderer(width, height, render_params)
     tap.render_forest(forest, reveal_x=1.0)
-    climax_path = os.path.join(OUT_DIR, "climax.png")
+    climax_path = os.path.join(OUT_DIR, "climax.jpg")
     tap.save(climax_path)
     print(f"[bake] climax {width}x{height} rendered in {time.time()-t1:.1f}s -> {climax_path}")
 
@@ -100,24 +100,23 @@ def main() -> int:
     downscale_save(climax_path, look_path, max_w=2000)
     print(f"[bake] inspection copy -> {look_path}")
 
-    manifest = {"climax": "tapestry/climax.png", "width": width, "height": height,
+    manifest = {"climax": "tapestry/climax.jpg", "width": width, "height": height,
                 "frames": [], "era_years": []}
 
     if args.frames:
         fdir = os.path.join(OUT_DIR, "frames")
         os.makedirs(fdir, exist_ok=True)
-        fw, fh = (width if args.fast else 3000), (height if args.fast else 1500)
+        fw, fh = (width if args.fast else 2600), (height if args.fast else 1300)
         for yr in ERA_YEARS:
             ft = make_renderer(fw, fh, render_params)
             ft.render_forest(forest, reveal_x=S.x_of_year(yr))
-            fp = os.path.join(fdir, f"frame_{yr}.png")
+            fp = os.path.join(fdir, f"frame_{yr}.jpg")
             ft.save(fp)
-            manifest["frames"].append(f"tapestry/frames/frame_{yr}.png")
+            manifest["frames"].append(f"tapestry/frames/frame_{yr}.jpg")
             manifest["era_years"].append(yr)
             print(f"[bake] era frame {yr} -> {fp}")
-            # also drop a couple into the look dir for inspection
             if yr in (313, 1000, 2025):
-                downscale_save(fp, os.path.join(LOOK_DIR, f"frame_{yr}_i{args.iter}.png"), 1400)
+                downscale_save(fp, os.path.join(LOOK_DIR, f"frame_{yr}_i{args.iter}.png"), 1300)
 
     json.dump(manifest, open(os.path.join(OUT_DIR, "manifest.json"), "w"), indent=1)
     print(f"[bake] manifest -> {os.path.join(OUT_DIR, 'manifest.json')}")
