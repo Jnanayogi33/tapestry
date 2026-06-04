@@ -1,0 +1,23 @@
+# === Tapestry Python dependencies ===
+#
+# ADVISORY PINS (tried first, per the build spec):
+#   mesa==2.3.4 networkx==3.2.1 scipy==1.11.4 numpy==1.26.4 pandas==2.1.4
+#   notion-client==2.2.1
+# These have NO wheels for Python 3.13 (this machine runs 3.13.1) and fail to build
+# from source (scipy 1.11.4 -> meson/cython compile error). Per the autonomy
+# directive we fell back to the latest compatible releases instead of retrying the
+# failing pins. See BLOCKERS.md, step 2.
+#
+# RESOLVED on this machine (Python 3.13.1), all import-smoke-tested OK:
+#   numpy 2.4.6  pandas 3.0.3  scipy 1.17.1  networkx 3.6.1  mesa 3.5.1
+#   notion-client 3.1.0   (Mesa MAJOR detected at runtime = 3)
+#
+# We use floors (not exact pins) so CI/other Python versions resolve to whatever
+# wheels exist there; all sim code detects the Mesa major version at runtime and
+# supports both 2.x and 3.x, so either resolution works.
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+networkx>=3.2
+mesa>=2.3
+notion-client>=2.2
