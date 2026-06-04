@@ -21,3 +21,4 @@ scipy>=1.11
 networkx>=3.2
 mesa>=2.3
 notion-client>=2.2
+Pillow>=10.0      # offline bake (PNG/tiles)

@@ -63,6 +63,11 @@ class Event:
     description: str
     effect: str
     mechanism: str
+    # v2 localized-perturbation fields (nullable)
+    places: str = ""
+    rate_effect: str = ""
+    reach: float | None = None
+    duration_years: float | None = None
 
 
 @dataclass
@@ -170,6 +175,10 @@ def load_events(data_dir: str = DEFAULT_DATA_DIR) -> list[Event]:
             description=r.get("description", ""),
             effect=r.get("effect", "Neutral") or "Neutral",
             mechanism=r.get("mechanism", "") or "",
+            places=r.get("places", "") or "",
+            rate_effect=r.get("rate_effect", "") or "",
+            reach=_f(r.get("reach")),
+            duration_years=_f(r.get("duration_years")),
         ))
     return sorted(out, key=lambda e: e.year_sort)
 

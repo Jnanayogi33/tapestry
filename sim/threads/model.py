@@ -128,6 +128,17 @@ class ThreadSim:
                         "strength": strength, "name": st.name,
                     })
 
+    def _romanmed_fade(self, year: float) -> float:
+        """Roman/Mediterranean is the antiquity-only category; its territory passes to
+        Western/Eastern Europe & MENA. Fade its thread count 500->900 so the light
+        MOVES OUTWARD from the center instead of leaving a permanent bright central
+        bar (this is the double-count rule, made visual)."""
+        if year <= 500:
+            return 1.0
+        if year >= 900:
+            return 0.0
+        return 1.0 - (year - 500) / 400.0
+
     def _build_thread_counts(self) -> None:
         """A(region, decade) = active lit lineage target, ∝ log(1+christians), summed
         to the budget; floored so early Christian regions still show a few threads."""
@@ -135,7 +146,10 @@ class ThreadSim:
         total = 0.0
         for r in S.REGIONS:
             for i in range(self.n):
-                v = math.log10(1.0 + self.tg.christians(r, i)) if self.tg.christian_frac(r, i) > 0.004 else 0.0
+                chr_ = self.tg.christians(r, i)
+                if r == "Roman/Mediterranean":
+                    chr_ *= self._romanmed_fade(self.years[i])
+                v = math.log10(1.0 + chr_) if (self.tg.christian_frac(r, i) > 0.004 and chr_ > 0) else 0.0
                 raw[(r, i)] = v
                 total += v
         self.A: dict[tuple, int] = {}
@@ -189,7 +203,7 @@ class ThreadSim:
                     continue
             place = self._pick_place(region, near_y=py)
             lid = self._new_id()
-            base_y = self.emb.y(place=place, jitter_key=f"L{lid}")
+            base_y = self.emb.y(place=place, jitter_key=f"L{lid}", jitter_scale=0.07)
             lin = Lineage(
                 id=lid, region=region, place=place, base_y=base_y, birth_i=i,
                 parent_id=parent_id, root_strand=root_strand,
@@ -278,25 +292,84 @@ class ThreadSim:
             for j in range(k):
                 place = self._pick_place(r)
                 key = f"D{r}{i}{j}"
-                y0 = self.emb.y(place=place, jitter_key=key, jitter_scale=0.07)
-                span = 1.5 + 3.0 * self.rng.random()
-                x0 = S.x_of_year(year)
+                y0 = self.emb.y(place=place, jitter_key=key, jitter_scale=0.13)
+                span = 1.0 + 6.0 * self.rng.random() ** 1.5   # wide spread of lengths
+                x0 = S.x_of_year(year + (self.rng.random() - 0.5) * 8)
                 x1 = S.x_of_year(year + span * 10)
                 ph = self.rng.random() * 6.283
-                self.dark.append({"x0": x0, "x1": x1, "y": y0, "phase": ph,
-                                  "amp": 0.006 + 0.01 * self.rng.random()})
+                self.dark.append({"x0": max(0.0, x0), "x1": x1, "y": y0, "phase": ph,
+                                  "amp": 0.01 + 0.03 * self.rng.random()})
+
+    # -- lineage CHAINS (the sweeping gold threads) --------------------------------
+    def chains(self, max_chains: int = 5000) -> list[dict]:
+        """Trace each leaf lineage's ancestry back to its root and PREPEND the seed,
+        producing one continuous sweep from the single origin (x=0,y=0.5) out to the
+        leaf — through every transmission point. Long gaps are curved (not straight) in
+        the renderer. This is the geometry that makes the tapestry fan from one seed."""
+        by_id = {l.id: l for l in self.lineages}
+        child_count: dict[int, int] = {}
+        for l in self.lineages:
+            if l.parent_id is not None:
+                child_count[l.parent_id] = child_count.get(l.parent_id, 0) + 1
+        leaves = [l for l in self.lineages if child_count.get(l.id, 0) == 0]
+        if len(leaves) > max_chains:
+            leaves = self.rng.sample(leaves, max_chains)
+        sx, sy = self.emb.seed_xy()
+        out = []
+        for leaf in leaves:
+            path = []
+            node = leaf
+            guard = 0
+            while node is not None and guard < 600:
+                path.append(node)
+                node = by_id.get(node.parent_id) if node.parent_id is not None else None
+                guard += 1
+            path.reverse()                       # root .. leaf
+            wp = [(sx, sy)]                       # everything emanates from the seed
+            for anc in path:
+                if anc.xs:
+                    # GAUSSIAN jitter on transmission waypoints: turns convergence hubs
+                    # (a lineage that lit many children) into soft clouds rather than
+                    # hard rectangular blobs, and breaks vertical "combs".
+                    jx = self.rng.gauss(0, 0.018)
+                    jy = self.rng.gauss(0, 0.04)
+                    wp.append((max(0.0, anc.xs[0] + jx), min(0.999, max(0.001, anc.ys[0] + jy))))
+            # a SHORT tail to the leaf's end point only (no long horizontal lingering —
+            # that piled threads into rectangular region×era boxes).
+            if len(leaf.xs) > 1:
+                wp.append((leaf.xs[-1], leaf.ys[-1]))
+            # de-dup + enforce MONOTONIC x (forward in time) so no near-vertical jumps
+            # become bright streaks; cross-region ignitions at the same decade get a
+            # minimum forward step so the thread always flows left->right.
+            ded = [wp[0]]
+            for p in wp[1:]:
+                nx = max(p[0], ded[-1][0] + 0.0035)
+                if abs(nx - ded[-1][0]) > 1e-4 or abs(p[1] - ded[-1][1]) > 1e-4:
+                    ded.append((min(1.0, nx), p[1]))
+            leaf_gold = bool(leaf.alive and leaf.shades and leaf.shades[-1] == "gold")
+            out.append({
+                "wp": ded,
+                "gold": leaf_gold,
+                "frayed": not leaf.alive,
+                "born": leaf.birth_i,
+                "sign": 1 if (leaf.id % 2 == 0) else -1,
+                "phase": (leaf.id * 0.6180339887) % 1.0,
+            })
+        return out
 
     # -- export --------------------------------------------------------------------
     def forest(self) -> dict:
+        chains = self.chains()
         return {
             "seed_xy": list(self.emb.seed_xy()),
             "years": self.years,
             "lineages": self.lineages,
             "links": self.links,
             "dark": self.dark,
+            "chains": chains,
             "meta": {
                 "n_lineages": len(self.lineages), "n_links": len(self.links),
-                "n_dark": len(self.dark),
+                "n_dark": len(self.dark), "n_chains": len(chains),
                 "lit_points": sum(len(l.xs) for l in self.lineages),
             },
         }

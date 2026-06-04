@@ -78,4 +78,18 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 
 <!-- VALIDATION:END -->
 
+
 - [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.
+
+## v2 Step 3 — COURSE CORRECTION (real simulation, not image-making)
+- [v2-3] CORRECTION (2026-06-04) — First thread attempt was wrong in SPIRIT: it set the
+  lit-thread COUNT directly from the macro curve and synthesized "chains" by prepending
+  the seed and ramping brightness rightward — a picture dressed as a sim. Rebuilt as a
+  genuine agent-based spatio-temporal CONTAGION (sim/threads/agents.py): real individual
+  lives on a real network (family + spatial + adjacent-region + named-strand bridges);
+  the single seed (Christ, AD30, Judaea) is the ONLY life lit a priori; an Unexposed life
+  converts only when a real lit neighbor touches it (complex contagion) or a named strand
+  locally ignites it; who-lit-whom is recorded. The fan, the outward spread, and the
+  right-edge blaze EMERGE; the bake draws the actual lives + actual transmission tree.
+  Global rates are CALIBRATED so the emergent region×decade lit-fraction matches anchors
+  (not imposed). Sampling (~10^5 lives stands for billions) is documented.
