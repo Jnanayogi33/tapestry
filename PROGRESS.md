@@ -23,7 +23,10 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
   objective haversine distance + branch; 36 archetypes, dark-warp highest weight).
   `make_fixtures.py` emits places.csv+archetypes.csv + extended cols.
   `validate.py` + `sync_from_notion.py` extended. Fixtures validate 0/0.
-- [ ] **2. Re-embed** — x(t), y(place), region→primary-Place fallback, seed at (0,0.5).
+- [x] **2. Re-embed** — DONE. `sim/embedding.py`: loads places.csv, `xy(year,place|region)`,
+  region→primary-Place fallback, deterministic per-thread jitter, seed→(0,0.5).
+  Self-test passes (`python -m sim.embedding`): Americas→top edge, E.Asia/Pacific→bottom,
+  Core centered.
 - [ ] **3. Micro-life-thread sim** — sample lives from archetypes by weight/region/era;
   emergent contagion; strands as local igniters; calibrate lit-fraction to composition;
   real example_lives.json (provenance assertion).
@@ -37,12 +40,17 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
 - [ ] **8. Done** only when deployed AND visual loop converged (≥12/14, no zeros).
 
 ## EXACT NEXT ACTION
-Step 2 (re-embed): create `sim/embedding.py` exposing place→(x,y) using
-`schema.x_of_year`/`y_of_place`, loading `data/places.csv`, with the
-region→primary-Place fallback and deterministic per-thread Y jitter. Seed (Jesus) →
-(x=0, y=0.5). Add a tiny self-test (e.g. assert Judaea≈0.5, Americas near 0, East
-Asia near 1). This is the coordinate foundation the micro-sim (step 3) and bake (step
-4) both consume.
+Step 3 (micro-life-thread sim): build `sim/threads/` (new) — sample a large stratified
+set of life-threads across regions×eras by population (anchors.total_population),
+drawn from archetypes by `weight`; give each a Place(→x,y), birth era, disposition, a
+small neighbor set; run emergent contagion over decadal steps with strands as LOCAL
+igniters (within ignition_radius of their (x,y)); record transmission links (who lit
+whom) for lineage threads. Calibrate region×year lit-fraction to the anchor composition
+(gold=practicing, gray=nominal+lapsed, dark=unaffiliated). Emit:
+`data/threads.json` (or compact binary) with per-thread (x,y,birth,state-over-time,
+parent link, shade) + `data/example_lives.json` (REAL dump, provenance assertion, incl.
+a Lyudmila gold→dark→gold arc) + `data/nav_index.json` (strand/event/place→coord).
+Start with a config-driven sampler + a single-corridor smoke run, then scale.
 
 ## Key decisions / assumptions (see BLOCKERS.md for the full log)
 - Layout per v2 prompt: `x=(year-30)/1995`; `y=0.5+sign*0.5*(distance_norm/100)`,
