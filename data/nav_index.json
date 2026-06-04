@@ -1,0 +1,3574 @@
+{
+ "strands": [
+  {
+   "name": "Jesus of Nazareth",
+   "birth_year": -4,
+   "death_year": 30,
+   "role": "The origin of the faith",
+   "mechanism_template": "SEED",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Judaea",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.0,
+   "y": 0.5,
+   "zoom": 5
+  },
+  {
+   "name": "Simon Peter",
+   "birth_year": 1,
+   "death_year": 64,
+   "role": "Apostle, leader of the Twelve",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Roman/Mediterranean",
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.0,
+   "y": 0.41005,
+   "zoom": 5
+  },
+  {
+   "name": "Paul of Tarsus",
+   "birth_year": 5,
+   "death_year": 65,
+   "role": "Apostle to the Gentiles",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Roman/Mediterranean",
+    "Western Europe",
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Antioch",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.00802,
+   "y": 0.5,
+   "zoom": 5
+  },
+  {
+   "name": "The Twelve Apostles",
+   "birth_year": null,
+   "death_year": null,
+   "role": "The first missionary band",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Roman/Mediterranean",
+    "Middle East & North Africa",
+    "South Asia"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean",
+    "Middle East & North Africa"
+   ],
+   "place": "Judaea",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "Medium",
+   "x": 0.0,
+   "y": 0.5,
+   "zoom": 5
+  },
+  {
+   "name": "Constantine the Great",
+   "birth_year": 272,
+   "death_year": 337,
+   "role": "Emperor who legalized the faith",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Constantinople",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.14135,
+   "y": 0.54565,
+   "zoom": 5
+  },
+  {
+   "name": "Athanasius of Alexandria",
+   "birth_year": 296,
+   "death_year": 373,
+   "role": "Defender of Nicene orthodoxy",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.14937,
+   "y": 0.51975,
+   "zoom": 5
+  },
+  {
+   "name": "Augustine of Hippo",
+   "birth_year": 354,
+   "death_year": 430,
+   "role": "Theologian of grace",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean",
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Middle East & North Africa",
+    "Roman/Mediterranean"
+   ],
+   "place": "Carthage",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.17895,
+   "y": 0.4083,
+   "zoom": 5
+  },
+  {
+   "name": "Benedict of Nursia",
+   "birth_year": 480,
+   "death_year": 547,
+   "role": "Father of Western monasticism",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.25013,
+   "y": 0.41005,
+   "zoom": 5
+  },
+  {
+   "name": "Gregory the Great",
+   "birth_year": 540,
+   "death_year": 604,
+   "role": "Pope who sent missions north",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.2807,
+   "y": 0.41005,
+   "zoom": 5
+  },
+  {
+   "name": "Cyril and Methodius",
+   "birth_year": 826,
+   "death_year": 885,
+   "role": "Apostles to the Slavs",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Balkans (Thessalonica)",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.41754,
+   "y": 0.55765,
+   "zoom": 5
+  },
+  {
+   "name": "Vladimir of Kiev",
+   "birth_year": 958,
+   "death_year": 1015,
+   "role": "Baptizer of the Rus",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.4802,
+   "y": 0.58255,
+   "zoom": 5
+  },
+  {
+   "name": "Thomas Aquinas",
+   "birth_year": 1225,
+   "death_year": 1274,
+   "role": "Synthesizer of faith and reason",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.61905,
+   "y": 0.41005,
+   "zoom": 5
+  },
+  {
+   "name": "Martin Luther",
+   "birth_year": 1483,
+   "death_year": 1546,
+   "role": "Reformer; sola fide, sola scriptura",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Wittenberg",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.74536,
+   "y": 0.38715,
+   "zoom": 5
+  },
+  {
+   "name": "William Tyndale",
+   "birth_year": 1494,
+   "death_year": 1536,
+   "role": "Translator of the English Bible",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Britain (Canterbury)",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.74937,
+   "y": 0.3624,
+   "zoom": 5
+  },
+  {
+   "name": "John Calvin",
+   "birth_year": 1509,
+   "death_year": 1564,
+   "role": "Reformer of Geneva",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Geneva",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.75489,
+   "y": 0.38455,
+   "zoom": 5
+  },
+  {
+   "name": "Ignatius of Loyola",
+   "birth_year": 1491,
+   "death_year": 1556,
+   "role": "Founder of the Jesuits",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.75689,
+   "y": 0.41005,
+   "zoom": 5
+  },
+  {
+   "name": "Polycarp of Smyrna",
+   "birth_year": 69,
+   "death_year": 155,
+   "role": "Bishop and martyr",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Asia Minor (Ephesus)",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.06266,
+   "y": 0.5,
+   "zoom": 5
+  },
+  {
+   "name": "Jonathan Edwards",
+   "birth_year": 1703,
+   "death_year": 1758,
+   "role": "Preacher of the Great Awakening",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.85414,
+   "y": 0.15385,
+   "zoom": 5
+  },
+  {
+   "name": "John Wesley",
+   "birth_year": 1703,
+   "death_year": 1791,
+   "role": "Founder of Methodism",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe",
+    "North America"
+   ],
+   "place": "Britain (Canterbury)",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.85614,
+   "y": 0.3624,
+   "zoom": 5
+  },
+  {
+   "name": "Count Zinzendorf",
+   "birth_year": 1700,
+   "death_year": 1760,
+   "role": "Leader of the Moravian missions",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.85063,
+   "y": 0.3816,
+   "zoom": 5
+  },
+  {
+   "name": "William Carey",
+   "birth_year": 1761,
+   "death_year": 1834,
+   "role": "Father of modern missions",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "South Asia"
+   ],
+   "primary_region": [
+    "South Asia"
+   ],
+   "place": "Malabar Coast",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.88371,
+   "y": 0.69,
+   "zoom": 5
+  },
+  {
+   "name": "William J. Seymour",
+   "birth_year": 1870,
+   "death_year": 1922,
+   "role": "Leader of the Azusa Street Revival",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "West Coast (Los Angeles)",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.94035,
+   "y": 0.02405,
+   "zoom": 5
+  },
+  {
+   "name": "Mother Teresa",
+   "birth_year": 1910,
+   "death_year": 1997,
+   "role": "Servant of the poorest",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "South Asia"
+   ],
+   "place": "Malabar Coast",
+   "depth_tier": "Tier 1",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.96241,
+   "y": 0.69,
+   "zoom": 5
+  },
+  {
+   "name": "Billy Graham",
+   "birth_year": 1918,
+   "death_year": 2018,
+   "role": "Evangelist to the nations",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.9619,
+   "y": 0.15385,
+   "zoom": 5
+  },
+  {
+   "name": "Pope John Paul II",
+   "birth_year": 1920,
+   "death_year": 2005,
+   "role": "Pope of the global church",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "GLOBAL"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 1",
+   "strength": 5,
+   "confidence": "High",
+   "x": 0.97644,
+   "y": 0.58255,
+   "zoom": 5
+  },
+  {
+   "name": "Justin Martyr",
+   "birth_year": 100,
+   "death_year": 165,
+   "role": "Philosopher-apologist",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.06015,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "Irenaeus of Lyons",
+   "birth_year": 130,
+   "death_year": 202,
+   "role": "Opponent of Gnosticism",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe",
+    "Roman/Mediterranean"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.07519,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Origen of Alexandria",
+   "birth_year": 184,
+   "death_year": 253,
+   "role": "Biblical scholar",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.09524,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Perpetua and Felicity",
+   "birth_year": 181,
+   "death_year": 203,
+   "role": "Martyrs of Carthage",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Roman/Mediterranean",
+    "Middle East & North Africa"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.08672,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Diocletian",
+   "birth_year": 244,
+   "death_year": 311,
+   "role": "Emperor of the Great Persecution",
+   "mechanism_template": "SUPPRESSION",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.13684,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "Anthony the Great",
+   "birth_year": 251,
+   "death_year": 356,
+   "role": "Father of desert monasticism",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Middle East & North Africa"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.1203,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Jerome",
+   "birth_year": 342,
+   "death_year": 420,
+   "role": "Translator of the Latin Vulgate",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.17644,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "John Chrysostom",
+   "birth_year": 349,
+   "death_year": 407,
+   "role": "Golden-mouthed preacher",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia",
+    "Middle East & North Africa"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.17845,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Patrick of Ireland",
+   "birth_year": 385,
+   "death_year": 461,
+   "role": "Apostle of Ireland",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Ireland (Armagh)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "Medium",
+   "x": 0.2015,
+   "y": 0.3386,
+   "zoom": 9
+  },
+  {
+   "name": "Columba",
+   "birth_year": 521,
+   "death_year": 597,
+   "role": "Missionary of Iona",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.26717,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Alopen",
+   "birth_year": null,
+   "death_year": null,
+   "role": "First missionary to China (Nestorian)",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Tang Chang'an",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Low",
+   "x": 0.30326,
+   "y": 0.7625,
+   "zoom": 9
+  },
+  {
+   "name": "Boniface",
+   "birth_year": 675,
+   "death_year": 754,
+   "role": "Apostle of the Germans",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Germania (Mainz)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "Medium",
+   "x": 0.34386,
+   "y": 0.38245,
+   "zoom": 9
+  },
+  {
+   "name": "Charlemagne",
+   "birth_year": 748,
+   "death_year": 814,
+   "role": "Emperor who Christianized by sword and school",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.36992,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Anselm of Canterbury",
+   "birth_year": 1033,
+   "death_year": 1109,
+   "role": "Father of scholasticism",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.52531,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Francis of Assisi",
+   "birth_year": 1181,
+   "death_year": 1226,
+   "role": "Reformer of poverty and joy",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.59098,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Dominic de Guzm\u00e1n",
+   "birth_year": 1170,
+   "death_year": 1221,
+   "role": "Founder of the Order of Preachers",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.59449,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "John Wycliffe",
+   "birth_year": 1328,
+   "death_year": 1384,
+   "role": "Morning star of the Reformation",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.67769,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Jan Hus",
+   "birth_year": 1369,
+   "death_year": 1415,
+   "role": "Bohemian reformer and martyr",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.68772,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Erasmus of Rotterdam",
+   "birth_year": 1466,
+   "death_year": 1536,
+   "role": "Editor of the Greek New Testament",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.74486,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Ulrich Zwingli",
+   "birth_year": 1484,
+   "death_year": 1531,
+   "role": "Reformer of Z\u00fcrich",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.74637,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Thomas Cranmer",
+   "birth_year": 1489,
+   "death_year": 1556,
+   "role": "Architect of the English Prayer Book",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.75338,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Teresa of \u00c1vila",
+   "birth_year": 1515,
+   "death_year": 1582,
+   "role": "Mystic and reformer of Carmel",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.76692,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Francis Xavier",
+   "birth_year": 1506,
+   "death_year": 1552,
+   "role": "Apostle of the East Indies",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "East Asia",
+    "Southeast Asia",
+    "South Asia"
+   ],
+   "primary_region": [
+    "East Asia",
+    "Southeast Asia",
+    "South Asia"
+   ],
+   "place": "Japan (Nagasaki)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.75739,
+   "y": 0.8339,
+   "zoom": 9
+  },
+  {
+   "name": "The Twelve Apostles of Mexico",
+   "birth_year": null,
+   "death_year": null,
+   "role": "Franciscan founders of the Mexican church",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Latin America"
+   ],
+   "primary_region": [
+    "Latin America"
+   ],
+   "place": "Mexico (Tenochtitlan)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "Medium",
+   "x": 0.74887,
+   "y": 0.01075,
+   "zoom": 9
+  },
+  {
+   "name": "Bartolom\u00e9 de las Casas",
+   "birth_year": 1484,
+   "death_year": 1566,
+   "role": "Defender of the indigenous",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Latin America"
+   ],
+   "primary_region": [
+    "Latin America"
+   ],
+   "place": "Bahia (Brazil)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.74386,
+   "y": 0.1376,
+   "zoom": 9
+  },
+  {
+   "name": "Matteo Ricci",
+   "birth_year": 1552,
+   "death_year": 1610,
+   "role": "Jesuit bridge to China",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Tang Chang'an",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.77794,
+   "y": 0.7625,
+   "zoom": 9
+  },
+  {
+   "name": "John Knox",
+   "birth_year": 1514,
+   "death_year": 1572,
+   "role": "Reformer of Scotland",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.76642,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "George Whitefield",
+   "birth_year": 1714,
+   "death_year": 1770,
+   "role": "Itinerant of the Awakening",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "North America",
+    "Western Europe"
+   ],
+   "primary_region": [
+    "North America",
+    "Western Europe"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.85714,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "David Brainerd",
+   "birth_year": 1718,
+   "death_year": 1747,
+   "role": "Missionary to the Delaware",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 2",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.85865,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "Adoniram Judson",
+   "birth_year": 1788,
+   "death_year": 1850,
+   "role": "Translator of the Burmese Bible",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Southeast Asia"
+   ],
+   "primary_region": [
+    "Southeast Asia"
+   ],
+   "place": "Vietnam (Tonkin)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.89373,
+   "y": 0.77415,
+   "zoom": 9
+  },
+  {
+   "name": "William Wilberforce",
+   "birth_year": 1759,
+   "death_year": 1833,
+   "role": "Christian abolitionist",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.8807,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "David Livingstone",
+   "birth_year": 1813,
+   "death_year": 1873,
+   "role": "Missionary-explorer of Africa",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Sub-Saharan Africa"
+   ],
+   "primary_region": [
+    "Sub-Saharan Africa"
+   ],
+   "place": "Southern Africa",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.90777,
+   "y": 0.7535,
+   "zoom": 9
+  },
+  {
+   "name": "Hudson Taylor",
+   "birth_year": 1832,
+   "death_year": 1905,
+   "role": "Founder of the China Inland Mission",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Shanghai (China coast)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.91429,
+   "y": 0.8097,
+   "zoom": 9
+  },
+  {
+   "name": "Samuel Ajayi Crowther",
+   "birth_year": 1809,
+   "death_year": 1891,
+   "role": "First African Anglican bishop",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "Sub-Saharan Africa"
+   ],
+   "primary_region": [
+    "Sub-Saharan Africa"
+   ],
+   "place": "Yorubaland (West Africa)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.90877,
+   "y": 0.66505,
+   "zoom": 9
+  },
+  {
+   "name": "Charles Spurgeon",
+   "birth_year": 1834,
+   "death_year": 1892,
+   "role": "Prince of preachers",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.91429,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Dwight L. Moody",
+   "birth_year": 1837,
+   "death_year": 1899,
+   "role": "Mass-revival evangelist",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "North America",
+    "Western Europe"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.92231,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "Karl Barth",
+   "birth_year": 1886,
+   "death_year": 1968,
+   "role": "Theologian of the Word",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.94687,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Dietrich Bonhoeffer",
+   "birth_year": 1906,
+   "death_year": 1945,
+   "role": "Martyr against Nazism",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "High",
+   "x": 0.9589,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "C. S. Lewis",
+   "birth_year": 1898,
+   "death_year": 1963,
+   "role": "Apologist of mere Christianity",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 2",
+   "strength": 4,
+   "confidence": "High",
+   "x": 0.95739,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Watchman Nee",
+   "birth_year": 1903,
+   "death_year": 1972,
+   "role": "Builder of the indigenous Chinese church",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Shanghai (China coast)",
+   "depth_tier": "Tier 2",
+   "strength": 3,
+   "confidence": "Medium",
+   "x": 0.95138,
+   "y": 0.8097,
+   "zoom": 9
+  },
+  {
+   "name": "Clement of Rome",
+   "birth_year": 35,
+   "death_year": 99,
+   "role": "Early bishop of Rome",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.02907,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "Ignatius of Antioch",
+   "birth_year": 35,
+   "death_year": 108,
+   "role": "Bishop and martyr",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.0386,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Tertullian",
+   "birth_year": 155,
+   "death_year": 220,
+   "role": "Latin apologist",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.08371,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Cyprian of Carthage",
+   "birth_year": 200,
+   "death_year": 258,
+   "role": "Bishop and martyr",
+   "mechanism_template": "MARTYRDOM",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.10927,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "Julian the Apostate",
+   "birth_year": 331,
+   "death_year": 363,
+   "role": "Emperor who tried to restore paganism",
+   "mechanism_template": "SUPPRESSION",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Medium",
+   "x": 0.16591,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "Basil of Caesarea",
+   "birth_year": 330,
+   "death_year": 379,
+   "role": "Cappadocian father",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.17043,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Gregory of Nyssa",
+   "birth_year": 335,
+   "death_year": 395,
+   "role": "Cappadocian theologian",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.17143,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Ambrose of Milan",
+   "birth_year": 339,
+   "death_year": 397,
+   "role": "Bishop who taught Augustine",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.17243,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Leo the Great",
+   "birth_year": 400,
+   "death_year": 461,
+   "role": "Pope who defined Chalcedon",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Roman/Mediterranean"
+   ],
+   "primary_region": [
+    "Roman/Mediterranean"
+   ],
+   "place": "Rome",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.20551,
+   "y": 0.41005,
+   "zoom": 9
+  },
+  {
+   "name": "John of Damascus",
+   "birth_year": 675,
+   "death_year": 749,
+   "role": "Last of the Greek fathers",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Middle East & North Africa"
+   ],
+   "primary_region": [
+    "Middle East & North Africa"
+   ],
+   "place": "Alexandria",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.34887,
+   "y": 0.51975,
+   "zoom": 9
+  },
+  {
+   "name": "The Venerable Bede",
+   "birth_year": 672,
+   "death_year": 735,
+   "role": "Historian of English Christianity",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.33584,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Anskar",
+   "birth_year": 801,
+   "death_year": 865,
+   "role": "Apostle of the North",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.4005,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Olga of Kiev",
+   "birth_year": 890,
+   "death_year": 969,
+   "role": "First Christian Rus ruler",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.46466,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Stephen of Hungary",
+   "birth_year": 975,
+   "death_year": 1038,
+   "role": "Christianizer of Hungary",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "Eastern Europe & Russia"
+   ],
+   "primary_region": [
+    "Eastern Europe & Russia"
+   ],
+   "place": "Kiev",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.48622,
+   "y": 0.58255,
+   "zoom": 9
+  },
+  {
+   "name": "Bernard of Clairvaux",
+   "birth_year": 1090,
+   "death_year": 1153,
+   "role": "Cistercian reformer",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.54386,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Catherine of Siena",
+   "birth_year": 1347,
+   "death_year": 1380,
+   "role": "Mystic and reformer",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.66967,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Julian of Norwich",
+   "birth_year": 1343,
+   "death_year": 1416,
+   "role": "English mystic",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 1,
+   "confidence": "Low",
+   "x": 0.67318,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Girolamo Savonarola",
+   "birth_year": 1452,
+   "death_year": 1498,
+   "role": "Florentine reform-preacher",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.73383,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Philipp Melanchthon",
+   "birth_year": 1497,
+   "death_year": 1560,
+   "role": "Systematizer of Lutheran theology",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.74737,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Menno Simons",
+   "birth_year": 1496,
+   "death_year": 1561,
+   "role": "Anabaptist leader",
+   "mechanism_template": "THEOLOGICAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.75489,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Roberto de Nobili",
+   "birth_year": 1577,
+   "death_year": 1656,
+   "role": "Inculturating missionary in India",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "South Asia"
+   ],
+   "primary_region": [
+    "South Asia"
+   ],
+   "place": "Malabar Coast",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.78947,
+   "y": 0.69,
+   "zoom": 9
+  },
+  {
+   "name": "John Eliot",
+   "birth_year": 1604,
+   "death_year": 1690,
+   "role": "Translator of the Algonquin Bible",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.80702,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "George Fox",
+   "birth_year": 1624,
+   "death_year": 1691,
+   "role": "Founder of the Quakers",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.81053,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Philipp Spener",
+   "birth_year": 1635,
+   "death_year": 1705,
+   "role": "Father of Pietism",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.82456,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Charles Wesley",
+   "birth_year": 1707,
+   "death_year": 1788,
+   "role": "Hymn-writer of the revival",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Western Europe",
+    "North America"
+   ],
+   "primary_region": [
+    "Western Europe"
+   ],
+   "place": "Gaul (Lyon)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.85614,
+   "y": 0.3816,
+   "zoom": 9
+  },
+  {
+   "name": "Francis Asbury",
+   "birth_year": 1745,
+   "death_year": 1816,
+   "role": "Father of American Methodism",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.87268,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "Charles Finney",
+   "birth_year": 1792,
+   "death_year": 1875,
+   "role": "Revivalist of the Second Awakening",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.89774,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "Robert Morrison",
+   "birth_year": 1782,
+   "death_year": 1834,
+   "role": "First Protestant Bible in Chinese",
+   "mechanism_template": "TRANSLATION",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Shanghai (China coast)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.89073,
+   "y": 0.8097,
+   "zoom": 9
+  },
+  {
+   "name": "Lottie Moon",
+   "birth_year": 1840,
+   "death_year": 1912,
+   "role": "Missionary to China",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "East Asia"
+   ],
+   "primary_region": [
+    "East Asia"
+   ],
+   "place": "Shanghai (China coast)",
+   "depth_tier": "Tier 3",
+   "strength": 1,
+   "confidence": "Low",
+   "x": 0.92381,
+   "y": 0.8097,
+   "zoom": 9
+  },
+  {
+   "name": "Amy Carmichael",
+   "birth_year": 1867,
+   "death_year": 1951,
+   "role": "Rescuer of temple children",
+   "mechanism_template": "INSTITUTIONAL",
+   "regions_affected": [
+    "South Asia"
+   ],
+   "primary_region": [
+    "South Asia"
+   ],
+   "place": "Malabar Coast",
+   "depth_tier": "Tier 3",
+   "strength": 1,
+   "confidence": "Low",
+   "x": 0.93784,
+   "y": 0.69,
+   "zoom": 9
+  },
+  {
+   "name": "Sundar Singh",
+   "birth_year": 1889,
+   "death_year": 1929,
+   "role": "Indian sadhu evangelist",
+   "mechanism_template": "APOSTOLIC_PROPAGATION",
+   "regions_affected": [
+    "South Asia"
+   ],
+   "primary_region": [
+    "South Asia"
+   ],
+   "place": "Malabar Coast",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.93985,
+   "y": 0.69,
+   "zoom": 9
+  },
+  {
+   "name": "John Sung",
+   "birth_year": 1901,
+   "death_year": 1944,
+   "role": "Revivalist of the Chinese diaspora",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "East Asia",
+    "Southeast Asia"
+   ],
+   "primary_region": [
+    "East Asia",
+    "Southeast Asia"
+   ],
+   "place": "Shanghai (China coast)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.95088,
+   "y": 0.8097,
+   "zoom": 9
+  },
+  {
+   "name": "Aimee Semple McPherson",
+   "birth_year": 1890,
+   "death_year": 1944,
+   "role": "Pentecostal mass-evangelist",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "North America"
+   ],
+   "primary_region": [
+    "North America"
+   ],
+   "place": "New England",
+   "depth_tier": "Tier 3",
+   "strength": 1,
+   "confidence": "Low",
+   "x": 0.94637,
+   "y": 0.15385,
+   "zoom": 9
+  },
+  {
+   "name": "Simon Kimbangu",
+   "birth_year": 1887,
+   "death_year": 1951,
+   "role": "Founder of an African church",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Sub-Saharan Africa"
+   ],
+   "primary_region": [
+    "Sub-Saharan Africa"
+   ],
+   "place": "Yorubaland (West Africa)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.94787,
+   "y": 0.66505,
+   "zoom": 9
+  },
+  {
+   "name": "Festo Kivengere",
+   "birth_year": 1919,
+   "death_year": 1988,
+   "role": "Voice of the East African Revival",
+   "mechanism_template": "REVIVAL",
+   "regions_affected": [
+    "Sub-Saharan Africa"
+   ],
+   "primary_region": [
+    "Sub-Saharan Africa"
+   ],
+   "place": "Yorubaland (West Africa)",
+   "depth_tier": "Tier 3",
+   "strength": 2,
+   "confidence": "Low",
+   "x": 0.97243,
+   "y": 0.66505,
+   "zoom": 9
+  }
+ ],
+ "events": [
+  {
+   "name": "Pentecost",
+   "year": "33",
+   "year_sort": 33.0,
+   "regions": [
+    "Roman/Mediterranean",
+    "GLOBAL"
+   ],
+   "description": "The Spirit falls on the first disciples in Jerusalem; the church is born and the first thousands believe.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.0015,
+   "y": 0.51926,
+   "zoom": 6
+  },
+  {
+   "name": "Neronian Persecution",
+   "year": "64",
+   "year_sort": 64.0,
+   "regions": [
+    "Roman/Mediterranean"
+   ],
+   "description": "After the Great Fire of Rome, Nero scapegoats and executes Christians; Peter and Paul are traditionally martyred.",
+   "effect": "Mild-",
+   "mechanism": "persecution",
+   "x": 0.01704,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Destruction of the Second Temple",
+   "year": "70",
+   "year_sort": 70.0,
+   "regions": [
+    "Roman/Mediterranean",
+    "Middle East & North Africa"
+   ],
+   "description": "Rome razes Jerusalem's temple; the church and synagogue decisively part ways.",
+   "effect": "Mild-",
+   "mechanism": "schism",
+   "x": 0.02005,
+   "y": 0.4649,
+   "zoom": 6
+  },
+  {
+   "name": "Edict of Milan",
+   "year": "313",
+   "year_sort": 313.0,
+   "regions": [
+    "Roman/Mediterranean"
+   ],
+   "description": "Constantine and Licinius legalize Christianity across the empire, ending state persecution.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.14185,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "First Council of Nicaea",
+   "year": "325",
+   "year_sort": 325.0,
+   "regions": [
+    "Roman/Mediterranean"
+   ],
+   "description": "The first ecumenical council defines the divinity of Christ against Arianism and sets the Nicene Creed.",
+   "effect": "Mild+",
+   "mechanism": "schism",
+   "x": 0.14787,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Christianity made the state religion",
+   "year": "380",
+   "year_sort": 380.0,
+   "regions": [
+    "Roman/Mediterranean"
+   ],
+   "description": "Theodosius I's Edict of Thessalonica makes Nicene Christianity the official religion of the empire.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.17544,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Council of Chalcedon",
+   "year": "451",
+   "year_sort": 451.0,
+   "regions": [
+    "Roman/Mediterranean",
+    "Middle East & North Africa"
+   ],
+   "description": "Defines the two natures of Christ; the Oriental Orthodox churches separate over its formula.",
+   "effect": "Mild-",
+   "mechanism": "schism",
+   "x": 0.21103,
+   "y": 0.4649,
+   "zoom": 6
+  },
+  {
+   "name": "Fall of Western Rome",
+   "year": "476",
+   "year_sort": 476.0,
+   "regions": [
+    "Western Europe",
+    "Roman/Mediterranean"
+   ],
+   "description": "The Western empire collapses; monasteries become the arks that carry literacy and faith through the upheaval.",
+   "effect": "Neutral",
+   "mechanism": "conversion",
+   "x": 0.22356,
+   "y": 0.39582,
+   "zoom": 6
+  },
+  {
+   "name": "Gregorian mission to England",
+   "year": "596",
+   "year_sort": 596.0,
+   "regions": [
+    "Western Europe"
+   ],
+   "description": "Gregory the Great sends Augustine of Canterbury to the Anglo-Saxons, beginning England's conversion.",
+   "effect": "Mild+",
+   "mechanism": "conversion",
+   "x": 0.28371,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Islamic conquests of the Christian East",
+   "year": "634\u2013750 (7th\u20138th c.)",
+   "year_sort": 700.0,
+   "regions": [
+    "Middle East & North Africa",
+    "Roman/Mediterranean"
+   ],
+   "description": "The Levant, Egypt and North Africa pass under Muslim rule; over centuries these heartlands become majority-Muslim.",
+   "effect": "Strong-",
+   "mechanism": "persecution",
+   "x": 0.33584,
+   "y": 0.4649,
+   "zoom": 6
+  },
+  {
+   "name": "Conversion of Kievan Rus",
+   "year": "988",
+   "year_sort": 988.0,
+   "regions": [
+    "Eastern Europe & Russia"
+   ],
+   "description": "Vladimir of Kiev is baptized and the Rus adopt Byzantine Christianity, seeding Russian Orthodoxy.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.4802,
+   "y": 0.58255,
+   "zoom": 6
+  },
+  {
+   "name": "Great Schism",
+   "year": "1054",
+   "year_sort": 1054.0,
+   "regions": [
+    "Eastern Europe & Russia",
+    "Roman/Mediterranean",
+    "Western Europe"
+   ],
+   "description": "Mutual excommunications formalize the split between the Latin West and the Greek East.",
+   "effect": "Mild-",
+   "mechanism": "schism",
+   "x": 0.51328,
+   "y": 0.45807,
+   "zoom": 6
+  },
+  {
+   "name": "Fall of Constantinople",
+   "year": "1453",
+   "year_sort": 1453.0,
+   "regions": [
+    "Eastern Europe & Russia",
+    "Middle East & North Africa"
+   ],
+   "description": "The Ottomans take Constantinople; Byzantine Christianity ends as a state and Orthodoxy's center shifts to Moscow.",
+   "effect": "Mild-",
+   "mechanism": "persecution",
+   "x": 0.71328,
+   "y": 0.55115,
+   "zoom": 6
+  },
+  {
+   "name": "Mission to the Americas",
+   "year": "1492\u20131600",
+   "year_sort": 1500.0,
+   "regions": [
+    "Latin America",
+    "North America"
+   ],
+   "description": "European contact and Catholic missions bring large-scale (and often coerced) conversion across the New World.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.73684,
+   "y": 0.14572,
+   "zoom": 6
+  },
+  {
+   "name": "Protestant Reformation",
+   "year": "1517",
+   "year_sort": 1517.0,
+   "regions": [
+    "Western Europe"
+   ],
+   "description": "Luther's Ninety-five Theses ignite a movement that splits Western Christendom and renews lay devotion.",
+   "effect": "Mild+",
+   "mechanism": "schism",
+   "x": 0.74536,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Vernacular Bible printing",
+   "year": "1534\u20131611",
+   "year_sort": 1550.0,
+   "regions": [
+    "Western Europe"
+   ],
+   "description": "Luther's German Bible and the King James Version put Scripture into the hands of ordinary readers.",
+   "effect": "Strong+",
+   "mechanism": "translation",
+   "x": 0.7619,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Peace of Westphalia",
+   "year": "1648",
+   "year_sort": 1648.0,
+   "regions": [
+    "Western Europe"
+   ],
+   "description": "Ends the Wars of Religion with a confessional settlement, beginning the long separation of church and state.",
+   "effect": "Neutral",
+   "mechanism": "secularization",
+   "x": 0.81103,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Great Awakenings",
+   "year": "1730\u20131860",
+   "year_sort": 1790.0,
+   "regions": [
+    "North America",
+    "Western Europe"
+   ],
+   "description": "Waves of evangelical revival sweep the English-speaking world, reshaping personal faith and reform movements.",
+   "effect": "Strong+",
+   "mechanism": "revival",
+   "x": 0.88221,
+   "y": 0.26772,
+   "zoom": 6
+  },
+  {
+   "name": "Modern Missionary Movement",
+   "year": "1792\u20131910",
+   "year_sort": 1850.0,
+   "regions": [
+    "Sub-Saharan Africa",
+    "South Asia",
+    "East Asia",
+    "Southeast Asia"
+   ],
+   "description": "Protestant and Catholic missions plant churches across Africa and Asia; translation and schools follow.",
+   "effect": "Strong+",
+   "mechanism": "conversion",
+   "x": 0.91228,
+   "y": 0.75179,
+   "zoom": 6
+  },
+  {
+   "name": "Soviet state atheism",
+   "year": "1917\u20131991",
+   "year_sort": 1950.0,
+   "regions": [
+    "Eastern Europe & Russia"
+   ],
+   "description": "The USSR enforces militant atheism \u2014 closed churches, imprisoned clergy \u2014 yet faith survives underground.",
+   "effect": "Strong-",
+   "mechanism": "persecution",
+   "x": 0.96241,
+   "y": 0.58255,
+   "zoom": 6
+  },
+  {
+   "name": "Western secularization",
+   "year": "1960\u2013present",
+   "year_sort": 1980.0,
+   "regions": [
+    "Western Europe",
+    "North America"
+   ],
+   "description": "Across the post-war West, affiliation and practice decline sharply as societies grow secular.",
+   "effect": "Strong-",
+   "mechanism": "secularization",
+   "x": 0.97744,
+   "y": 0.26772,
+   "zoom": 6
+  }
+ ],
+ "places": [
+  {
+   "name": "Judaea",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "Core",
+   "distance_norm": 0.01,
+   "era_note": "AD 30 \u2014 the seed",
+   "notes": "Jerusalem; Christ enters here. x=0, y=0.5.",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 7
+  },
+  {
+   "name": "Galilee",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "Core",
+   "distance_norm": 0.92,
+   "era_note": "1st c.",
+   "notes": "Where the first disciples are called.",
+   "x": 0.01003,
+   "y": 0.5,
+   "zoom": 7
+  },
+  {
+   "name": "Antioch",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "Core",
+   "distance_norm": 3.91,
+   "era_note": "1st c.",
+   "notes": "Believers first called 'Christians'; mission base.",
+   "x": 0.01003,
+   "y": 0.5,
+   "zoom": 7
+  },
+  {
+   "name": "Cyprus",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "Core",
+   "distance_norm": 3.23,
+   "era_note": "1st c.",
+   "notes": "Barnabas & Paul's first journey.",
+   "x": 0.01003,
+   "y": 0.5,
+   "zoom": 7
+  },
+  {
+   "name": "Asia Minor (Ephesus)",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "Core",
+   "distance_norm": 7.75,
+   "era_note": "1st-2nd c.",
+   "notes": "Pauline & Johannine churches.",
+   "x": 0.06015,
+   "y": 0.5,
+   "zoom": 7
+  },
+  {
+   "name": "Rome",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "West",
+   "distance_norm": 17.99,
+   "era_note": "1st c.+",
+   "notes": "Capital; Peter & Paul. Roman/Mediterranean primary place.",
+   "x": 0.01003,
+   "y": 0.41005,
+   "zoom": 7
+  },
+  {
+   "name": "Carthage",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "West",
+   "distance_norm": 18.34,
+   "era_note": "2nd-5th c.",
+   "notes": "Latin African church: Tertullian, Cyprian, Augustine.",
+   "x": 0.21053,
+   "y": 0.4083,
+   "zoom": 7
+  },
+  {
+   "name": "Iberia (Toledo)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 28.27,
+   "era_note": "4th c.+",
+   "notes": "Visigothic & medieval Spain.",
+   "x": 0.1604,
+   "y": 0.35865,
+   "zoom": 7
+  },
+  {
+   "name": "Gaul (Lyon)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 23.68,
+   "era_note": "2nd c.+",
+   "notes": "Irenaeus; the Frankish church. Western Europe primary place.",
+   "x": 0.06015,
+   "y": 0.3816,
+   "zoom": 7
+  },
+  {
+   "name": "Britain (Canterbury)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 27.52,
+   "era_note": "597+",
+   "notes": "Augustine of Canterbury; English church.",
+   "x": 0.28421,
+   "y": 0.3624,
+   "zoom": 7
+  },
+  {
+   "name": "Ireland (Armagh)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 32.28,
+   "era_note": "5th c.",
+   "notes": "Patrick; insular monasticism.",
+   "x": 0.21053,
+   "y": 0.3386,
+   "zoom": 7
+  },
+  {
+   "name": "Germania (Mainz)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 23.51,
+   "era_note": "8th c.",
+   "notes": "Boniface, apostle of the Germans.",
+   "x": 0.3609,
+   "y": 0.38245,
+   "zoom": 7
+  },
+  {
+   "name": "Scandinavia (Uppsala)",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 26.43,
+   "era_note": "9th-11th c.",
+   "notes": "Anskar; late northern conversion.",
+   "x": 0.51128,
+   "y": 0.36785,
+   "zoom": 7
+  },
+  {
+   "name": "Wittenberg",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 22.57,
+   "era_note": "1517",
+   "notes": "Luther; the Reformation.",
+   "x": 0.74536,
+   "y": 0.38715,
+   "zoom": 7
+  },
+  {
+   "name": "Geneva",
+   "parent_macro_region": "Western Europe",
+   "branch": "West",
+   "distance_norm": 23.09,
+   "era_note": "16th c.",
+   "notes": "Calvin's reform.",
+   "x": 0.7619,
+   "y": 0.38455,
+   "zoom": 7
+  },
+  {
+   "name": "New England",
+   "parent_macro_region": "North America",
+   "branch": "West",
+   "distance_norm": 69.23,
+   "era_note": "17th c.+",
+   "notes": "Puritans; the Great Awakenings. North America primary place.",
+   "x": 0.81203,
+   "y": 0.15385,
+   "zoom": 7
+  },
+  {
+   "name": "Chesapeake (Virginia)",
+   "parent_macro_region": "North America",
+   "branch": "West",
+   "distance_norm": 75.12,
+   "era_note": "17th c.+",
+   "notes": "Anglican colonial settlement.",
+   "x": 0.81203,
+   "y": 0.1244,
+   "zoom": 7
+  },
+  {
+   "name": "West Coast (Los Angeles)",
+   "parent_macro_region": "North America",
+   "branch": "West",
+   "distance_norm": 95.19,
+   "era_note": "1906",
+   "notes": "Azusa Street; modern Pentecostalism.",
+   "x": 0.94035,
+   "y": 0.02405,
+   "zoom": 7
+  },
+  {
+   "name": "Mexico (Tenochtitlan)",
+   "parent_macro_region": "Latin America",
+   "branch": "West",
+   "distance_norm": 97.85,
+   "era_note": "1524+",
+   "notes": "Twelve Apostles of Mexico.",
+   "x": 0.74887,
+   "y": 0.01075,
+   "zoom": 7
+  },
+  {
+   "name": "Bahia (Brazil)",
+   "parent_macro_region": "Latin America",
+   "branch": "West",
+   "distance_norm": 72.48,
+   "era_note": "16th c.+",
+   "notes": "Portuguese mission. Latin America primary place.",
+   "x": 0.7619,
+   "y": 0.1376,
+   "zoom": 7
+  },
+  {
+   "name": "Andes (Lima)",
+   "parent_macro_region": "Latin America",
+   "branch": "West",
+   "distance_norm": 100.0,
+   "era_note": "16th c.+",
+   "notes": "Spanish viceregal church.",
+   "x": 0.7619,
+   "y": 0.0,
+   "zoom": 7
+  },
+  {
+   "name": "Caribbean (Hispaniola)",
+   "parent_macro_region": "Latin America",
+   "branch": "West",
+   "distance_norm": 80.33,
+   "era_note": "1492+",
+   "notes": "First contact.",
+   "x": 0.73283,
+   "y": 0.09835,
+   "zoom": 7
+  },
+  {
+   "name": "Greece (Corinth)",
+   "parent_macro_region": "Roman/Mediterranean",
+   "branch": "East-South",
+   "distance_norm": 10.25,
+   "era_note": "1st c.+",
+   "notes": "Greek-speaking churches; Orthodoxy's root.",
+   "x": 0.01003,
+   "y": 0.55125,
+   "zoom": 7
+  },
+  {
+   "name": "Constantinople",
+   "parent_macro_region": "Eastern Europe & Russia",
+   "branch": "East-South",
+   "distance_norm": 9.13,
+   "era_note": "330+",
+   "notes": "New Rome; Byzantine center.",
+   "x": 0.15038,
+   "y": 0.54565,
+   "zoom": 7
+  },
+  {
+   "name": "Balkans (Thessalonica)",
+   "parent_macro_region": "Eastern Europe & Russia",
+   "branch": "East-South",
+   "distance_norm": 11.53,
+   "era_note": "9th c.",
+   "notes": "Cyril & Methodius' mission base.",
+   "x": 0.41103,
+   "y": 0.55765,
+   "zoom": 7
+  },
+  {
+   "name": "Kiev",
+   "parent_macro_region": "Eastern Europe & Russia",
+   "branch": "East-South",
+   "distance_norm": 16.51,
+   "era_note": "988",
+   "notes": "Baptism of the Rus. Eastern Europe & Russia primary place.",
+   "x": 0.4802,
+   "y": 0.58255,
+   "zoom": 7
+  },
+  {
+   "name": "Moscow",
+   "parent_macro_region": "Eastern Europe & Russia",
+   "branch": "East-South",
+   "distance_norm": 20.88,
+   "era_note": "15th c.+",
+   "notes": "'Third Rome'; later Soviet suppression.",
+   "x": 0.71178,
+   "y": 0.6044,
+   "zoom": 7
+  },
+  {
+   "name": "Armenia (Etchmiadzin)",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 9.68,
+   "era_note": "301",
+   "notes": "First Christian state.",
+   "x": 0.13584,
+   "y": 0.5484,
+   "zoom": 7
+  },
+  {
+   "name": "Alexandria",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 3.95,
+   "era_note": "1st c.+",
+   "notes": "Mark; Athanasius; great school. MENA primary place.",
+   "x": 0.01003,
+   "y": 0.51975,
+   "zoom": 7
+  },
+  {
+   "name": "Egypt (Thebaid)",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 5.57,
+   "era_note": "3rd c.+",
+   "notes": "Desert monasticism (Anthony).",
+   "x": 0.11028,
+   "y": 0.52785,
+   "zoom": 7
+  },
+  {
+   "name": "Mesopotamia (Ctesiphon)",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 6.96,
+   "era_note": "3rd c.+",
+   "notes": "Church of the East.",
+   "x": 0.11028,
+   "y": 0.5348,
+   "zoom": 7
+  },
+  {
+   "name": "Persia (Nisibis)",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 6.29,
+   "era_note": "4th c.+",
+   "notes": "Nestorian school of theology.",
+   "x": 0.1604,
+   "y": 0.53145,
+   "zoom": 7
+  },
+  {
+   "name": "Arabia (Najran)",
+   "parent_macro_region": "Middle East & North Africa",
+   "branch": "East-South",
+   "distance_norm": 14.24,
+   "era_note": "5th-6th c.",
+   "notes": "Pre-Islamic Christian community.",
+   "x": 0.26065,
+   "y": 0.5712,
+   "zoom": 7
+  },
+  {
+   "name": "Aksum (Ethiopia)",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 15.57,
+   "era_note": "4th c.+",
+   "notes": "Ethiopian church; never extinguished.",
+   "x": 0.1604,
+   "y": 0.57785,
+   "zoom": 7
+  },
+  {
+   "name": "Nubia",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 12.41,
+   "era_note": "6th-14th c.",
+   "notes": "Medieval Christian kingdoms.",
+   "x": 0.66165,
+   "y": 0.56205,
+   "zoom": 7
+  },
+  {
+   "name": "Yorubaland (West Africa)",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 33.01,
+   "era_note": "19th c.+",
+   "notes": "Crowther; explosive modern growth. Sub-Saharan Africa primary place.",
+   "x": 0.91228,
+   "y": 0.66505,
+   "zoom": 7
+  },
+  {
+   "name": "Kongo",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 37.21,
+   "era_note": "1500+",
+   "notes": "Kingdom of Kongo's conversion.",
+   "x": 0.73684,
+   "y": 0.68605,
+   "zoom": 7
+  },
+  {
+   "name": "East Africa (Uganda)",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 27.37,
+   "era_note": "20th c.",
+   "notes": "The East African Revival.",
+   "x": 0.96241,
+   "y": 0.63685,
+   "zoom": 7
+  },
+  {
+   "name": "Southern Africa",
+   "parent_macro_region": "Sub-Saharan Africa",
+   "branch": "East-South",
+   "distance_norm": 50.7,
+   "era_note": "19th-20th c.",
+   "notes": "Mission and settler churches.",
+   "x": 0.96241,
+   "y": 0.7535,
+   "zoom": 7
+  },
+  {
+   "name": "Malabar Coast",
+   "parent_macro_region": "South Asia",
+   "branch": "East-South",
+   "distance_norm": 38.0,
+   "era_note": "ancient+",
+   "notes": "Thomas Christians of Kerala. South Asia primary place.",
+   "x": 0.5,
+   "y": 0.69,
+   "zoom": 7
+  },
+  {
+   "name": "North India (Goa)",
+   "parent_macro_region": "South Asia",
+   "branch": "East-South",
+   "distance_norm": 33.58,
+   "era_note": "16th c.+",
+   "notes": "Xavier; de Nobili.",
+   "x": 0.7619,
+   "y": 0.6679,
+   "zoom": 7
+  },
+  {
+   "name": "Ceylon",
+   "parent_macro_region": "South Asia",
+   "branch": "East-South",
+   "distance_norm": 42.03,
+   "era_note": "16th c.+",
+   "notes": "Portuguese & later missions.",
+   "x": 0.7619,
+   "y": 0.71015,
+   "zoom": 7
+  },
+  {
+   "name": "Tang Chang'an",
+   "parent_macro_region": "East Asia",
+   "branch": "East-South",
+   "distance_norm": 52.5,
+   "era_note": "635+",
+   "notes": "Alopen; the Nestorian stele.",
+   "x": 0.30326,
+   "y": 0.7625,
+   "zoom": 7
+  },
+  {
+   "name": "Shanghai (China coast)",
+   "parent_macro_region": "East Asia",
+   "branch": "East-South",
+   "distance_norm": 61.94,
+   "era_note": "19th c.+",
+   "notes": "Protestant missions; modern house church. East Asia primary place.",
+   "x": 0.91228,
+   "y": 0.8097,
+   "zoom": 7
+  },
+  {
+   "name": "Korea (Seoul)",
+   "parent_macro_region": "East Asia",
+   "branch": "East-South",
+   "distance_norm": 62.99,
+   "era_note": "19th-20th c.",
+   "notes": "Rapid modern growth.",
+   "x": 0.96241,
+   "y": 0.81495,
+   "zoom": 7
+  },
+  {
+   "name": "Japan (Nagasaki)",
+   "parent_macro_region": "East Asia",
+   "branch": "East-South",
+   "distance_norm": 66.78,
+   "era_note": "16th c.+",
+   "notes": "Xavier; the hidden Christians.",
+   "x": 0.7619,
+   "y": 0.8339,
+   "zoom": 7
+  },
+  {
+   "name": "Manila (Philippines)",
+   "parent_macro_region": "Southeast Asia",
+   "branch": "East-South",
+   "distance_norm": 68.48,
+   "era_note": "1565+",
+   "notes": "Spanish Catholic mission. Southeast Asia primary place.",
+   "x": 0.76942,
+   "y": 0.8424,
+   "zoom": 7
+  },
+  {
+   "name": "Vietnam (Tonkin)",
+   "parent_macro_region": "Southeast Asia",
+   "branch": "East-South",
+   "distance_norm": 54.83,
+   "era_note": "17th c.+",
+   "notes": "Alexandre de Rhodes.",
+   "x": 0.81203,
+   "y": 0.77415,
+   "zoom": 7
+  },
+  {
+   "name": "Java (Indonesia)",
+   "parent_macro_region": "Southeast Asia",
+   "branch": "East-South",
+   "distance_norm": 67.67,
+   "era_note": "19th-20th c.",
+   "notes": "Dutch-era and indigenous churches.",
+   "x": 0.96241,
+   "y": 0.83835,
+   "zoom": 7
+  }
+ ],
+ "archetypes": [
+  {
+   "name": "The Unreached (antiquity)",
+   "era": "1st-3rd c.",
+   "region": "GLOBAL",
+   "end_state": "Unaffiliated",
+   "weight": 100.0,
+   "drivers": [
+    "family"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "Most of humanity in antiquity never hears the gospel; the dark warp behind the light.",
+   "x": 0.11028,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "The Unreached (medieval)",
+   "era": "Medieval",
+   "region": "GLOBAL",
+   "end_state": "Unaffiliated",
+   "weight": 100.0,
+   "drivers": [
+    "family"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "Beyond Christendom's edges, the field stays dark for a thousand years.",
+   "x": 0.5,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "The Unreached (early modern)",
+   "era": "Early Modern",
+   "region": "GLOBAL",
+   "end_state": "Unaffiliated",
+   "weight": 92.0,
+   "drivers": [
+    "family"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "Asia and the interior remain largely unreached before the missionary century.",
+   "x": 0.5,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Born after the conquest (MENA)",
+   "era": "Medieval",
+   "region": "Middle East & North Africa",
+   "end_state": "Unaffiliated",
+   "weight": 82.0,
+   "drivers": [
+    "institution/state",
+    "family"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "After the 7th-c. conquests the Christian East becomes a shrinking minority.",
+   "x": 0.5,
+   "y": 0.51975,
+   "zoom": 6
+  },
+  {
+   "name": "Confucian-Buddhist world (Asia)",
+   "era": "20th c.",
+   "region": "East Asia",
+   "end_state": "Unaffiliated",
+   "weight": 88.0,
+   "drivers": [
+    "family",
+    "secular culture"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "Even amid modern missions, most of East Asia remains unreached.",
+   "x": 0.96241,
+   "y": 0.8097,
+   "zoom": 6
+  },
+  {
+   "name": "Hindu world (South Asia)",
+   "era": "20th c.",
+   "region": "South Asia",
+   "end_state": "Unaffiliated",
+   "weight": 85.0,
+   "drivers": [
+    "family"
+   ],
+   "pattern_tags": [
+    "dark warp"
+   ],
+   "summary": "Christianity stays a small minority across the subcontinent.",
+   "x": 0.96241,
+   "y": 0.69,
+   "zoom": 6
+  },
+  {
+   "name": "Apostolic convert",
+   "era": "1st-3rd c.",
+   "region": "Roman/Mediterranean",
+   "end_state": "Practicing",
+   "weight": 8.0,
+   "drivers": [
+    "missionary contact",
+    "conversion experience",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "convert",
+    "steady faith"
+   ],
+   "summary": "Hears an apostle or a neighbor, believes, and is baptized.",
+   "x": 0.11028,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Martyr of the persecutions",
+   "era": "1st-3rd c.",
+   "region": "Roman/Mediterranean",
+   "end_state": "Martyred",
+   "weight": 3.0,
+   "drivers": [
+    "persecution",
+    "martyrdom witness"
+   ],
+   "pattern_tags": [
+    "martyr",
+    "persecuted-faithful"
+   ],
+   "summary": "Refuses to recant; the blood of the martyrs becomes seed.",
+   "x": 0.11028,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "House-church matron",
+   "era": "1st-3rd c.",
+   "region": "Roman/Mediterranean",
+   "end_state": "Practicing",
+   "weight": 5.0,
+   "drivers": [
+    "family",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "steady faith"
+   ],
+   "summary": "Keeps a household church; the quiet backbone of the early church.",
+   "x": 0.11028,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Constantinian nominal",
+   "era": "4th-6th c.",
+   "region": "Roman/Mediterranean",
+   "end_state": "Nominal",
+   "weight": 18.0,
+   "drivers": [
+    "institution/state",
+    "prosperity"
+   ],
+   "pattern_tags": [
+    "nominal inheritance",
+    "convert"
+   ],
+   "summary": "Joins when the faith becomes respectable; belief stays a label.",
+   "x": 0.26065,
+   "y": 0.41005,
+   "zoom": 6
+  },
+  {
+   "name": "Desert ascetic",
+   "era": "4th-6th c.",
+   "region": "Middle East & North Africa",
+   "end_state": "Practicing",
+   "weight": 4.0,
+   "drivers": [
+    "mysticism",
+    "conversion experience"
+   ],
+   "pattern_tags": [
+    "steady faith"
+   ],
+   "summary": "Flees to the desert to seek God wholly.",
+   "x": 0.26065,
+   "y": 0.51975,
+   "zoom": 6
+  },
+  {
+   "name": "Barbarian baptized with the king",
+   "era": "4th-6th c.",
+   "region": "Western Europe",
+   "end_state": "Nominal",
+   "weight": 16.0,
+   "drivers": [
+    "institution/state",
+    "family"
+   ],
+   "pattern_tags": [
+    "nominal inheritance"
+   ],
+   "summary": "Converted top-down when the chieftain is baptized.",
+   "x": 0.26065,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Monastic copyist",
+   "era": "Medieval",
+   "region": "Western Europe",
+   "end_state": "Practicing",
+   "weight": 6.0,
+   "drivers": [
+    "institution/state",
+    "scripture/translation"
+   ],
+   "pattern_tags": [
+    "steady faith"
+   ],
+   "summary": "Carries faith and letters through the dark centuries.",
+   "x": 0.5,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Medieval peasant believer",
+   "era": "Medieval",
+   "region": "Western Europe",
+   "end_state": "Nominal",
+   "weight": 26.0,
+   "drivers": [
+    "family",
+    "institution/state"
+   ],
+   "pattern_tags": [
+    "nominal inheritance",
+    "steady faith"
+   ],
+   "summary": "Born into Christendom; devout in form, ordinary in fervor.",
+   "x": 0.5,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Orthodox faithful of the Rus",
+   "era": "Medieval",
+   "region": "Eastern Europe & Russia",
+   "end_state": "Practicing",
+   "weight": 12.0,
+   "drivers": [
+    "institution/state",
+    "family",
+    "mysticism"
+   ],
+   "pattern_tags": [
+    "convert",
+    "steady faith"
+   ],
+   "summary": "Baptized with the Rus; Orthodoxy becomes the soul of a people.",
+   "x": 0.5,
+   "y": 0.58255,
+   "zoom": 6
+  },
+  {
+   "name": "Thomas Christian of Malabar",
+   "era": "Medieval",
+   "region": "South Asia",
+   "end_state": "Practicing",
+   "weight": 4.0,
+   "drivers": [
+    "family",
+    "displacement/migration"
+   ],
+   "pattern_tags": [
+    "steady faith",
+    "diaspora"
+   ],
+   "summary": "An ancient church surviving on the Indian coast.",
+   "x": 0.5,
+   "y": 0.69,
+   "zoom": 6
+  },
+  {
+   "name": "Reformation lay reader",
+   "era": "Reformation",
+   "region": "Western Europe",
+   "end_state": "Practicing",
+   "weight": 9.0,
+   "drivers": [
+    "scripture/translation",
+    "revival",
+    "intellectual doubt"
+   ],
+   "pattern_tags": [
+    "revival-swept",
+    "convert"
+   ],
+   "summary": "Reads Scripture in the vernacular and finds living faith.",
+   "x": 0.5,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Recusant martyr",
+   "era": "Reformation",
+   "region": "Western Europe",
+   "end_state": "Martyred",
+   "weight": 2.0,
+   "drivers": [
+    "persecution",
+    "martyrdom witness"
+   ],
+   "pattern_tags": [
+    "martyr",
+    "persecuted-faithful"
+   ],
+   "summary": "Dies for confession in an age of religious war.",
+   "x": 0.5,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "New World mission convert",
+   "era": "Early Modern",
+   "region": "Latin America",
+   "end_state": "Nominal",
+   "weight": 22.0,
+   "drivers": [
+    "missionary contact",
+    "institution/state"
+   ],
+   "pattern_tags": [
+    "convert",
+    "nominal inheritance"
+   ],
+   "summary": "Baptized en masse under colonial mission; faith folk and inherited.",
+   "x": 0.5,
+   "y": 0.1376,
+   "zoom": 6
+  },
+  {
+   "name": "Hidden Christian (Japan)",
+   "era": "Early Modern",
+   "region": "East Asia",
+   "end_state": "Practicing",
+   "weight": 3.0,
+   "drivers": [
+    "persecution",
+    "family",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "underground",
+    "persecuted-faithful"
+   ],
+   "summary": "Keeps the faith in secret across generations of persecution.",
+   "x": 0.5,
+   "y": 0.8097,
+   "zoom": 6
+  },
+  {
+   "name": "Pietist of the awakening",
+   "era": "Early Modern",
+   "region": "Western Europe",
+   "end_state": "Practicing",
+   "weight": 7.0,
+   "drivers": [
+    "revival",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "revival-swept",
+    "convert"
+   ],
+   "summary": "Heart-religion rekindled in small renewal societies.",
+   "x": 0.5,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Great-Awakening convert",
+   "era": "Early Modern",
+   "region": "North America",
+   "end_state": "Practicing",
+   "weight": 11.0,
+   "drivers": [
+    "revival",
+    "conversion experience"
+   ],
+   "pattern_tags": [
+    "revival-swept",
+    "convert"
+   ],
+   "summary": "Swept up in the colonial revivals.",
+   "x": 0.5,
+   "y": 0.15385,
+   "zoom": 6
+  },
+  {
+   "name": "Mission-school pupil (Africa)",
+   "era": "19th c.",
+   "region": "Sub-Saharan Africa",
+   "end_state": "Practicing",
+   "weight": 15.0,
+   "drivers": [
+    "missionary contact",
+    "scripture/translation"
+   ],
+   "pattern_tags": [
+    "convert"
+   ],
+   "summary": "Learns to read Scripture at a mission school and believes.",
+   "x": 0.91228,
+   "y": 0.66505,
+   "zoom": 6
+  },
+  {
+   "name": "Slave-convert of the diaspora",
+   "era": "19th c.",
+   "region": "North America",
+   "end_state": "Practicing",
+   "weight": 9.0,
+   "drivers": [
+    "displacement/migration",
+    "revival",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "convert",
+    "diaspora",
+    "steady faith"
+   ],
+   "summary": "Finds in the gospel both hope and a community in bondage.",
+   "x": 0.91228,
+   "y": 0.15385,
+   "zoom": 6
+  },
+  {
+   "name": "First reader of a new translation",
+   "era": "19th c.",
+   "region": "Sub-Saharan Africa",
+   "end_state": "Practicing",
+   "weight": 7.0,
+   "drivers": [
+    "scripture/translation",
+    "missionary contact"
+   ],
+   "pattern_tags": [
+    "convert"
+   ],
+   "summary": "The Bible arrives in the mother tongue; the church takes root.",
+   "x": 0.91228,
+   "y": 0.66505,
+   "zoom": 6
+  },
+  {
+   "name": "Colonial nominal Christian",
+   "era": "19th c.",
+   "region": "Sub-Saharan Africa",
+   "end_state": "Nominal",
+   "weight": 16.0,
+   "drivers": [
+    "institution/state",
+    "prosperity"
+   ],
+   "pattern_tags": [
+    "nominal inheritance"
+   ],
+   "summary": "Adopts the colonizer's religion as a label.",
+   "x": 0.91228,
+   "y": 0.66505,
+   "zoom": 6
+  },
+  {
+   "name": "Pentecostal of Azusa",
+   "era": "20th c.",
+   "region": "North America",
+   "end_state": "Practicing",
+   "weight": 9.0,
+   "drivers": [
+    "revival",
+    "conversion experience",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "revival-swept",
+    "convert"
+   ],
+   "summary": "Touched by the Pentecostal outpouring.",
+   "x": 0.96241,
+   "y": 0.15385,
+   "zoom": 6
+  },
+  {
+   "name": "East African revivalist",
+   "era": "20th c.",
+   "region": "Sub-Saharan Africa",
+   "end_state": "Practicing",
+   "weight": 18.0,
+   "drivers": [
+    "revival",
+    "social ties"
+   ],
+   "pattern_tags": [
+    "revival-swept"
+   ],
+   "summary": "Confession and song turn a mission church into living faith.",
+   "x": 0.96241,
+   "y": 0.66505,
+   "zoom": 6
+  },
+  {
+   "name": "Base-community Catholic",
+   "era": "20th c.",
+   "region": "Latin America",
+   "end_state": "Practicing",
+   "weight": 20.0,
+   "drivers": [
+    "social ties",
+    "institution/state"
+   ],
+   "pattern_tags": [
+    "steady faith",
+    "nominal inheritance"
+   ],
+   "summary": "Faith deepened in small grassroots communities.",
+   "x": 0.96241,
+   "y": 0.1376,
+   "zoom": 6
+  },
+  {
+   "name": "Soviet secret believer (Lyudmila)",
+   "era": "20th c.",
+   "region": "Eastern Europe & Russia",
+   "end_state": "Practicing",
+   "weight": 6.0,
+   "drivers": [
+    "persecution",
+    "family",
+    "social ties",
+    "mysticism"
+   ],
+   "pattern_tags": [
+    "returned",
+    "frayed/declining",
+    "persecuted-faithful"
+   ],
+   "summary": "Raised under atheism, lapses, then returns late through believing ties \u2014 the Lyudmila arc.",
+   "x": 0.96241,
+   "y": 0.58255,
+   "zoom": 6
+  },
+  {
+   "name": "Soviet atheist (lost faith)",
+   "era": "20th c.",
+   "region": "Eastern Europe & Russia",
+   "end_state": "Unaffiliated",
+   "weight": 42.0,
+   "drivers": [
+    "institution/state",
+    "secular culture"
+   ],
+   "pattern_tags": [
+    "secularized",
+    "lapsed",
+    "dark warp"
+   ],
+   "summary": "State atheism severs an inherited faith.",
+   "x": 0.96241,
+   "y": 0.58255,
+   "zoom": 6
+  },
+  {
+   "name": "Chinese house-church believer",
+   "era": "20th c.",
+   "region": "East Asia",
+   "end_state": "Practicing",
+   "weight": 11.0,
+   "drivers": [
+    "social ties",
+    "missionary contact"
+   ],
+   "pattern_tags": [
+    "underground",
+    "convert",
+    "revival-swept"
+   ],
+   "summary": "Comes to faith in a hidden church and stays despite pressure.",
+   "x": 0.96241,
+   "y": 0.8097,
+   "zoom": 6
+  },
+  {
+   "name": "Korean megachurch convert",
+   "era": "20th c.",
+   "region": "East Asia",
+   "end_state": "Practicing",
+   "weight": 8.0,
+   "drivers": [
+    "revival",
+    "social ties",
+    "prosperity"
+   ],
+   "pattern_tags": [
+    "convert",
+    "revival-swept"
+   ],
+   "summary": "Part of Korea's rapid 20th-c. growth.",
+   "x": 0.96241,
+   "y": 0.8097,
+   "zoom": 6
+  },
+  {
+   "name": "Western nominal who drifts",
+   "era": "20th c.",
+   "region": "Western Europe",
+   "end_state": "Lapsed",
+   "weight": 38.0,
+   "drivers": [
+    "secular culture",
+    "family"
+   ],
+   "pattern_tags": [
+    "frayed/declining",
+    "secularized",
+    "lapsed"
+   ],
+   "summary": "Inherited faith quietly thins to nothing.",
+   "x": 0.96241,
+   "y": 0.3816,
+   "zoom": 6
+  },
+  {
+   "name": "Post-Christian seeker who returns",
+   "era": "21st c.",
+   "region": "North America",
+   "end_state": "Practicing",
+   "weight": 6.0,
+   "drivers": [
+    "personal crisis",
+    "social ties",
+    "conversion experience"
+   ],
+   "pattern_tags": [
+    "returned",
+    "convert"
+   ],
+   "summary": "After drifting, comes home through a crisis and a friend.",
+   "x": 1.0,
+   "y": 0.15385,
+   "zoom": 6
+  },
+  {
+   "name": "Global-South migrant believer",
+   "era": "21st c.",
+   "region": "GLOBAL",
+   "end_state": "Practicing",
+   "weight": 12.0,
+   "drivers": [
+    "displacement/migration",
+    "family"
+   ],
+   "pattern_tags": [
+    "diaspora",
+    "steady faith"
+   ],
+   "summary": "Carries a vibrant faith along the routes of migration.",
+   "x": 1.0,
+   "y": 0.41005,
+   "zoom": 6
+  }
+ ],
+ "seed": {
+  "name": "Christ \u2014 Pentecost",
+  "x": 0.0,
+  "y": 0.5,
+  "zoom": 4,
+  "description": "AD 30, Jerusalem. The single thread enters here."
+ }
+}

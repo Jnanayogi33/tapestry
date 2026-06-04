@@ -27,9 +27,13 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
   region→primary-Place fallback, deterministic per-thread jitter, seed→(0,0.5).
   Self-test passes (`python -m sim.embedding`): Americas→top edge, E.Asia/Pacific→bottom,
   Core centered.
-- [ ] **3. Micro-life-thread sim** — sample lives from archetypes by weight/region/era;
-  emergent contagion; strands as local igniters; calibrate lit-fraction to composition;
-  real example_lives.json (provenance assertion).
+- [x] **3. Micro-life-thread sim** — DONE. `sim/threads/`: `targets.py` (per-region/decade
+  lit + gold + count from the v1-calibrated macro run, reconciled to anchors),
+  `model.py` (ThreadSim: emergent lineage contagion rooted at the seed + named-strand
+  igniters; transmission links = who-lit-whom; dark warp fills Y; thread count ∝
+  log(christians) → blaze; fixed seed), `run.py` (regenerates real example_lives.json
+  via v1 micro sim + augments with x/y PATHS & shades; writes nav_index.json for
+  strands/events/places/archetypes/seed). Lyudmila gold→dark→gold arc verified real.
 - [ ] **4. Offline bake** — additive + bloom + woven ground → gigapixel climax + era
   frames + nav index + DZI tiles.
 - [ ] **5. Web app** — deep-zoom + scrub + nav menu + single-life; DELETE old arcs /
@@ -40,17 +44,15 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
 - [ ] **8. Done** only when deployed AND visual loop converged (≥12/14, no zeros).
 
 ## EXACT NEXT ACTION
-Step 3 (micro-life-thread sim): build `sim/threads/` (new) — sample a large stratified
-set of life-threads across regions×eras by population (anchors.total_population),
-drawn from archetypes by `weight`; give each a Place(→x,y), birth era, disposition, a
-small neighbor set; run emergent contagion over decadal steps with strands as LOCAL
-igniters (within ignition_radius of their (x,y)); record transmission links (who lit
-whom) for lineage threads. Calibrate region×year lit-fraction to the anchor composition
-(gold=practicing, gray=nominal+lapsed, dark=unaffiliated). Emit:
-`data/threads.json` (or compact binary) with per-thread (x,y,birth,state-over-time,
-parent link, shade) + `data/example_lives.json` (REAL dump, provenance assertion, incl.
-a Lyudmila gold→dark→gold arc) + `data/nav_index.json` (strand/event/place→coord).
-Start with a config-driven sampler + a single-corridor smoke run, then scale.
+Step 4 (offline bake): create `bake/` — `bake/render.py` builds the gigapixel CLIMAX
+still + per-era frames from `sim.threads.model.ThreadSim`. Additive-accumulate glowing
+curves (lineage polylines + curved transmission filaments + faint dark warp) into a
+float buffer (numpy); map shade→gold/gray-gold/dark palette; tone-map + BLOOM
+(scipy gaussian); composite over a woven dark ground + vignette/frame. Era frames =
+reveal up to year T (mask x>x(T)). Emit `viz/public/tapestry/climax.png` (downscaled
+inspect copy to reports/look/), era frames, and DZI tiles (`bake/dzi.py`). Then INSPECT
+the pixels (Read the PNG) before moving on. Budgets: start ~240k lit pts / 60k dark;
+res ~7000x3500 climax. Keep `data/nav_index.json` coords aligned to the image.
 
 ## Key decisions / assumptions (see BLOCKERS.md for the full log)
 - Layout per v2 prompt: `x=(year-30)/1995`; `y=0.5+sign*0.5*(distance_norm/100)`,

@@ -1,0 +1,20 @@
+{
+ "coordinate_model": {
+  "x": "time",
+  "y": "distance-from-Judaea",
+  "seed_xy": [
+   0.0,
+   0.5
+  ]
+ },
+ "example_lives": {
+  "n": 7,
+  "target_arc_present": true
+ },
+ "nav_counts": {
+  "strands": 100,
+  "events": 21,
+  "places": 49,
+  "archetypes": 36
+ }
+}

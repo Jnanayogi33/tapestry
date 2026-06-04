@@ -79,6 +79,10 @@ class Strand:
     strength: int
     depth_tier: str
     confidence: str
+    # v2 local-igniter geometry (nullable; sim falls back to region->place + defaults)
+    place: str = ""
+    ignition_radius: float | None = None
+    effect_decay: float | None = None
 
     def expanded_regions(self) -> list[str]:
         """regions_affected with GLOBAL expanded to all 10 regions."""
@@ -94,6 +98,33 @@ class Life:
     start_disposition: str
     trajectory: str
     drivers: str
+    summary: str
+
+
+@dataclass
+class Place:
+    name: str
+    parent_macro_region: str
+    branch: str
+    lat: float | None
+    lon: float | None
+    distance_km: float | None
+    distance_norm: float | None
+    era_note: str
+    notes: str
+
+
+@dataclass
+class Archetype:
+    name: str
+    era: str
+    region: str
+    start_disposition: str
+    belief_path: str
+    end_state: str
+    weight: float
+    drivers: list[str]
+    pattern_tags: list[str]
     summary: str
 
 
@@ -164,6 +195,38 @@ def load_strands(data_dir: str = DEFAULT_DATA_DIR) -> list[Strand]:
             strength=_i(r.get("strength")) or 1,
             depth_tier=r.get("depth_tier", "Tier 3") or "Tier 3",
             confidence=r.get("confidence", "Medium") or "Medium",
+            place=r.get("place", "") or "",
+            ignition_radius=_f(r.get("ignition_radius")),
+            effect_decay=_f(r.get("effect_decay")),
+        ))
+    return out
+
+
+def load_places(data_dir: str = DEFAULT_DATA_DIR) -> list[Place]:
+    out = []
+    for r in _read(os.path.join(data_dir, "places.csv")):
+        out.append(Place(
+            name=r.get("name", ""),
+            parent_macro_region=r.get("parent_macro_region", ""),
+            branch=r.get("branch", "Core"),
+            lat=_f(r.get("lat")), lon=_f(r.get("lon")),
+            distance_km=_f(r.get("distance_km")), distance_norm=_f(r.get("distance_norm")),
+            era_note=r.get("era_note", ""), notes=r.get("notes", ""),
+        ))
+    return out
+
+
+def load_archetypes(data_dir: str = DEFAULT_DATA_DIR) -> list[Archetype]:
+    out = []
+    for r in _read(os.path.join(data_dir, "archetypes.csv")):
+        out.append(Archetype(
+            name=r.get("name", ""), era=r.get("era", ""), region=r.get("region", ""),
+            start_disposition=r.get("start_disposition", ""),
+            belief_path=r.get("belief_path", ""), end_state=r.get("end_state", ""),
+            weight=_f(r.get("weight")) or 1.0,
+            drivers=S.load_multiselect(r.get("drivers")),
+            pattern_tags=S.load_multiselect(r.get("pattern_tags")),
+            summary=r.get("summary", ""),
         ))
     return out
 
