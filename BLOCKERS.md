@@ -53,6 +53,20 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
   ~13.6 -> ~1.25; mean absolute anchor residual ≈ 11-12 percentage points.
 
 
+## Step 10 — Deploy
+- [10] BLOCKER→WORKAROUND (2026-06-03) — The available `gh` token (account
+  Jnanayogi33) has scopes `gist, read:org, repo` but NOT `workflow`. GitHub therefore
+  rejects any push that creates/updates files under `.github/workflows/`
+  ("refusing to allow an OAuth App to create or update workflow ... without workflow
+  scope"). I cannot re-auth interactively to add the scope. Workaround taken:
+  (1) the correct Actions workflows are preserved in the repo under `deploy/` (build +
+  Pages deploy with permissions contents:read/pages:write/id-token:write and
+  configure-pages/upload-pages-artifact/deploy-pages) — move them to `.github/workflows/`
+  once a `workflow`-scoped token is available; (2) for an actual LIVE URL now, the built
+  static bundle is deployed directly to the `gh-pages` branch (a content push, no
+  workflow scope needed) and Pages is served from that branch. The Vite base is
+  `/tapestry/` to match the Pages subpath. Live URL recorded in README.
+
 ## Step 9 — Notion sync
 - [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.
 

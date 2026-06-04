@@ -1,0 +1,41 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Import smoke test (prints versions, detects Mesa major)
+        run: python pipeline/smoke_imports.py
+
+      - name: Ensure data snapshots exist (fixtures if none committed)
+        run: |
+          if [ ! -f data/anchors.csv ]; then
+            echo "No committed data snapshots; generating fixtures."
+            python pipeline/make_fixtures.py
+          fi
+
+      - name: Validate data (hard-fails fail the build; warnings do not)
+        run: python pipeline/validate.py
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report
+          path: reports/validation_report.md
