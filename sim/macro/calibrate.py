@@ -229,7 +229,7 @@ def calibrate(base_config: MacroConfig, budget_s: float = 3600.0, smoke: bool = 
     return best_params, info
 
 
-def write_report(best_params, info, base_config) -> str:
+def write_report(best_params, info, base_config, out_path: str | None = None) -> str:
     anchors = D.load_anchors(base_config.data_dir)
     m, years, gpct = evaluate(best_params, base_config)
     lines = ["# Macro calibration report", ""]
@@ -289,8 +289,9 @@ def write_report(best_params, info, base_config) -> str:
                  "indigenous house-church growth). Residuals above are reported honestly; "
                  "Phase 2 adds finer structure and ABC-SMC calibration._")
     report = "\n".join(lines)
-    os.makedirs(os.path.join(REPO_ROOT, "reports"), exist_ok=True)
-    with open(os.path.join(REPO_ROOT, "reports", "calibration_report.md"), "w", encoding="utf-8") as f:
+    out_path = out_path or os.path.join(REPO_ROOT, "reports", "calibration_report.md")
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(report)
     return report
 

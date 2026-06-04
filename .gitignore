@@ -8,3 +8,5 @@ viz/dist/
 viz/node_modules/
 .DS_Store
 *.log
+data/smoke/
+reports/smoke/

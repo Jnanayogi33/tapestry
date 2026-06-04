@@ -2,7 +2,7 @@
 
 - Mode: full
 - Measured per-run wall time: **27 ms**
-- Wall-clock budget: 180 s
+- Wall-clock budget: 150 s
 - runs/eval: 1  |  maxfev: 2000  |  evaluations actually run: 1998
 - Stop reason (cap hit): **maxfev/convergence**
 - Free params: base_conversion_rate, complex_contagion_threshold, secularization_term, persecution_severity, inter_region_decay, fertility_adv, martyrdom_amplification, nominal_to_practicing_ratio
