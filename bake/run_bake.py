@@ -17,11 +17,21 @@ import time
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+import json  # noqa: E402
+
 from PIL import Image  # noqa: E402
 
 from pipeline import schema as S  # noqa: E402
-from sim.threads.model import ThreadSim  # noqa: E402
+from sim import data as D  # noqa: E402
+from sim.threads.agents import AgentField, AgentConfig, DEFAULT_PARAMS  # noqa: E402
 from bake.render import Tapestry  # noqa: E402
+
+
+def load_params():
+    path = os.path.join(D.DEFAULT_DATA_DIR, "thread_params.json")
+    if os.path.exists(path):
+        return json.load(open(path))["params"]
+    return dict(DEFAULT_PARAMS)
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(REPO_ROOT, "viz", "public", "tapestry")
@@ -58,21 +68,22 @@ def main() -> int:
     if args.fast:
         width = args.width or 2200
         height = args.height or 1100
-        budget_lit = args.budget_lit or 240_000
-        budget_dark = args.budget_dark or 16_000
+        n_lives = args.budget_lit or 120_000
+        max_lit, max_links, max_dark = 90_000, 30_000, 45_000
     else:
         width = args.width or 7000
         height = args.height or 3500
-        budget_lit = args.budget_lit or 260_000
-        budget_dark = args.budget_dark or 70_000
+        n_lives = args.budget_lit or 300_000
+        max_lit, max_links, max_dark = 220_000, 70_000, 110_000
 
     render_params = json.loads(args.params) if args.params else {}
+    sim_params = load_params()
 
     t0 = time.time()
-    print(f"[bake] building forest (lit={budget_lit}, dark={budget_dark}) ...")
-    sim = ThreadSim(budget_lit=budget_lit, budget_dark=budget_dark, quiet=False)
-    forest = sim.run()
-    print(f"[bake] forest built in {time.time()-t0:.1f}s — {forest['meta']}")
+    print(f"[bake] running agent contagion (n_lives={n_lives}) with calibrated params ...")
+    af = AgentField(AgentConfig(n_lives=n_lives, quiet=False))
+    forest = af.export_forest(sim_params, max_lit=max_lit, max_links=max_links, max_dark=max_dark)
+    print(f"[bake] real forest built in {time.time()-t0:.1f}s — {forest['meta']}")
 
     os.makedirs(OUT_DIR, exist_ok=True)
 

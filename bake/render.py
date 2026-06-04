@@ -28,9 +28,9 @@ DARK_FIBER = np.array([0.115, 0.097, 0.083])
 
 class Tapestry:
     def __init__(self, width: int = 2400, height: int = 1200,
-                 gold_gain: float = 1.15, gray_gain: float = 0.45, dark_gain: float = 0.26,
-                 bloom_sigma: float = 8.0, bloom_strength: float = 1.75,
-                 tone_k_gold: float = 0.82, line_width: float = 1.0):
+                 gold_gain: float = 0.80, gray_gain: float = 0.50, dark_gain: float = 0.26,
+                 bloom_sigma: float = 7.0, bloom_strength: float = 1.25,
+                 tone_k_gold: float = 0.62, line_width: float = 1.0):
         self.W = width
         self.H = height
         self.gold = np.zeros((height, width), np.float32)
@@ -142,13 +142,28 @@ class Tapestry:
             ys = d["y"] + d["amp"] * np.sin(6.0 * t + d["phase"])
             self._splat(self.dark, xs, ys, 0.16)
 
-        # lineage CHAINS — the sweeping gold/gray threads emanating from the seed.
+        # LIT-LIFE DENSITY UNDERLAY — every (sampled) lit life as a faint short thread.
+        # The modern multitude makes the right edge blaze; kept faint so the lineage
+        # threads read on top.
+        for L in forest.get("lit_lives", []):
+            x0 = L["x0"]; x1 = min(L["x1"], reveal_x)
+            if x0 > reveal_x or x1 <= x0:
+                continue
+            n = max(2, int((x1 - x0) * self.W / 3))
+            t = np.linspace(0, 1, n)
+            xs = x0 + (x1 - x0) * t
+            ys = L["y"] + 0.006 * np.sin(5.0 * t + L["phase"])
+            buf = self.gold if L["gold"] else self.gray
+            self._splat(buf, xs, ys, 0.16 if L["gold"] else 0.10)
+
+        # real lineage CHAINS — who-lit-whom traced back to the seed; the flowing gold
+        # threads that fan out and braid, emanating from the one origin.
         for ch in forest.get("chains", []):
             wp = [(x, y) for (x, y) in ch["wp"] if x <= reveal_x + 1e-6]
             if len(wp) < 2:
                 continue
             buf = self.gold if ch["gold"] else self.gray
-            inten = 0.42 if ch["gold"] else 0.30
+            inten = 0.34 if ch["gold"] else 0.22
             self.add_chain(wp, buf, inten, ch.get("sign", 1), ch.get("phase", 0.0))
 
         # the seed: a concentrated bright point at left-center (a tiny gaussian blob so
@@ -158,7 +173,7 @@ class Tapestry:
             rr = np.linspace(-0.012, 0.012, 25)
             gx, gy = np.meshgrid(rr, rr)
             w = np.exp(-(gx ** 2 + gy ** 2) / (2 * 0.0045 ** 2))
-            self._splat(self.gold, (sx + gx).ravel(), (sy + gy).ravel(), (2.4 * w).ravel())
+            self._splat(self.gold, (sx + gx).ravel(), (sy + gy).ravel(), (1.3 * w).ravel())
 
     # -- tone-map + bloom + colorize ----------------------------------------------
     def compose(self) -> np.ndarray:

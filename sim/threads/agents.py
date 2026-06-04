@@ -415,6 +415,8 @@ class AgentField:
         N = self.N
         state = np.zeros(N, np.int8)
         state[self._seed_idx] = PRAC
+        ever_lit = np.zeros(N, bool)
+        ever_lit[self._seed_idx] = True
         born = np.zeros(N, bool)
         born[self.birth_t == 0] = True
 
@@ -556,17 +558,127 @@ class AgentField:
                     for idx in mart.nonzero()[0]:
                         transitions[idx].append((t, MART))
 
+            ever_lit |= (state == AFF) | (state == PRAC)
             # aggregate
             np.add.at(agg_alive[:, t], reg[alive], 1.0)
             litmask = alive & ((state == AFF) | (state == PRAC))
             np.add.at(agg_lit[:, t], reg[litmask], 1.0)
             np.add.at(agg_prac[:, t], reg[alive & (state == PRAC)], 1.0)
 
-        result = {"agg_lit": agg_lit, "agg_prac": agg_prac, "agg_alive": agg_alive}
+        result = {"agg_lit": agg_lit, "agg_prac": agg_prac, "agg_alive": agg_alive,
+                  "ever_lit": ever_lit}
         if record:
             result.update({"state": state, "lit_by": lit_by, "lit_t": lit_t,
                            "transitions": transitions})
         return result
+
+    # -- export the REAL forest for the bake ---------------------------------------
+    def export_forest(self, params: dict, max_lit: int = 130_000, max_links: int = 45_000,
+                      max_dark: int = 80_000):
+        """Run the recorded contagion and emit, with NOTHING synthesized:
+          * lit_lives — every (sampled) life that was ever lit, as a short thread over
+            its own lifespan at its (x,y), gold if it ends Practicing else gray-gold.
+            Most of these are modern, so the right edge BLAZES with the billions.
+          * links — the ACTUAL transmission edges (who lit whom): a near neighbour, or a
+            named strand's locale (the long missionary filaments). Every chain of links
+            traces back to the seed, so the emanation-from-Christ is emergent, not drawn.
+          * dark — a sample of the never-lit (the woven warp of unredeemed lives)."""
+        res = self.run_contagion(params, record=True)
+        state = res["state"]; lit_by = res["lit_by"]
+        sx, sy = self.emb.seed_xy()
+        step = self.years[1] - self.years[0] if len(self.years) > 1 else 10
+        ever_lit = res.get("ever_lit")
+        if ever_lit is None:
+            ever_lit = (state == AFF) | (state == PRAC) | (state == MART)
+
+        def life_seg(i):
+            x0 = float(self.x[i])
+            life = (self.death_t[i] - self.birth_t[i]) * step
+            x1 = min(1.0, S.x_of_year(self.years[min(self.birth_t[i], self.n_steps - 1)] + life))
+            return x0, max(x1, x0 + 0.004), float(self.y[i])
+
+        # faint density underlay: every (sampled) lit life as a short thread
+        lit_idx = np.where(ever_lit)[0]
+        if len(lit_idx) > max_lit:
+            lit_idx = self.rng.choice(lit_idx, size=max_lit, replace=False)
+        lit_lives = []
+        for i in lit_idx:
+            x0, x1, y = life_seg(int(i))
+            lit_lives.append({"x0": x0, "x1": x1, "y": y,
+                              "gold": bool(state[i] == PRAC or state[i] == MART),
+                              "phase": float((i * 2.39996) % 6.283)})
+
+        # --- per strand: the SENDER who carried the gospel to that missionary (the
+        # nearest earlier lit life in the Core/origin) so a lineage continues unbroken
+        # back to the seed instead of stopping at each mission.
+        roman_i = self.region_names.index("Roman/Mediterranean")
+        sender_of = {}
+        for s in self.strand_xy:
+            cand = np.where(ever_lit & (self.birth_t < s["t0"]) &
+                            ((self.region_of == roman_i) |
+                             (self.region_of == self.region_names.index(s["primary"])
+                              if s["primary"] in self.region_names else False)))[0]
+            if len(cand):
+                sender_of[s["sid"]] = int(cand[np.argmax(self.birth_t[cand])])
+            else:
+                sender_of[s["sid"]] = self._seed_idx
+
+        # --- real lineage CHAINS: trace who-lit-whom from a leaf back to the seed,
+        # hopping each strand to its sender. These are the flowing gold threads.
+        is_parent = np.zeros(self.N, bool)
+        is_parent[lit_by[lit_by >= 0]] = True
+        leaves = np.where(ever_lit & ~is_parent)[0]
+        max_chains = max_links
+        if len(leaves) > max_chains:
+            w = (self.birth_t[leaves] + 5.0).astype(np.float64); w /= w.sum()
+            leaves = self.rng.choice(leaves, size=max_chains, replace=False, p=w)
+        sx_, sy_ = sx, sy
+        chains = []
+        for leaf in leaves:
+            wp = []
+            node = int(leaf); guard = 0
+            while node >= 0 and guard < 500:
+                wp.append((float(self.x[node]), float(self.y[node])))
+                nb = lit_by[node]
+                if nb <= -2:
+                    s = self.strand_xy[-(int(nb)) - 2]
+                    wp.append((s["x"], s["y"]))
+                    node = sender_of.get(s["sid"], self._seed_idx)
+                    if node == self._seed_idx:
+                        break
+                elif nb < 0:
+                    break
+                else:
+                    node = int(nb)
+                guard += 1
+            wp.append((sx_, sy_)); wp.reverse()
+            ded = [wp[0]]
+            for pnt in wp[1:]:
+                nx = max(pnt[0], ded[-1][0] + 0.003)
+                ded.append((min(1.0, nx), pnt[1]))
+            fs = state[leaf]
+            chains.append({"wp": ded, "gold": bool(fs == PRAC or fs == MART),
+                           "sign": 1 if leaf % 2 == 0 else -1,
+                           "phase": float((leaf * 0.618) % 1.0)})
+
+        dark_idx = np.where(~ever_lit)[0]
+        if len(dark_idx) > max_dark:
+            dark_idx = self.rng.choice(dark_idx, size=max_dark, replace=False)
+        dark = []
+        for i in dark_idx:
+            x0, x1, y = life_seg(int(i))
+            dark.append({"x0": x0, "x1": x1, "y": y,
+                         "phase": float((i * 2.39996) % 6.283),
+                         "amp": 0.006 + 0.018 * float(self.rng.random())})
+
+        return {
+            "seed_xy": [sx, sy], "years": self.years,
+            "lit_lives": lit_lives, "links": [], "dark": dark, "chains": chains,
+            "meta": {"n_lit_drawn": len(lit_lives), "n_chains": len(chains),
+                     "n_dark": len(dark), "n_lit_total": int(ever_lit.sum()),
+                     "n_lives": int(self.N),
+                     "chain_pts": sum(len(c["wp"]) for c in chains)},
+        }
 
     def _assign_lit_by(self, ci, strand_dom, litf, t, lit_by, transitions, reg):
         """Record who lit each newly-converted life: a strand (negative-encoded) when

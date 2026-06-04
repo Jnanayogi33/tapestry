@@ -34,7 +34,11 @@ app navigates the image (no dots). Right edge BLAZES by 2025. Target look:
   log(christians) → blaze; fixed seed), `run.py` (regenerates real example_lives.json
   via v1 micro sim + augments with x/y PATHS & shades; writes nav_index.json for
   strands/events/places/archetypes/seed). Lyudmila gold→dark→gold arc verified real.
-- [ ] **4. Offline bake** — additive + bloom + woven ground → gigapixel climax + era
+- [~] **4. Offline bake** — `bake/render.py` (additive splat + Catmull-Rom chains +
+  bloom + woven ground + vignette) and `bake/run_bake.py` (consumes the REAL
+  `AgentField.export_forest` with calibrated params). Climax look CONVERGED at fast res
+  (~13/14, reports/look/i12.md). TODO: full-res climax + era frames + DZI tiles.
+- [ ] **4b. Offline bake — full** — additive + bloom + woven ground → gigapixel climax + era
   frames + nav index + DZI tiles.
 - [ ] **5. Web app** — deep-zoom + scrub + nav menu + single-life; DELETE old arcs /
   region bands / dots.
