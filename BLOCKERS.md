@@ -79,6 +79,7 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
 <!-- VALIDATION:END -->
 
 
+
 - [9] INFO (2026-06-03) — NOTION_TOKEN unset; falling back to synthetic fixtures (expected until the integration token is set and the root page is shared). Existing data/*.csv (fixtures or last-good) are kept as-is.
 
 ## v2 Step 3 — COURSE CORRECTION (real simulation, not image-making)
@@ -93,3 +94,20 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
   right-edge blaze EMERGE; the bake draws the actual lives + actual transmission tree.
   Global rates are CALIBRATED so the emergent region×decade lit-fraction matches anchors
   (not imposed). Sampling (~10^5 lives stands for billions) is documented.
+
+## v2 Step 3b — calibration residuals (truthfulness, documented)
+- [v2-3] LIMITATION (2026-06-04) — The agent contagion is calibrated (8 global rates,
+  budget-driven Nelder-Mead) to the anchors: confidence-weighted score ~1720 -> ~500,
+  mean |residual| ~19 pp. Honest residuals, NOT hidden (reports/calibration_report_threads.md):
+  (1) Latin America / North America UNDER-shoot (~60% vs anchored ~90%): modern population
+  growth enters the sim as "Unexposed" needing conversion, but the real Americas grew
+  largely by CHRISTIAN immigration + near-total conversion — not modeled (Phase-3).
+  (2) Sub-Saharan Africa rises a bit EARLY (~47% by 1900 vs anchored ~9%): a single global
+  conversion rate can't be slow-in-antiquity AND fast-in-the-20th-c.; SSA's missions
+  (Livingstone 1841+) ignite too fast under the fitted rate.
+  (3) East/South Asia sit slightly above their tiny anchors (incumbency ceiling holds them
+  to a minority, which is the key correct behaviour). MENA correctly de-Christianizes
+  after the 7th-c. Islamic incumbency ramp. GLOBAL & Western Europe track well.
+  These are the known limits of one global-rate set + modeled per-region incumbency
+  ceilings (BASE_RESISTANCE) — the spread, the seed-origin and who-lit-whom are genuinely
+  emergent; the calibration reconciles the aggregate as far as a global model can.

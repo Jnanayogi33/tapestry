@@ -62,15 +62,15 @@ TIER_W = {"Tier 1": 1.0, "Tier 2": 0.62, "Tier 3": 0.4}
 # but growth INTO the incumbent majority is gated. Time-varying handled in code (Islam).
 BASE_RESISTANCE = {
     "Roman/Mediterranean": 0.10,         # classical paganism gave way
-    "Western Europe": 0.10,
-    "Eastern Europe & Russia": 0.15,
-    "North America": 0.15,
-    "Latin America": 0.28,               # indigenous religions, but colonized & converted
-    "Sub-Saharan Africa": 0.38,          # traditional religions; converts strongly in modernity
+    "Western Europe": 0.08,
+    "Eastern Europe & Russia": 0.12,
+    "North America": 0.05,               # settler-colonial; ~90%+ Christian by 1900
+    "Latin America": 0.08,               # thoroughly Christianized (Catholic), ~90%
+    "Sub-Saharan Africa": 0.40,          # traditional religions + Islam; ~55% by 2000
     "Middle East & North Africa": 0.20,  # rises to ~0.9 after the 7th-c. Islamic conquests
-    "South Asia": 0.86,                  # Hinduism entrenched
-    "East Asia": 0.80,                   # Confucian / Buddhist
-    "Southeast Asia": 0.60,              # mixed: Philippines converts, Islam/Buddhism resist
+    "South Asia": 0.91,                  # Hinduism entrenched (~3-4% Christian)
+    "East Asia": 0.88,                   # Confucian / Buddhist (~5-8%)
+    "Southeast Asia": 0.70,              # Philippines converts; Islam/Buddhism resist
 }
 EFFECT_SIGN = {"Strong+": 1.0, "Mild+": 0.5, "Neutral": 0.0, "Mild-": -0.5, "Strong-": -1.0}
 
@@ -89,10 +89,14 @@ PARAM_SPEC = {
     "base_conversion": (0.02, 0.55, 0.14),       # internal growth from a beachhead (slow)
     "contagion_threshold": (0.05, 0.7, 0.34),    # complex contagion needs a critical mass
     "practice_rate": (0.05, 0.9, 0.35),
-    "secular_term": (0.0, 0.7, 0.20),
-    "suppression_severity": (0.0, 1.0, 0.50),
-    "return_rate": (0.0, 0.6, 0.15),
-    "strand_ignite": (0.0, 0.8, 0.34),           # missions plant the beachhead
+    # lower bounds kept > 0 so the modern Western DECLINE, the Soviet DIP, and the
+    # rekindling RETURN remain present — the art is "dimming where resisted, rekindling
+    # after", not just growth.
+    "secular_term": (0.08, 0.7, 0.22),
+    "suppression_severity": (0.20, 1.0, 0.50),
+    "return_rate": (0.05, 0.6, 0.16),
+    "strand_ignite": (0.2, 0.85, 0.40),          # missions plant the beachhead — kept
+                                                 # clearly > 0 (it is the core mechanism)
     "vertical_transmission": (0.2, 0.98, 0.78),
 }
 PARAM_NAMES = list(PARAM_SPEC)
@@ -450,11 +454,12 @@ class AgentField:
                 fam_lit = self.Fam.dot(litf_all) / self.fam_deg
                 alive_nbr = np.maximum(self.A.dot(prev_alive.astype(np.float32)), 1.0)
                 comm_lit = self.A.dot(litf_all * prev_alive) / alive_nbr
-                inherit = np.maximum(fam_lit, 0.85 * comm_lit)
+                inherit = np.maximum(fam_lit, 0.95 * comm_lit)
                 nb = newborn.nonzero()[0]
-                # vertical respects the ceiling (replacement, not unbounded growth)
+                # vertical respects the ceiling (replacement, not unbounded growth), but
+                # stays strong near it so thoroughly-Christianized regions hold high.
                 become = nb[rng.random(len(nb)) < p["vertical_transmission"] * inherit[nb]
-                           * (0.25 + 0.75 * hr[nb])]
+                           * (0.45 + 0.55 * hr[nb])]
                 state[become] = AFF
                 born[newborn] = True
                 if record:

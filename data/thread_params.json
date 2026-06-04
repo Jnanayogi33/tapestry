@@ -1,0 +1,18 @@
+{
+ "params": {
+  "base_conversion": 0.55,
+  "contagion_threshold": 0.06638236201621574,
+  "practice_rate": 0.4195391860239054,
+  "secular_term": 0.08,
+  "suppression_severity": 0.2,
+  "return_rate": 0.05,
+  "strand_ignite": 0.2986496108739618,
+  "vertical_transmission": 0.98
+ },
+ "score": 498.2923512626931,
+ "n_lives": 75000,
+ "seed": 1729,
+ "evals": 292,
+ "maxfev": 293,
+ "per_eval_s": 1.6307587623596191
+}
