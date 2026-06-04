@@ -1,0 +1,5798 @@
+{
+ "meta": {
+  "region": "Eastern Europe & Russia",
+  "n_agents": 2000,
+  "start_year": 1900,
+  "end_year": 2025,
+  "seed": 1729,
+  "mesa_major": 3,
+  "provenance": "REAL micro-simulation dump (asserted against the run state log)",
+  "rate_seeding": {
+   "source": "calibrated macro params",
+   "macro_calibrated": true
+  },
+  "target_arc": "Affiliated -> unbelieving -> strongly-Practicing (Lyudmila)",
+  "target_arc_found": true,
+  "target_arc_score": 1.0,
+  "target_arc_detail": {
+   "fell_to": "Unaffiliated",
+   "return_year_idx": 93,
+   "return_driver": "believing family",
+   "began_affiliated": true,
+   "ends_practicing": true,
+   "return_by_ties": true
+  },
+  "seeds_attempted": 1
+ },
+ "states": [
+  "Unexposed",
+  "Affiliated",
+  "Practicing",
+  "Lapsed",
+  "Unaffiliated"
+ ],
+ "society": {
+  "years": [
+   1900,
+   1901,
+   1902,
+   1903,
+   1904,
+   1905,
+   1906,
+   1907,
+   1908,
+   1909,
+   1910,
+   1911,
+   1912,
+   1913,
+   1914,
+   1915,
+   1916,
+   1917,
+   1918,
+   1919,
+   1920,
+   1921,
+   1922,
+   1923,
+   1924,
+   1925,
+   1926,
+   1927,
+   1928,
+   1929,
+   1930,
+   1931,
+   1932,
+   1933,
+   1934,
+   1935,
+   1936,
+   1937,
+   1938,
+   1939,
+   1940,
+   1941,
+   1942,
+   1943,
+   1944,
+   1945,
+   1946,
+   1947,
+   1948,
+   1949,
+   1950,
+   1951,
+   1952,
+   1953,
+   1954,
+   1955,
+   1956,
+   1957,
+   1958,
+   1959,
+   1960,
+   1961,
+   1962,
+   1963,
+   1964,
+   1965,
+   1966,
+   1967,
+   1968,
+   1969,
+   1970,
+   1971,
+   1972,
+   1973,
+   1974,
+   1975,
+   1976,
+   1977,
+   1978,
+   1979,
+   1980,
+   1981,
+   1982,
+   1983,
+   1984,
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "secular_pressure": [
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.05,
+   0.15,
+   0.221,
+   0.292,
+   0.362,
+   0.433,
+   0.504,
+   0.575,
+   0.646,
+   0.717,
+   0.787,
+   0.858,
+   0.929,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.96,
+   0.92,
+   0.88,
+   0.84,
+   0.8,
+   0.76,
+   0.72,
+   0.68,
+   0.64,
+   0.6,
+   0.56,
+   0.52,
+   0.48,
+   0.44,
+   0.4,
+   0.36,
+   0.32,
+   0.28,
+   0.24,
+   0.2,
+   0.16,
+   0.12,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1
+  ],
+  "revival": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.967,
+   0.933,
+   0.9,
+   0.867,
+   0.833,
+   0.8,
+   0.767,
+   0.733,
+   0.7,
+   0.667,
+   0.633,
+   0.6,
+   0.567,
+   0.533,
+   0.5,
+   0.467,
+   0.433,
+   0.4,
+   0.367,
+   0.333,
+   0.3,
+   0.267,
+   0.233,
+   0.2,
+   0.167,
+   0.133,
+   0.1,
+   0.067,
+   0.033,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "lives": [
+  {
+   "id": "agent_17",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.464,
+   "network_degree": 9,
+   "is_target_arc": true,
+   "lyudmila_score": 1.0,
+   "matched_profile": "life_lyudmila",
+   "summary": "1900: Affiliated (born) \u2192 1906: Practicing (believing friends) \u2192 1956: Lapsed (secular pressure) \u2192 1957: Unaffiliated (secular pressure) \u2192 1975: Lapsed (believing family) \u2192 1977: Unaffiliated (secular pressure) \u2192 1992: Lapsed (believing family) \u2192 1993: Practicing (believing family)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Affiliated",
+     "driver": "born",
+     "believing_field": 0.516
+    },
+    {
+     "year": 1901,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.56
+    },
+    {
+     "year": 1902,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.56
+    },
+    {
+     "year": 1903,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1904,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1905,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": "believing friends",
+     "believing_field": 0.569
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.73
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.73
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.73
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.73
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.774
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.774
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1935,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1936,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1937,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1938,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1939,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.855
+    },
+    {
+     "year": 1940,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.927
+    },
+    {
+     "year": 1941,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.839
+    },
+    {
+     "year": 1942,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.839
+    },
+    {
+     "year": 1943,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.839
+    },
+    {
+     "year": 1944,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 1945,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 1946,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 1947,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 1948,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1949,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.444
+    },
+    {
+     "year": 1950,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1951,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1952,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1953,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1954,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1956,
+     "state": "Lapsed",
+     "driver": "secular pressure",
+     "believing_field": 0.605
+    },
+    {
+     "year": 1957,
+     "state": "Unaffiliated",
+     "driver": "secular pressure",
+     "believing_field": 0.516
+    },
+    {
+     "year": 1958,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1959,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1960,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.605
+    },
+    {
+     "year": 1961,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1962,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1963,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1964,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1965,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1966,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1967,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1968,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1969,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1970,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1971,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1972,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1973,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1974,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1975,
+     "state": "Lapsed",
+     "driver": "believing family",
+     "believing_field": 0.677
+    },
+    {
+     "year": 1976,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1977,
+     "state": "Unaffiliated",
+     "driver": "secular pressure",
+     "believing_field": 0.516
+    },
+    {
+     "year": 1978,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1979,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1980,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1981,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1982,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1983,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.427
+    },
+    {
+     "year": 1984,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.427
+    },
+    {
+     "year": 1985,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1986,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1987,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.589
+    },
+    {
+     "year": 1988,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.589
+    },
+    {
+     "year": 1989,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.589
+    },
+    {
+     "year": 1990,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.589
+    },
+    {
+     "year": 1991,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.589
+    },
+    {
+     "year": 1992,
+     "state": "Lapsed",
+     "driver": "believing family",
+     "believing_field": 0.589
+    },
+    {
+     "year": 1993,
+     "state": "Practicing",
+     "driver": "believing family",
+     "believing_field": 0.677
+    },
+    {
+     "year": 1994,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1995,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1996,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1997,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 1998,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 1999,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2000,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2001,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2002,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2003,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2004,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2005,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2006,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2007,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2008,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2009,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2010,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.516
+    },
+    {
+     "year": 2011,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2012,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2013,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2014,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2015,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2016,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2017,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2018,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.677
+    },
+    {
+     "year": 2019,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2020,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2021,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2022,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2023,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2024,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    },
+    {
+     "year": 2025,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.766
+    }
+   ]
+  },
+  {
+   "id": "agent_2",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.983,
+   "network_degree": 6,
+   "is_target_arc": false,
+   "lyudmila_score": 0.3,
+   "matched_profile": null,
+   "summary": "1900: Practicing (born)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Practicing",
+     "driver": "born",
+     "believing_field": 0.5
+    },
+    {
+     "year": 1901,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.5
+    },
+    {
+     "year": 1902,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.75
+    },
+    {
+     "year": 1903,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1904,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1905,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.848
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.946
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.946
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.946
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1935,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1936,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1937,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1938,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1939,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1940,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1941,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1942,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1943,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1944,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1945,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1946,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1947,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1948,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1949,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1950,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1951,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1952,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1953,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1954,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1956,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1957,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1958,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1959,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1960,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1961,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1962,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1963,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1964,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1965,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1966,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1967,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1968,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1969,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1970,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1971,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1972,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1973,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1974,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1975,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1976,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1977,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1978,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1979,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.392
+    },
+    {
+     "year": 1980,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1981,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1982,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1983,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1984,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1985,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1986,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1987,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1988,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1989,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1990,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1991,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1992,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1993,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1994,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1995,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1996,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1997,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1998,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1999,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2000,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2001,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2002,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2003,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2004,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2005,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2006,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2007,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2008,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2009,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2010,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2011,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2012,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2013,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2014,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2015,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2016,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2017,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2018,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2019,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2020,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2021,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2022,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2023,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2024,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 2025,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    }
+   ]
+  },
+  {
+   "id": "agent_6",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.646,
+   "network_degree": 5,
+   "is_target_arc": false,
+   "lyudmila_score": 0.88,
+   "matched_profile": null,
+   "summary": "1900: Unexposed (born) \u2192 1904: Affiliated (met believers) \u2192 1905: Practicing (believing friends) \u2192 1949: Lapsed (secular pressure) \u2192 1955: Practicing (believing family)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Unexposed",
+     "driver": "born",
+     "believing_field": 0.5
+    },
+    {
+     "year": 1901,
+     "state": "Unexposed",
+     "driver": null,
+     "believing_field": 0.5
+    },
+    {
+     "year": 1902,
+     "state": "Unexposed",
+     "driver": null,
+     "believing_field": 0.712
+    },
+    {
+     "year": 1903,
+     "state": "Unexposed",
+     "driver": null,
+     "believing_field": 0.712
+    },
+    {
+     "year": 1904,
+     "state": "Affiliated",
+     "driver": "met believers",
+     "believing_field": 0.712
+    },
+    {
+     "year": 1905,
+     "state": "Practicing",
+     "driver": "believing friends",
+     "believing_field": 0.712
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.712
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.712
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.712
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.863
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1935,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1936,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1937,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1938,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1939,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1940,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1941,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1942,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1943,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1944,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1945,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1946,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1947,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1948,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1949,
+     "state": "Lapsed",
+     "driver": "secular pressure",
+     "believing_field": 0.849
+    },
+    {
+     "year": 1950,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1951,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.575
+    },
+    {
+     "year": 1952,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.575
+    },
+    {
+     "year": 1953,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.575
+    },
+    {
+     "year": 1954,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": "believing family",
+     "believing_field": 0.849
+    },
+    {
+     "year": 1956,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1957,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1958,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1959,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1960,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1961,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1962,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1963,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1964,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1965,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1966,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1967,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1968,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1969,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.849
+    },
+    {
+     "year": 1970,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1971,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1972,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1973,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1974,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1975,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1976,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.699
+    },
+    {
+     "year": 1977,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1978,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1979,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.274
+    },
+    {
+     "year": 1980,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1981,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1982,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1983,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1984,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1985,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1986,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1987,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1988,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1989,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1990,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1991,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1992,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1993,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1994,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1995,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1996,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1997,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1998,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 1999,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2000,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2001,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2002,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2003,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2004,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2005,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.425
+    },
+    {
+     "year": 2006,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2007,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2008,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2009,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2010,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2011,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2012,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2013,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2014,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2015,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2016,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2017,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2018,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2019,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2020,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2021,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2022,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2023,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2024,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    },
+    {
+     "year": 2025,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.151
+    }
+   ]
+  },
+  {
+   "id": "agent_5",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.175,
+   "network_degree": 6,
+   "is_target_arc": false,
+   "lyudmila_score": 0.7,
+   "matched_profile": null,
+   "summary": "1900: Affiliated (born) \u2192 1902: Practicing (personal conviction) \u2192 1951: Lapsed (secular pressure) \u2192 1954: Practicing (believing family) \u2192 1977: Lapsed (secular pressure) \u2192 1979: Unaffiliated (secular pressure)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Affiliated",
+     "driver": "born",
+     "believing_field": 0.446
+    },
+    {
+     "year": 1901,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.446
+    },
+    {
+     "year": 1902,
+     "state": "Practicing",
+     "driver": "personal conviction",
+     "believing_field": 0.512
+    },
+    {
+     "year": 1903,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.512
+    },
+    {
+     "year": 1904,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 1905,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.75
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.75
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.75
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.75
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.881
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1935,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1936,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1937,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1938,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1939,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1940,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1941,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1942,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1943,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1944,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1945,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1946,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1947,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1948,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1949,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.762
+    },
+    {
+     "year": 1950,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.762
+    },
+    {
+     "year": 1951,
+     "state": "Lapsed",
+     "driver": "secular pressure",
+     "believing_field": 0.762
+    },
+    {
+     "year": 1952,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.762
+    },
+    {
+     "year": 1953,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.762
+    },
+    {
+     "year": 1954,
+     "state": "Practicing",
+     "driver": "believing family",
+     "believing_field": 0.762
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1956,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1957,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1958,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1959,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 1960,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1961,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1962,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1963,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1964,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1965,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1966,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1967,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1968,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1969,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1970,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1971,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1972,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1973,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1974,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1975,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1976,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1977,
+     "state": "Lapsed",
+     "driver": "secular pressure",
+     "believing_field": 0.738
+    },
+    {
+     "year": 1978,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1979,
+     "state": "Unaffiliated",
+     "driver": "secular pressure",
+     "believing_field": 0.607
+    },
+    {
+     "year": 1980,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1981,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1982,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1983,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1984,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1985,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1986,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1987,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1988,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1989,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1990,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1991,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1992,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1993,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1994,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.738
+    },
+    {
+     "year": 1995,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1996,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1997,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1998,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 1999,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2000,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2001,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2002,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2003,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2004,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2005,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.869
+    },
+    {
+     "year": 2006,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2007,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2008,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2009,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2010,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2011,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2012,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2013,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2014,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2015,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2016,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2017,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2018,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2019,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2020,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2021,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2022,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2023,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2024,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    },
+    {
+     "year": 2025,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.631
+    }
+   ]
+  },
+  {
+   "id": "agent_0",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.284,
+   "network_degree": 7,
+   "is_target_arc": false,
+   "lyudmila_score": 0.5,
+   "matched_profile": null,
+   "summary": "1900: Affiliated (born) \u2192 1903: Practicing (believing friends)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Affiliated",
+     "driver": "born",
+     "believing_field": 0.54
+    },
+    {
+     "year": 1901,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.54
+    },
+    {
+     "year": 1902,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.717
+    },
+    {
+     "year": 1903,
+     "state": "Practicing",
+     "driver": "believing friends",
+     "believing_field": 0.717
+    },
+    {
+     "year": 1904,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.717
+    },
+    {
+     "year": 1905,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.765
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.765
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.765
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.765
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.854
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1935,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1936,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1937,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1938,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1939,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1940,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1941,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1942,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1943,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1944,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1945,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1946,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1947,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1948,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1949,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1950,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1951,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1952,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1953,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1954,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1956,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1957,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1958,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1959,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1960,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1961,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1962,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1963,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1964,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1965,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1966,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1967,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1968,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1969,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1970,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1971,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1972,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1973,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1974,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1975,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1976,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1977,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1978,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1979,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.646
+    },
+    {
+     "year": 1980,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1981,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1982,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1983,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1984,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1985,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1986,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1987,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1988,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1989,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1990,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.823
+    },
+    {
+     "year": 1991,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1992,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1993,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1994,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.726
+    },
+    {
+     "year": 1995,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1996,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1997,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1998,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.903
+    },
+    {
+     "year": 1999,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2000,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2001,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2002,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2003,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2004,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2005,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2006,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2007,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2008,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2009,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2010,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2011,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2012,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2013,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2014,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2015,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2016,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2017,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2018,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2019,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2020,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2021,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2022,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2023,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2024,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2025,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    }
+   ]
+  },
+  {
+   "id": "agent_44",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.103,
+   "network_degree": 7,
+   "is_target_arc": false,
+   "lyudmila_score": 0.3,
+   "matched_profile": null,
+   "summary": "1900: Unaffiliated (born) \u2192 1975: Lapsed (believing family) \u2192 1979: Unaffiliated (secular pressure) \u2192 2011: Lapsed (believing family)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Unaffiliated",
+     "driver": "born",
+     "believing_field": 0.404
+    },
+    {
+     "year": 1901,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.457
+    },
+    {
+     "year": 1902,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.457
+    },
+    {
+     "year": 1903,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.457
+    },
+    {
+     "year": 1904,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.457
+    },
+    {
+     "year": 1905,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.553
+    },
+    {
+     "year": 1906,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.702
+    },
+    {
+     "year": 1907,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.702
+    },
+    {
+     "year": 1908,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.702
+    },
+    {
+     "year": 1909,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.702
+    },
+    {
+     "year": 1910,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1911,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1912,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1913,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1914,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1915,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1916,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1917,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1918,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1919,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1920,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1921,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1922,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1923,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1924,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1925,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1926,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1927,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1928,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1929,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1930,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1931,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1932,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1933,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.808
+    },
+    {
+     "year": 1934,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1935,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1936,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1937,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 1938,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1939,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1940,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1941,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1942,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1943,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1944,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1945,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1946,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1947,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1948,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1949,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1950,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1951,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1952,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.788
+    },
+    {
+     "year": 1953,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1954,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1955,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1956,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1957,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1958,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1959,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1960,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1961,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1962,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1963,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1964,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 1965,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.298
+    },
+    {
+     "year": 1966,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1967,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1968,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1969,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1970,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1971,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1972,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1973,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1974,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1975,
+     "state": "Lapsed",
+     "driver": "believing family",
+     "believing_field": 0.212
+    },
+    {
+     "year": 1976,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1977,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1978,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1979,
+     "state": "Unaffiliated",
+     "driver": "secular pressure",
+     "believing_field": 0.212
+    },
+    {
+     "year": 1980,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1981,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1982,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1983,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1984,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1985,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1986,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1987,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1988,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1989,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1990,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1991,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.212
+    },
+    {
+     "year": 1992,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.106
+    },
+    {
+     "year": 1993,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.106
+    },
+    {
+     "year": 1994,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.106
+    },
+    {
+     "year": 1995,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.298
+    },
+    {
+     "year": 1996,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 1997,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 1998,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 1999,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2000,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2001,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2002,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2003,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2004,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2005,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2006,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2007,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2008,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2009,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2010,
+     "state": "Unaffiliated",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2011,
+     "state": "Lapsed",
+     "driver": "believing family",
+     "believing_field": 0.404
+    },
+    {
+     "year": 2012,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2013,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.404
+    },
+    {
+     "year": 2014,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2015,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2016,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2017,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2018,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2019,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2020,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2021,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2022,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2023,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2024,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    },
+    {
+     "year": 2025,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.596
+    }
+   ]
+  },
+  {
+   "id": "agent_1",
+   "region": "Eastern Europe & Russia",
+   "disposition": 0.491,
+   "network_degree": 6,
+   "is_target_arc": false,
+   "lyudmila_score": 0.88,
+   "matched_profile": null,
+   "summary": "1900: Affiliated (born) \u2192 1902: Practicing (believing friends) \u2192 1935: Lapsed (secular pressure) \u2192 1949: Practicing (believing family)",
+   "trajectory": [
+    {
+     "year": 1900,
+     "state": "Affiliated",
+     "driver": "born",
+     "believing_field": 0.49
+    },
+    {
+     "year": 1901,
+     "state": "Affiliated",
+     "driver": null,
+     "believing_field": 0.49
+    },
+    {
+     "year": 1902,
+     "state": "Practicing",
+     "driver": "believing friends",
+     "believing_field": 0.588
+    },
+    {
+     "year": 1903,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1904,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1905,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1906,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1907,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1908,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.686
+    },
+    {
+     "year": 1909,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1910,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1911,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1912,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1913,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1914,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1915,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1916,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1917,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1918,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1919,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1920,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1921,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1922,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1923,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1924,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1925,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1926,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1927,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1928,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1929,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1930,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1931,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1932,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1933,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1934,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1935,
+     "state": "Lapsed",
+     "driver": "secular pressure",
+     "believing_field": 0.784
+    },
+    {
+     "year": 1936,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1937,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1938,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1939,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1940,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1941,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1942,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1943,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1944,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1945,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1946,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1947,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1948,
+     "state": "Lapsed",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1949,
+     "state": "Practicing",
+     "driver": "believing family",
+     "believing_field": 0.784
+    },
+    {
+     "year": 1950,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1951,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1952,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1953,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1954,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1955,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1956,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1957,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1958,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1959,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.784
+    },
+    {
+     "year": 1960,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.588
+    },
+    {
+     "year": 1961,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1962,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1963,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1964,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1965,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1966,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1967,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1968,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1969,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1970,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1971,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1972,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1973,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1974,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1975,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1976,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1977,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1978,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1979,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.5
+    },
+    {
+     "year": 1980,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1981,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1982,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1983,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1984,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1985,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1986,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1987,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1988,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1989,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1990,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.804
+    },
+    {
+     "year": 1991,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1992,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1993,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1994,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.696
+    },
+    {
+     "year": 1995,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1996,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1997,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1998,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 0.892
+    },
+    {
+     "year": 1999,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2000,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2001,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2002,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2003,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2004,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2005,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2006,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2007,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2008,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2009,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2010,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2011,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2012,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2013,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2014,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2015,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2016,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2017,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2018,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2019,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2020,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2021,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2022,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2023,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2024,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    },
+    {
+     "year": 2025,
+     "state": "Practicing",
+     "driver": null,
+     "believing_field": 1.0
+    }
+   ]
+  }
+ ]
+}

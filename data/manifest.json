@@ -1,0 +1,12 @@
+{
+ "files": [
+  "simulation_output.json",
+  "example_lives.json",
+  "strands.csv",
+  "events.csv",
+  "anchors.csv",
+  "regions.csv"
+ ],
+ "missing": [],
+ "generatedFrom": "/Users/tin-yunho/Documents/Claude/Projects/Tapestry/data"
+}
