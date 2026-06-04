@@ -1,0 +1,32 @@
+{
+ "climax": "tapestry/climax.jpg",
+ "width": 7000,
+ "height": 3500,
+ "frames": [
+  "tapestry/frames/frame_100.jpg",
+  "tapestry/frames/frame_300.jpg",
+  "tapestry/frames/frame_500.jpg",
+  "tapestry/frames/frame_800.jpg",
+  "tapestry/frames/frame_1100.jpg",
+  "tapestry/frames/frame_1400.jpg",
+  "tapestry/frames/frame_1600.jpg",
+  "tapestry/frames/frame_1800.jpg",
+  "tapestry/frames/frame_1900.jpg",
+  "tapestry/frames/frame_1970.jpg",
+  "tapestry/frames/frame_2025.jpg"
+ ],
+ "era_years": [
+  100,
+  300,
+  500,
+  800,
+  1100,
+  1400,
+  1600,
+  1800,
+  1900,
+  1970,
+  2025
+ ],
+ "Q": 1000
+}

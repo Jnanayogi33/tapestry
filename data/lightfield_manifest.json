@@ -1,0 +1,577 @@
+{
+ "Q": 1000,
+ "years": [
+  30,
+  50,
+  75,
+  100,
+  125,
+  150,
+  175,
+  200,
+  225,
+  250,
+  275,
+  300,
+  325,
+  350,
+  375,
+  400,
+  425,
+  450,
+  475,
+  500,
+  525,
+  550,
+  575,
+  600,
+  625,
+  650,
+  675,
+  700,
+  725,
+  750,
+  775,
+  800,
+  825,
+  850,
+  875,
+  900,
+  925,
+  950,
+  975,
+  1000,
+  1025,
+  1050,
+  1075,
+  1100,
+  1125,
+  1150,
+  1175,
+  1200,
+  1225,
+  1250,
+  1275,
+  1300,
+  1325,
+  1350,
+  1375,
+  1400,
+  1425,
+  1450,
+  1475,
+  1500,
+  1525,
+  1550,
+  1575,
+  1600,
+  1625,
+  1650,
+  1675,
+  1700,
+  1725,
+  1750,
+  1775,
+  1800,
+  1825,
+  1850,
+  1875,
+  1900,
+  1925,
+  1950,
+  1975,
+  2000,
+  2025
+ ],
+ "strand_curve": [
+  {
+   "year": 30,
+   "believers": 1000,
+   "gold_gray_strands": 1,
+   "total_strands": 200000
+  },
+  {
+   "year": 50,
+   "believers": 1780,
+   "gold_gray_strands": 2,
+   "total_strands": 200000
+  },
+  {
+   "year": 75,
+   "believers": 3661,
+   "gold_gray_strands": 4,
+   "total_strands": 200000
+  },
+  {
+   "year": 100,
+   "believers": 7530,
+   "gold_gray_strands": 8,
+   "total_strands": 200000
+  },
+  {
+   "year": 125,
+   "believers": 16966,
+   "gold_gray_strands": 17,
+   "total_strands": 200625
+  },
+  {
+   "year": 150,
+   "believers": 38224,
+   "gold_gray_strands": 38,
+   "total_strands": 201250
+  },
+  {
+   "year": 175,
+   "believers": 86121,
+   "gold_gray_strands": 86,
+   "total_strands": 201875
+  },
+  {
+   "year": 200,
+   "believers": 194036,
+   "gold_gray_strands": 194,
+   "total_strands": 202500
+  },
+  {
+   "year": 225,
+   "believers": 437174,
+   "gold_gray_strands": 437,
+   "total_strands": 203125
+  },
+  {
+   "year": 250,
+   "believers": 984977,
+   "gold_gray_strands": 985,
+   "total_strands": 203750
+  },
+  {
+   "year": 275,
+   "believers": 2219209,
+   "gold_gray_strands": 2219,
+   "total_strands": 204375
+  },
+  {
+   "year": 300,
+   "believers": 5000000,
+   "gold_gray_strands": 5000,
+   "total_strands": 205000
+  },
+  {
+   "year": 325,
+   "believers": 6226289,
+   "gold_gray_strands": 6226,
+   "total_strands": 204679
+  },
+  {
+   "year": 350,
+   "believers": 8062158,
+   "gold_gray_strands": 8062,
+   "total_strands": 204011
+  },
+  {
+   "year": 375,
+   "believers": 10439348,
+   "gold_gray_strands": 10439,
+   "total_strands": 203342
+  },
+  {
+   "year": 400,
+   "believers": 13517470,
+   "gold_gray_strands": 13517,
+   "total_strands": 202674
+  },
+  {
+   "year": 425,
+   "believers": 17503200,
+   "gold_gray_strands": 17503,
+   "total_strands": 202005
+  },
+  {
+   "year": 450,
+   "believers": 22664154,
+   "gold_gray_strands": 22664,
+   "total_strands": 201337
+  },
+  {
+   "year": 475,
+   "believers": 29346854,
+   "gold_gray_strands": 29347,
+   "total_strands": 200668
+  },
+  {
+   "year": 500,
+   "believers": 38000000,
+   "gold_gray_strands": 38000,
+   "total_strands": 200000
+  },
+  {
+   "year": 525,
+   "believers": 38446471,
+   "gold_gray_strands": 38446,
+   "total_strands": 203750
+  },
+  {
+   "year": 550,
+   "believers": 38898187,
+   "gold_gray_strands": 38898,
+   "total_strands": 207500
+  },
+  {
+   "year": 575,
+   "believers": 39355211,
+   "gold_gray_strands": 39355,
+   "total_strands": 211250
+  },
+  {
+   "year": 600,
+   "believers": 39817604,
+   "gold_gray_strands": 39818,
+   "total_strands": 215000
+  },
+  {
+   "year": 625,
+   "believers": 40285430,
+   "gold_gray_strands": 40285,
+   "total_strands": 218750
+  },
+  {
+   "year": 650,
+   "believers": 40758753,
+   "gold_gray_strands": 40759,
+   "total_strands": 222500
+  },
+  {
+   "year": 675,
+   "believers": 41237637,
+   "gold_gray_strands": 41238,
+   "total_strands": 226250
+  },
+  {
+   "year": 700,
+   "believers": 41722147,
+   "gold_gray_strands": 41722,
+   "total_strands": 230000
+  },
+  {
+   "year": 725,
+   "believers": 42212350,
+   "gold_gray_strands": 42212,
+   "total_strands": 233750
+  },
+  {
+   "year": 750,
+   "believers": 42708313,
+   "gold_gray_strands": 42708,
+   "total_strands": 237500
+  },
+  {
+   "year": 775,
+   "believers": 43210103,
+   "gold_gray_strands": 43210,
+   "total_strands": 241250
+  },
+  {
+   "year": 800,
+   "believers": 43717788,
+   "gold_gray_strands": 43718,
+   "total_strands": 245000
+  },
+  {
+   "year": 825,
+   "believers": 44231438,
+   "gold_gray_strands": 44231,
+   "total_strands": 248750
+  },
+  {
+   "year": 850,
+   "believers": 44751124,
+   "gold_gray_strands": 44751,
+   "total_strands": 252500
+  },
+  {
+   "year": 875,
+   "believers": 45276915,
+   "gold_gray_strands": 45277,
+   "total_strands": 256250
+  },
+  {
+   "year": 900,
+   "believers": 45808884,
+   "gold_gray_strands": 45809,
+   "total_strands": 260000
+  },
+  {
+   "year": 925,
+   "believers": 46347103,
+   "gold_gray_strands": 46347,
+   "total_strands": 263750
+  },
+  {
+   "year": 950,
+   "believers": 46891646,
+   "gold_gray_strands": 46892,
+   "total_strands": 267500
+  },
+  {
+   "year": 975,
+   "believers": 47442586,
+   "gold_gray_strands": 47443,
+   "total_strands": 271250
+  },
+  {
+   "year": 1000,
+   "believers": 48000000,
+   "gold_gray_strands": 48000,
+   "total_strands": 275000
+  },
+  {
+   "year": 1025,
+   "believers": 48915782,
+   "gold_gray_strands": 48916,
+   "total_strands": 281944
+  },
+  {
+   "year": 1050,
+   "believers": 49849036,
+   "gold_gray_strands": 49849,
+   "total_strands": 288889
+  },
+  {
+   "year": 1075,
+   "believers": 51403130,
+   "gold_gray_strands": 51403,
+   "total_strands": 298004
+  },
+  {
+   "year": 1100,
+   "believers": 53124953,
+   "gold_gray_strands": 53125,
+   "total_strands": 307534
+  },
+  {
+   "year": 1125,
+   "believers": 54904451,
+   "gold_gray_strands": 54904,
+   "total_strands": 317063
+  },
+  {
+   "year": 1150,
+   "believers": 56743557,
+   "gold_gray_strands": 56744,
+   "total_strands": 326592
+  },
+  {
+   "year": 1175,
+   "believers": 58644265,
+   "gold_gray_strands": 58644,
+   "total_strands": 336121
+  },
+  {
+   "year": 1200,
+   "believers": 60608641,
+   "gold_gray_strands": 60609,
+   "total_strands": 345650
+  },
+  {
+   "year": 1225,
+   "believers": 62638816,
+   "gold_gray_strands": 62639,
+   "total_strands": 355179
+  },
+  {
+   "year": 1250,
+   "believers": 64736996,
+   "gold_gray_strands": 64737,
+   "total_strands": 364709
+  },
+  {
+   "year": 1275,
+   "believers": 66905456,
+   "gold_gray_strands": 66905,
+   "total_strands": 374238
+  },
+  {
+   "year": 1300,
+   "believers": 69146553,
+   "gold_gray_strands": 69147,
+   "total_strands": 383767
+  },
+  {
+   "year": 1325,
+   "believers": 71462718,
+   "gold_gray_strands": 71463,
+   "total_strands": 393296
+  },
+  {
+   "year": 1350,
+   "believers": 73856467,
+   "gold_gray_strands": 73856,
+   "total_strands": 402825
+  },
+  {
+   "year": 1375,
+   "believers": 76330398,
+   "gold_gray_strands": 76330,
+   "total_strands": 412354
+  },
+  {
+   "year": 1400,
+   "believers": 78887196,
+   "gold_gray_strands": 78887,
+   "total_strands": 421883
+  },
+  {
+   "year": 1425,
+   "believers": 81529639,
+   "gold_gray_strands": 81530,
+   "total_strands": 431413
+  },
+  {
+   "year": 1450,
+   "believers": 84260594,
+   "gold_gray_strands": 84261,
+   "total_strands": 440942
+  },
+  {
+   "year": 1475,
+   "believers": 87083026,
+   "gold_gray_strands": 87083,
+   "total_strands": 450471
+  },
+  {
+   "year": 1500,
+   "believers": 90000000,
+   "gold_gray_strands": 90000,
+   "total_strands": 460000
+  },
+  {
+   "year": 1525,
+   "believers": 95291395,
+   "gold_gray_strands": 95291,
+   "total_strands": 484417
+  },
+  {
+   "year": 1550,
+   "believers": 102822280,
+   "gold_gray_strands": 102822,
+   "total_strands": 529470
+  },
+  {
+   "year": 1575,
+   "believers": 110948331,
+   "gold_gray_strands": 110948,
+   "total_strands": 574523
+  },
+  {
+   "year": 1600,
+   "believers": 119716585,
+   "gold_gray_strands": 119717,
+   "total_strands": 619576
+  },
+  {
+   "year": 1625,
+   "believers": 129177794,
+   "gold_gray_strands": 129178,
+   "total_strands": 664629
+  },
+  {
+   "year": 1650,
+   "believers": 139386723,
+   "gold_gray_strands": 139387,
+   "total_strands": 709682
+  },
+  {
+   "year": 1675,
+   "believers": 150402465,
+   "gold_gray_strands": 150402,
+   "total_strands": 754735
+  },
+  {
+   "year": 1700,
+   "believers": 162288782,
+   "gold_gray_strands": 162289,
+   "total_strands": 799788
+  },
+  {
+   "year": 1725,
+   "believers": 175114474,
+   "gold_gray_strands": 175114,
+   "total_strands": 844841
+  },
+  {
+   "year": 1750,
+   "believers": 188953783,
+   "gold_gray_strands": 188954,
+   "total_strands": 889894
+  },
+  {
+   "year": 1775,
+   "believers": 203886812,
+   "gold_gray_strands": 203887,
+   "total_strands": 934947
+  },
+  {
+   "year": 1800,
+   "believers": 220000000,
+   "gold_gray_strands": 220000,
+   "total_strands": 980000
+  },
+  {
+   "year": 1825,
+   "believers": 277678889,
+   "gold_gray_strands": 277679,
+   "total_strands": 1139906
+  },
+  {
+   "year": 1850,
+   "believers": 350479843,
+   "gold_gray_strands": 350480,
+   "total_strands": 1299812
+  },
+  {
+   "year": 1875,
+   "believers": 442367515,
+   "gold_gray_strands": 442368,
+   "total_strands": 1459719
+  },
+  {
+   "year": 1900,
+   "believers": 558346000,
+   "gold_gray_strands": 558346,
+   "total_strands": 1619625
+  },
+  {
+   "year": 1925,
+   "believers": 737301601,
+   "gold_gray_strands": 737302,
+   "total_strands": 2360970
+  },
+  {
+   "year": 1950,
+   "believers": 973614302,
+   "gold_gray_strands": 973614,
+   "total_strands": 3102314
+  },
+  {
+   "year": 1975,
+   "believers": 1319925959,
+   "gold_gray_strands": 1319926,
+   "total_strands": 4104308
+  },
+  {
+   "year": 2000,
+   "believers": 1987905000,
+   "gold_gray_strands": 1987905,
+   "total_strands": 6148899
+  },
+  {
+   "year": 2025,
+   "believers": 2645317000,
+   "gold_gray_strands": 2645317,
+   "total_strands": 8191988
+  }
+ ],
+ "n_community_definitions": 229,
+ "columns": "place,subpopulation,faith,region,year,x,y,population,gold_strands,gray_strands,dark_strands",
+ "note": "WHOLE-WORLD field. Each row = a (sub)population in a year. Draw gold_strands gold + gray_strands gray + dark_strands dark filaments at (x,y). total over all rows in a year == world_pop/1000; gold+gray == believers/1000 (AD30 1 -> 2025 ~2.6M). Most of the field is dark."
+}

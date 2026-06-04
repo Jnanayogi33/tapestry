@@ -1,7 +1,10 @@
 {
  "files": [
-  "simulation_output.json",
+  "lightfield_manifest.json",
+  "lightfield_index.json",
+  "nav_index.json",
   "example_lives.json",
+  "simulation_output.json",
   "strands.csv",
   "events.csv",
   "anchors.csv",

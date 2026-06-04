@@ -1,0 +1,3094 @@
+{
+ "subpopulations": [
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Jewish-Christian church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 1825,
+   "x": 0.4499,
+   "y": 0.5,
+   "peak": 275
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Jews (Rabbinic)",
+   "faith": "Jewish",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.49,
+   "peak": 0
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Roman pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 375,
+   "x": 0.0865,
+   "y": 0.51,
+   "peak": 0
+  },
+  {
+   "place": "Galilee",
+   "name": "Jewish-Christian church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 1825,
+   "x": 0.4499,
+   "y": 0.5,
+   "peak": 184
+  },
+  {
+   "place": "Galilee",
+   "name": "Jews",
+   "faith": "Jewish",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.49,
+   "peak": 0
+  },
+  {
+   "place": "Damascus",
+   "name": "Aramean/Syriac church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.497,
+   "peak": 393
+  },
+  {
+   "place": "Damascus",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 375,
+   "x": 0.0865,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Syriac church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.494,
+   "peak": 499
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 425,
+   "x": 0.099,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Cyprus",
+   "name": "Cypriot Orthodox",
+   "faith": "Christian",
+   "region": "Roman/Mediterranean",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.485,
+   "peak": 2128
+  },
+  {
+   "place": "Cyprus",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Roman/Mediterranean",
+   "start_year": 30,
+   "end_year": 1550,
+   "x": 0.381,
+   "y": 0.485,
+   "peak": 0
+  },
+  {
+   "place": "Egypt (Alexandria)",
+   "name": "Greek Alexandrian church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 625,
+   "x": 0.1491,
+   "y": 0.512,
+   "peak": 1651
+  },
+  {
+   "place": "Egypt (Alexandria)",
+   "name": "Egyptian pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 425,
+   "x": 0.099,
+   "y": 0.515,
+   "peak": 0
+  },
+  {
+   "place": "Mesopotamia (Edessa)",
+   "name": "Syriac Church of the East",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.52,
+   "peak": 1049
+  },
+  {
+   "place": "Mesopotamia (Edessa)",
+   "name": "Pagans/Zoroastrians",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 625,
+   "x": 0.1491,
+   "y": 0.52,
+   "peak": 0
+  },
+  {
+   "place": "Persia (Ctesiphon)",
+   "name": "Church of the East (Persia)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 1375,
+   "x": 0.3371,
+   "y": 0.53,
+   "peak": 586
+  },
+  {
+   "place": "Persia (Ctesiphon)",
+   "name": "Zoroastrians",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 875,
+   "x": 0.2118,
+   "y": 0.53,
+   "peak": 0
+  },
+  {
+   "place": "Galatia (Ancyra)",
+   "name": "Anatolian Greek church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.47,
+   "peak": 1789
+  },
+  {
+   "place": "Galatia (Ancyra)",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 425,
+   "x": 0.099,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Anatolian Greek church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 1900,
+   "x": 0.4687,
+   "y": 0.467,
+   "peak": 2753
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 425,
+   "x": 0.099,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Crete",
+   "name": "Cretan Orthodox",
+   "faith": "Christian",
+   "region": "Roman/Mediterranean",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.47,
+   "peak": 2308
+  },
+  {
+   "place": "Crete",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Roman/Mediterranean",
+   "start_year": 30,
+   "end_year": 1975,
+   "x": 0.4875,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Armenia (Etchmiadzin)",
+   "name": "Armenian Apostolic Church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.54,
+   "peak": 7267
+  },
+  {
+   "place": "Armenia (Etchmiadzin)",
+   "name": "Pagans/Zoroastrians",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 325,
+   "x": 0.0739,
+   "y": 0.54,
+   "peak": 0
+  },
+  {
+   "place": "Greece (Corinth)",
+   "name": "Greek Orthodox",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.46,
+   "peak": 29046
+  },
+  {
+   "place": "Greece (Corinth)",
+   "name": "Greco-Roman pagans",
+   "faith": "Pagan",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 425,
+   "x": 0.099,
+   "y": 0.46,
+   "peak": 0
+  },
+  {
+   "place": "Macedonia (Thessalonica)",
+   "name": "Greek/Slavic Orthodox",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.455,
+   "peak": 17261
+  },
+  {
+   "place": "Macedonia (Thessalonica)",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 475,
+   "x": 0.1115,
+   "y": 0.455,
+   "peak": 0
+  },
+  {
+   "place": "Nubia (Dongola)",
+   "name": "Nubian Church",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 1875,
+   "x": 0.4624,
+   "y": 0.55,
+   "peak": 876
+  },
+  {
+   "place": "Nubia (Dongola)",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 575,
+   "x": 0.1366,
+   "y": 0.55,
+   "peak": 0
+  },
+  {
+   "place": "Arabia (Najran)",
+   "name": "Arabian Christians (Najran)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 1925,
+   "x": 0.4749,
+   "y": 0.555,
+   "peak": 420
+  },
+  {
+   "place": "Arabia (Najran)",
+   "name": "Arab pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 625,
+   "x": 0.1491,
+   "y": 0.555,
+   "peak": 0
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Serbian/Bulgarian Orthodox",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.437,
+   "peak": 39609
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Slavic pagans",
+   "faith": "Pagan",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 875,
+   "x": 0.2118,
+   "y": 0.44,
+   "peak": 0
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "Ethiopian Orthodox (Tewahedo)",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.56,
+   "peak": 79299
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 575,
+   "x": 0.1366,
+   "y": 0.56,
+   "peak": 0
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Rus' Orthodox",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.435,
+   "peak": 57493
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Slavic pagans",
+   "faith": "Pagan",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 1075,
+   "x": 0.2619,
+   "y": 0.435,
+   "peak": 0
+  },
+  {
+   "place": "Rome / Italy",
+   "name": "Roman Catholic Church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.43,
+   "peak": 59738
+  },
+  {
+   "place": "Rome / Italy",
+   "name": "Roman pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 475,
+   "x": 0.1115,
+   "y": 0.43,
+   "peak": 0
+  },
+  {
+   "place": "Maghreb (Carthage)",
+   "name": "Latin African Church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.575,
+   "peak": 5453
+  },
+  {
+   "place": "Maghreb (Carthage)",
+   "name": "Berber/Punic pagans",
+   "faith": "Pagan",
+   "region": "Middle East & North Africa",
+   "start_year": 30,
+   "end_year": 475,
+   "x": 0.1115,
+   "y": 0.575,
+   "peak": 0
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Russian Orthodox",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.415,
+   "peak": 92357
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Eastern Europe & Russia",
+   "start_year": 30,
+   "end_year": 1275,
+   "x": 0.312,
+   "y": 0.415,
+   "peak": 0
+  },
+  {
+   "place": "Central Asia (Samarkand)",
+   "name": "Church of the East (Silk Road)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.595,
+   "peak": 847
+  },
+  {
+   "place": "Central Asia (Samarkand)",
+   "name": "Buddhists/Zoroastrians",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 875,
+   "x": 0.2118,
+   "y": 0.595,
+   "peak": 0
+  },
+  {
+   "place": "Germania (Mainz)",
+   "name": "German Catholics",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.405,
+   "peak": 35453
+  },
+  {
+   "place": "Germania (Mainz)",
+   "name": "Germanic pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 875,
+   "x": 0.2118,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Gaul (Lyon)",
+   "name": "French Catholic Church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.405,
+   "peak": 50564
+  },
+  {
+   "place": "Gaul (Lyon)",
+   "name": "Gallo-Roman/Celtic pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 575,
+   "x": 0.1366,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Scandinavia (Uppsala)",
+   "name": "Catholic (pre-Reformation)",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 1525,
+   "x": 0.3747,
+   "y": 0.395,
+   "peak": 3567
+  },
+  {
+   "place": "Scandinavia (Uppsala)",
+   "name": "Norse pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 1075,
+   "x": 0.2619,
+   "y": 0.395,
+   "peak": 0
+  },
+  {
+   "place": "East Africa (Buganda)",
+   "name": "Anglican/Catholic missions",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.61,
+   "peak": 133634
+  },
+  {
+   "place": "East Africa (Buganda)",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 1850,
+   "x": 0.4561,
+   "y": 0.61,
+   "peak": 0
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Roman/Celtic & RC church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 1525,
+   "x": 0.3747,
+   "y": 0.385,
+   "peak": 10462
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Anglo-Saxon pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 625,
+   "x": 0.1491,
+   "y": 0.385,
+   "peak": 0
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Iberian Catholic Church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.385,
+   "peak": 55795
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Roman pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 475,
+   "x": 0.1115,
+   "y": 0.375,
+   "peak": 0
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Catholic missions",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.625,
+   "peak": 14164
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Hindus",
+   "faith": "Hindu",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.625,
+   "peak": 0
+  },
+  {
+   "place": "Ireland (Armagh)",
+   "name": "Irish Catholic Church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.37,
+   "peak": 5006
+  },
+  {
+   "place": "Ireland (Armagh)",
+   "name": "Celtic pagans",
+   "faith": "Pagan",
+   "region": "Western Europe",
+   "start_year": 30,
+   "end_year": 475,
+   "x": 0.1115,
+   "y": 0.37,
+   "peak": 0
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "Anglican/CMS (Crowther)",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.63,
+   "peak": 55536
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 1825,
+   "x": 0.4499,
+   "y": 0.63,
+   "peak": 0
+  },
+  {
+   "place": "Kongo (Mbanza-Kongo)",
+   "name": "Kongo Catholic (1491)",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.65,
+   "peak": 55226
+  },
+  {
+   "place": "Kongo (Mbanza-Kongo)",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 1475,
+   "x": 0.3622,
+   "y": 0.65,
+   "peak": 0
+  },
+  {
+   "place": "Malabar / Kerala",
+   "name": "Saint Thomas Christians",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.65,
+   "peak": 8347
+  },
+  {
+   "place": "Malabar / Kerala",
+   "name": "Hindus",
+   "faith": "Hindu",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.64,
+   "peak": 0
+  },
+  {
+   "place": "Ceylon (Colombo)",
+   "name": "Catholic (Portuguese)",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.67,
+   "peak": 2823
+  },
+  {
+   "place": "Ceylon (Colombo)",
+   "name": "Buddhists/Hindus",
+   "faith": "Buddhist/folk",
+   "region": "South Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.67,
+   "peak": 0
+  },
+  {
+   "place": "Mongolia (Karakorum)",
+   "name": "Church of the East (Keraite)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 1975,
+   "x": 0.4875,
+   "y": 0.685,
+   "peak": 73
+  },
+  {
+   "place": "Mongolia (Karakorum)",
+   "name": "Buddhist/shamanist",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.685,
+   "peak": 0
+  },
+  {
+   "place": "Tang China (Xi'an)",
+   "name": "Church of the East (Jingjiao)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 1575,
+   "x": 0.3872,
+   "y": 0.71,
+   "peak": 196
+  },
+  {
+   "place": "Tang China (Xi'an)",
+   "name": "Buddhist/folk/secular",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.71,
+   "peak": 0
+  },
+  {
+   "place": "Vietnam (Hanoi)",
+   "name": "Catholic (MEP)",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.72,
+   "peak": 2713
+  },
+  {
+   "place": "Vietnam (Hanoi)",
+   "name": "Buddhist/folk",
+   "faith": "Buddhist/folk",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.72,
+   "peak": 0
+  },
+  {
+   "place": "Southern Africa (Cape)",
+   "name": "Dutch Reformed/Anglican",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.735,
+   "peak": 58908
+  },
+  {
+   "place": "Southern Africa (Cape)",
+   "name": "African traditional",
+   "faith": "Traditional",
+   "region": "Sub-Saharan Africa",
+   "start_year": 30,
+   "end_year": 1650,
+   "x": 0.406,
+   "y": 0.735,
+   "peak": 0
+  },
+  {
+   "place": "Korea (Pyongyang)",
+   "name": "Catholic (1784)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.745,
+   "peak": 6325
+  },
+  {
+   "place": "Korea (Pyongyang)",
+   "name": "Buddhist/Confucian/secular",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.745,
+   "peak": 0
+  },
+  {
+   "place": "China coast (Shanghai)",
+   "name": "Catholic",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.75,
+   "peak": 12343
+  },
+  {
+   "place": "China coast (Shanghai)",
+   "name": "Buddhist/folk/secular",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.75,
+   "peak": 0
+  },
+  {
+   "place": "Japan (Nagasaki)",
+   "name": "Kirishitan (Jesuit)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 1600,
+   "x": 0.3935,
+   "y": 0.77,
+   "peak": 351
+  },
+  {
+   "place": "Japan (Nagasaki)",
+   "name": "Shinto/Buddhist",
+   "faith": "Buddhist/folk",
+   "region": "East Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.77,
+   "peak": 0
+  },
+  {
+   "place": "Indonesia (Java)",
+   "name": "Protestant (Dutch)",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.77,
+   "peak": 5865
+  },
+  {
+   "place": "Indonesia (Java)",
+   "name": "Hindu/Buddhist",
+   "faith": "Hindu",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 1475,
+   "x": 0.3622,
+   "y": 0.77,
+   "peak": 0
+  },
+  {
+   "place": "Mainland SE Asia (Bangkok)",
+   "name": "Catholic missions",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.73,
+   "peak": 9750
+  },
+  {
+   "place": "Mainland SE Asia (Bangkok)",
+   "name": "Buddhist",
+   "faith": "Buddhist/folk",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.73,
+   "peak": 0
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Roman Catholic (Spanish)",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.775,
+   "peak": 54290
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Indigenous animists",
+   "faith": "Traditional",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 1550,
+   "x": 0.381,
+   "y": 0.775,
+   "peak": 0
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Protestant (settler)",
+   "faith": "Christian",
+   "region": "North America",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.225,
+   "peak": 149800
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Indigenous religions",
+   "faith": "Traditional",
+   "region": "North America",
+   "start_year": 30,
+   "end_year": 1675,
+   "x": 0.4123,
+   "y": 0.225,
+   "peak": 0
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Roman Catholic (Portuguese)",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.21,
+   "peak": 200613
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Indigenous/Afro-Brazilian",
+   "faith": "Traditional",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 1675,
+   "x": 0.4123,
+   "y": 0.21,
+   "peak": 0
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Roman Catholic (Spanish)",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.11,
+   "peak": 48861
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Andean traditional",
+   "faith": "Traditional",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 1575,
+   "x": 0.3872,
+   "y": 0.11,
+   "peak": 0
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Roman Catholic (Guadalupe)",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 0.11,
+   "peak": 142887
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Mesoamerican religion",
+   "faith": "Traditional",
+   "region": "Latin America",
+   "start_year": 30,
+   "end_year": 1575,
+   "x": 0.3872,
+   "y": 0.11,
+   "peak": 0
+  },
+  {
+   "place": "Pacific (Fiji)",
+   "name": "Methodist/Protestant (1835)",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 2025,
+   "x": 0.5,
+   "y": 1.0,
+   "peak": 2376
+  },
+  {
+   "place": "Pacific (Fiji)",
+   "name": "Pacific traditional",
+   "faith": "Traditional",
+   "region": "Southeast Asia",
+   "start_year": 30,
+   "end_year": 1825,
+   "x": 0.4499,
+   "y": 1.0,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Greek/Antiochene church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 50,
+   "end_year": 1250,
+   "x": 0.3108,
+   "y": 0.503,
+   "peak": 326
+  },
+  {
+   "place": "Cyprus",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Roman/Mediterranean",
+   "start_year": 50,
+   "end_year": 375,
+   "x": 0.0915,
+   "y": 0.485,
+   "peak": 0
+  },
+  {
+   "place": "Crete",
+   "name": "Pagans",
+   "faith": "Pagan",
+   "region": "Roman/Mediterranean",
+   "start_year": 75,
+   "end_year": 425,
+   "x": 0.1103,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Sephardi Jews",
+   "faith": "Jewish",
+   "region": "Western Europe",
+   "start_year": 100,
+   "end_year": 1475,
+   "x": 0.3797,
+   "y": 0.395,
+   "peak": 0
+  },
+  {
+   "place": "Egypt (Alexandria)",
+   "name": "Coptic Church",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 200,
+   "end_year": 2025,
+   "x": 0.5426,
+   "y": 0.515,
+   "peak": 9286
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Byzantine Greek Christians",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 325,
+   "end_year": 625,
+   "x": 0.2231,
+   "y": 0.503,
+   "peak": 315
+  },
+  {
+   "place": "Galilee",
+   "name": "Byzantine Greek Christians",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 325,
+   "end_year": 625,
+   "x": 0.2231,
+   "y": 0.503,
+   "peak": 140
+  },
+  {
+   "place": "Damascus",
+   "name": "Greek Melkites",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 325,
+   "end_year": 2025,
+   "x": 0.5739,
+   "y": 0.503,
+   "peak": 236
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Armenians (Anatolia)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 325,
+   "end_year": 1900,
+   "x": 0.5426,
+   "y": 0.473,
+   "peak": 826
+  },
+  {
+   "place": "Armenia (Etchmiadzin)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 350,
+   "end_year": 1975,
+   "x": 0.5677,
+   "y": 0.54,
+   "peak": 0
+  },
+  {
+   "place": "Damascus",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 400,
+   "end_year": 650,
+   "x": 0.2481,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 450,
+   "end_year": 625,
+   "x": 0.2544,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Egypt (Alexandria)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 450,
+   "end_year": 625,
+   "x": 0.2544,
+   "y": 0.515,
+   "peak": 0
+  },
+  {
+   "place": "Galatia (Ancyra)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 450,
+   "end_year": 1050,
+   "x": 0.3609,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 450,
+   "end_year": 1050,
+   "x": 0.3609,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Greece (Corinth)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Eastern Europe & Russia",
+   "start_year": 450,
+   "end_year": 1975,
+   "x": 0.5927,
+   "y": 0.46,
+   "peak": 0
+  },
+  {
+   "place": "Macedonia (Thessalonica)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Eastern Europe & Russia",
+   "start_year": 500,
+   "end_year": 1975,
+   "x": 0.6053,
+   "y": 0.455,
+   "peak": 0
+  },
+  {
+   "place": "Rome / Italy",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 500,
+   "end_year": 1950,
+   "x": 0.599,
+   "y": 0.43,
+   "peak": 0
+  },
+  {
+   "place": "Maghreb (Carthage)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Middle East & North Africa",
+   "start_year": 500,
+   "end_year": 675,
+   "x": 0.2794,
+   "y": 0.575,
+   "peak": 0
+  },
+  {
+   "place": "Ireland (Armagh)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 500,
+   "end_year": 1975,
+   "x": 0.6053,
+   "y": 0.37,
+   "peak": 0
+  },
+  {
+   "place": "Nubia (Dongola)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Sub-Saharan Africa",
+   "start_year": 600,
+   "end_year": 1300,
+   "x": 0.4612,
+   "y": 0.55,
+   "peak": 0
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Sub-Saharan Africa",
+   "start_year": 600,
+   "end_year": 875,
+   "x": 0.3546,
+   "y": 0.56,
+   "peak": 0
+  },
+  {
+   "place": "Gaul (Lyon)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 600,
+   "end_year": 1900,
+   "x": 0.6115,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Muslims (Arab)",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.51,
+   "peak": 0
+  },
+  {
+   "place": "Galilee",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.51,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Egypt (Alexandria)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.515,
+   "peak": 0
+  },
+  {
+   "place": "Mesopotamia (Edessa)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.52,
+   "peak": 0
+  },
+  {
+   "place": "Arabia (Najran)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 650,
+   "end_year": 2025,
+   "x": 0.6554,
+   "y": 0.555,
+   "peak": 0
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 650,
+   "end_year": 1925,
+   "x": 0.6303,
+   "y": 0.385,
+   "peak": 0
+  },
+  {
+   "place": "Damascus",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 675,
+   "end_year": 2025,
+   "x": 0.6617,
+   "y": 0.5,
+   "peak": 0
+  },
+  {
+   "place": "Persia (Ctesiphon)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 675,
+   "end_year": 2025,
+   "x": 0.6617,
+   "y": 0.53,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Maronites",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 700,
+   "end_year": 2025,
+   "x": 0.6679,
+   "y": 0.503,
+   "peak": 200
+  },
+  {
+   "place": "Maghreb (Carthage)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 700,
+   "end_year": 2025,
+   "x": 0.6679,
+   "y": 0.575,
+   "peak": 0
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Muslims (Al-Andalus)",
+   "faith": "Muslim",
+   "region": "Western Europe",
+   "start_year": 725,
+   "end_year": 1600,
+   "x": 0.5677,
+   "y": 0.375,
+   "peak": 0
+  },
+  {
+   "place": "Central Asia (Samarkand)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "East Asia",
+   "start_year": 750,
+   "end_year": 2025,
+   "x": 0.6804,
+   "y": 0.595,
+   "peak": 0
+  },
+  {
+   "place": "Malabar / Kerala",
+   "name": "Mappila Muslims",
+   "faith": "Muslim",
+   "region": "South Asia",
+   "start_year": 800,
+   "end_year": 2025,
+   "x": 0.693,
+   "y": 0.66,
+   "peak": 0
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Catholics (Croat)",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 875,
+   "end_year": 2025,
+   "x": 0.7118,
+   "y": 0.443,
+   "peak": 15844
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Eastern Europe & Russia",
+   "start_year": 900,
+   "end_year": 1375,
+   "x": 0.5551,
+   "y": 0.44,
+   "peak": 0
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Sub-Saharan Africa",
+   "start_year": 900,
+   "end_year": 2025,
+   "x": 0.718,
+   "y": 0.56,
+   "peak": 0
+  },
+  {
+   "place": "Germania (Mainz)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 900,
+   "end_year": 1950,
+   "x": 0.6992,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Galatia (Ancyra)",
+   "name": "Muslims (Turks)",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 1075,
+   "end_year": 2025,
+   "x": 0.7619,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Muslims (Turks)",
+   "faith": "Muslim",
+   "region": "Middle East & North Africa",
+   "start_year": 1075,
+   "end_year": 2025,
+   "x": 0.7619,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Crusader Latins",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1100,
+   "end_year": 1275,
+   "x": 0.5802,
+   "y": 0.5,
+   "peak": 57
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1100,
+   "end_year": 1900,
+   "x": 0.7368,
+   "y": 0.435,
+   "peak": 0
+  },
+  {
+   "place": "Scandinavia (Uppsala)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 1100,
+   "end_year": 1925,
+   "x": 0.7431,
+   "y": 0.395,
+   "peak": 0
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1100,
+   "end_year": 2025,
+   "x": 0.7682,
+   "y": 0.64,
+   "peak": 0
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "South Asia",
+   "start_year": 1200,
+   "end_year": 2025,
+   "x": 0.7932,
+   "y": 0.635,
+   "peak": 0
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Muslims (Tatar)",
+   "faith": "Muslim",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1300,
+   "end_year": 2025,
+   "x": 0.8183,
+   "y": 0.415,
+   "peak": 0
+  },
+  {
+   "place": "Nubia (Dongola)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1325,
+   "end_year": 2025,
+   "x": 0.8246,
+   "y": 0.55,
+   "peak": 0
+  },
+  {
+   "place": "Persia (Ctesiphon)",
+   "name": "Assyrian Christians",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1400,
+   "end_year": 2025,
+   "x": 0.8434,
+   "y": 0.53,
+   "peak": 387
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Muslims (Ottoman)",
+   "faith": "Muslim",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1400,
+   "end_year": 2025,
+   "x": 0.8434,
+   "y": 0.44,
+   "peak": 0
+  },
+  {
+   "place": "Indonesia (Java)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Southeast Asia",
+   "start_year": 1400,
+   "end_year": 2025,
+   "x": 0.8434,
+   "y": 0.77,
+   "peak": 0
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Moro Muslims",
+   "faith": "Muslim",
+   "region": "Southeast Asia",
+   "start_year": 1400,
+   "end_year": 2025,
+   "x": 0.8434,
+   "y": 0.775,
+   "peak": 0
+  },
+  {
+   "place": "Macedonia (Thessalonica)",
+   "name": "Muslims (Ottoman)",
+   "faith": "Muslim",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1450,
+   "end_year": 1900,
+   "x": 0.8246,
+   "y": 0.455,
+   "peak": 0
+  },
+  {
+   "place": "Kongo (Mbanza-Kongo)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1500,
+   "end_year": 2025,
+   "x": 0.8684,
+   "y": 0.65,
+   "peak": 0
+  },
+  {
+   "place": "Malabar / Kerala",
+   "name": "Catholic (Portuguese)",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 1500,
+   "end_year": 2025,
+   "x": 0.8684,
+   "y": 0.653,
+   "peak": 3339
+  },
+  {
+   "place": "Rome / Italy",
+   "name": "Protestants",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1525,
+   "end_year": 2025,
+   "x": 0.8747,
+   "y": 0.433,
+   "peak": 2987
+  },
+  {
+   "place": "Germania (Mainz)",
+   "name": "Lutheran/Protestant",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1525,
+   "end_year": 2025,
+   "x": 0.8747,
+   "y": 0.408,
+   "peak": 35453
+  },
+  {
+   "place": "Gaul (Lyon)",
+   "name": "Huguenots (Protestant)",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1550,
+   "end_year": 1675,
+   "x": 0.7932,
+   "y": 0.408,
+   "peak": 1315
+  },
+  {
+   "place": "Scandinavia (Uppsala)",
+   "name": "Lutheran Church",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1550,
+   "end_year": 2025,
+   "x": 0.881,
+   "y": 0.395,
+   "peak": 15983
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Church of England (Protestant)",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1550,
+   "end_year": 2025,
+   "x": 0.881,
+   "y": 0.382,
+   "peak": 36616
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Catholics",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1550,
+   "end_year": 2025,
+   "x": 0.881,
+   "y": 0.388,
+   "peak": 10462
+  },
+  {
+   "place": "Cyprus",
+   "name": "Muslims (Ottoman)",
+   "faith": "Muslim",
+   "region": "Roman/Mediterranean",
+   "start_year": 1575,
+   "end_year": 2025,
+   "x": 0.8872,
+   "y": 0.485,
+   "peak": 0
+  },
+  {
+   "place": "Ireland (Armagh)",
+   "name": "Protestants (Ulster)",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1600,
+   "end_year": 2025,
+   "x": 0.8935,
+   "y": 0.373,
+   "peak": 1001
+  },
+  {
+   "place": "Tang China (Xi'an)",
+   "name": "Catholic (Jesuit)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1600,
+   "end_year": 2025,
+   "x": 0.8935,
+   "y": 0.71,
+   "peak": 3389
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Latin America",
+   "start_year": 1600,
+   "end_year": 1975,
+   "x": 0.881,
+   "y": 0.11,
+   "peak": 0
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Latin America",
+   "start_year": 1600,
+   "end_year": 1975,
+   "x": 0.881,
+   "y": 0.11,
+   "peak": 0
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Western Europe",
+   "start_year": 1625,
+   "end_year": 1950,
+   "x": 0.881,
+   "y": 0.385,
+   "peak": 0
+  },
+  {
+   "place": "Japan (Nagasaki)",
+   "name": "Hidden Christians",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1625,
+   "end_year": 1850,
+   "x": 0.8559,
+   "y": 0.77,
+   "peak": 202
+  },
+  {
+   "place": "Crete",
+   "name": "Muslims (Ottoman)",
+   "faith": "Muslim",
+   "region": "Roman/Mediterranean",
+   "start_year": 1650,
+   "end_year": 1875,
+   "x": 0.8684,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Ceylon (Colombo)",
+   "name": "Protestant (Dutch/British)",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 1650,
+   "end_year": 2025,
+   "x": 0.906,
+   "y": 0.673,
+   "peak": 1210
+  },
+  {
+   "place": "Southern Africa (Cape)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1675,
+   "end_year": 2025,
+   "x": 0.9123,
+   "y": 0.735,
+   "peak": 0
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "North America",
+   "start_year": 1700,
+   "end_year": 1975,
+   "x": 0.906,
+   "y": 0.225,
+   "peak": 0
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Latin America",
+   "start_year": 1700,
+   "end_year": 1975,
+   "x": 0.906,
+   "y": 0.21,
+   "peak": 0
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Protestant missions",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 1800,
+   "end_year": 2025,
+   "x": 0.9436,
+   "y": 0.625,
+   "peak": 14164
+  },
+  {
+   "place": "Southern Africa (Cape)",
+   "name": "Mission & African Independent",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1825,
+   "end_year": 2025,
+   "x": 0.9499,
+   "y": 0.735,
+   "peak": 49090
+  },
+  {
+   "place": "China coast (Shanghai)",
+   "name": "Protestant missions",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1825,
+   "end_year": 2025,
+   "x": 0.9499,
+   "y": 0.753,
+   "peak": 16458
+  },
+  {
+   "place": "Indonesia (Java)",
+   "name": "Catholic",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1825,
+   "end_year": 2025,
+   "x": 0.9499,
+   "y": 0.773,
+   "peak": 3910
+  },
+  {
+   "place": "Judaea (Jerusalem)",
+   "name": "Modern Christians (Arab/Armenian)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 0.5,
+   "peak": 187
+  },
+  {
+   "place": "Galilee",
+   "name": "Modern Arab Christians",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 0.5,
+   "peak": 124
+  },
+  {
+   "place": "Maghreb (Carthage)",
+   "name": "French colonial Catholics",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1850,
+   "end_year": 1950,
+   "x": 0.9373,
+   "y": 0.575,
+   "peak": 258
+  },
+  {
+   "place": "East Africa (Buganda)",
+   "name": "Muslims",
+   "faith": "Muslim",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 0.61,
+   "peak": 0
+  },
+  {
+   "place": "Mainland SE Asia (Bangkok)",
+   "name": "Protestant (Karen etc.)",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 0.733,
+   "peak": 11700
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Catholic (immigrant)",
+   "faith": "Christian",
+   "region": "North America",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 0.225,
+   "peak": 62417
+  },
+  {
+   "place": "Pacific (Fiji)",
+   "name": "Catholic",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1850,
+   "end_year": 2025,
+   "x": 0.9561,
+   "y": 1.0,
+   "peak": 1018
+  },
+  {
+   "place": "Pacific (Fiji)",
+   "name": "Unreached / other faiths",
+   "faith": "Other",
+   "region": "Southeast Asia",
+   "start_year": 1850,
+   "end_year": 1875,
+   "x": 0.9185,
+   "y": 1.0,
+   "peak": 0
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Dalit/tribal Christians",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 1875,
+   "end_year": 2025,
+   "x": 0.9624,
+   "y": 0.631,
+   "peak": 17706
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "Catholic missions",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1875,
+   "end_year": 2025,
+   "x": 0.9624,
+   "y": 0.627,
+   "peak": 41652
+  },
+  {
+   "place": "Japan (Nagasaki)",
+   "name": "Modern Catholic/Protestant",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1875,
+   "end_year": 2025,
+   "x": 0.9624,
+   "y": 0.77,
+   "peak": 2259
+  },
+  {
+   "place": "Asia Minor (Ephesus)",
+   "name": "Greek refugees (pre-exchange)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1900,
+   "end_year": 2025,
+   "x": 0.9687,
+   "y": 0.47,
+   "peak": 253
+  },
+  {
+   "place": "Nubia (Dongola)",
+   "name": "Modern Sudanese Christians",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1900,
+   "end_year": 2025,
+   "x": 0.9687,
+   "y": 0.55,
+   "peak": 1718
+  },
+  {
+   "place": "Korea (Pyongyang)",
+   "name": "Protestant (1884)",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1900,
+   "end_year": 2025,
+   "x": 0.9687,
+   "y": 0.745,
+   "peak": 16867
+  },
+  {
+   "place": "Pacific (Fiji)",
+   "name": "Hindu (Fiji Indians)",
+   "faith": "Hindu",
+   "region": "Southeast Asia",
+   "start_year": 1900,
+   "end_year": 2025,
+   "x": 0.9687,
+   "y": 1.0,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Assyrian/Armenian refugees",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.506,
+   "peak": 74
+  },
+  {
+   "place": "Armenia (Etchmiadzin)",
+   "name": "Armenian genocide survivors",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.543,
+   "peak": 1090
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Soviet-era underground",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1925,
+   "end_year": 1975,
+   "x": 0.9624,
+   "y": 0.438,
+   "peak": 5095
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Soviet atheists",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1925,
+   "end_year": 1975,
+   "x": 0.9624,
+   "y": 0.435,
+   "peak": 0
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Soviet underground",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1925,
+   "end_year": 1975,
+   "x": 0.9624,
+   "y": 0.418,
+   "peak": 9106
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Soviet atheists",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1925,
+   "end_year": 1975,
+   "x": 0.9624,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Gaul (Lyon)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "Aladura/Pentecostal",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.633,
+   "peak": 83304
+  },
+  {
+   "place": "Kongo (Mbanza-Kongo)",
+   "name": "Kimbanguist/Independent",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.65,
+   "peak": 55226
+  },
+  {
+   "place": "Vietnam (Hanoi)",
+   "name": "Protestant",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.723,
+   "peak": 542
+  },
+  {
+   "place": "Southern Africa (Cape)",
+   "name": "Pentecostal",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.741,
+   "peak": 29454
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Aglipayan/Independent",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.775,
+   "peak": 5429
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Evangelical/Pentecostal",
+   "faith": "Christian",
+   "region": "North America",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.231,
+   "peak": 74900
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Pentecostal/Evangelical",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 1925,
+   "end_year": 2025,
+   "x": 0.9749,
+   "y": 0.213,
+   "peak": 125383
+  },
+  {
+   "place": "Arabia (Najran)",
+   "name": "Migrant Christians (Gulf)",
+   "faith": "Christian",
+   "region": "Middle East & North Africa",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.555,
+   "peak": 2476
+  },
+  {
+   "place": "Balkans (Belgrade)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.45,
+   "peak": 0
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "Protestant (P'ent'ay)",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.563,
+   "peak": 23790
+  },
+  {
+   "place": "Scandinavia (Uppsala)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.395,
+   "peak": 0
+  },
+  {
+   "place": "East Africa (Buganda)",
+   "name": "Pentecostal/Revival (Balokole)",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.613,
+   "peak": 95453
+  },
+  {
+   "place": "Britain (London)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.385,
+   "peak": 0
+  },
+  {
+   "place": "West Africa (Yorubaland)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.639,
+   "peak": 48594
+  },
+  {
+   "place": "Tang China (Xi'an)",
+   "name": "House-church Protestants",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.713,
+   "peak": 7907
+  },
+  {
+   "place": "China coast (Shanghai)",
+   "name": "House-church/Three-Self",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.756,
+   "peak": 28801
+  },
+  {
+   "place": "China coast (Shanghai)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "East Asia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.76,
+   "peak": 0
+  },
+  {
+   "place": "Japan (Nagasaki)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "East Asia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.78,
+   "peak": 0
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Evangelical/Pentecostal",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.781,
+   "peak": 8144
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Evangelical/Pentecostal",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.11,
+   "peak": 14371
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Evangelical/Pentecostal",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.11,
+   "peak": 23815
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 1950,
+   "end_year": 2025,
+   "x": 0.9812,
+   "y": 0.116,
+   "peak": 55567
+  },
+  {
+   "place": "Greece (Corinth)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.463,
+   "peak": 8943
+  },
+  {
+   "place": "Rome / Italy",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.43,
+   "peak": 0
+  },
+  {
+   "place": "Germania (Mainz)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Returning emigrant Christians",
+   "faith": "Christian",
+   "region": "Western Europe",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.388,
+   "peak": 6782
+  },
+  {
+   "place": "Iberia (Toledo)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.385,
+   "peak": 0
+  },
+  {
+   "place": "North India (Delhi)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.634,
+   "peak": 12394
+  },
+  {
+   "place": "Kongo (Mbanza-Kongo)",
+   "name": "Pentecostal",
+   "faith": "Christian",
+   "region": "Sub-Saharan Africa",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.656,
+   "peak": 44181
+  },
+  {
+   "place": "Vietnam (Hanoi)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Southeast Asia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.73,
+   "peak": 0
+  },
+  {
+   "place": "Korea (Pyongyang)",
+   "name": "Pentecostal/megachurch",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.751,
+   "peak": 8433
+  },
+  {
+   "place": "Indonesia (Java)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.776,
+   "peak": 3421
+  },
+  {
+   "place": "Mainland SE Asia (Bangkok)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.736,
+   "peak": 6826
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Latin America",
+   "start_year": 1975,
+   "end_year": 2025,
+   "x": 0.9875,
+   "y": 0.116,
+   "peak": 20120
+  },
+  {
+   "place": "Damascus",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Middle East & North Africa",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.51,
+   "peak": 0
+  },
+  {
+   "place": "Syria (Antioch)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Middle East & North Africa",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.51,
+   "peak": 0
+  },
+  {
+   "place": "Cyprus",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Roman/Mediterranean",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.495,
+   "peak": 0
+  },
+  {
+   "place": "Crete",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Roman/Mediterranean",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.47,
+   "peak": 0
+  },
+  {
+   "place": "Armenia (Etchmiadzin)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Middle East & North Africa",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.54,
+   "peak": 0
+  },
+  {
+   "place": "Greece (Corinth)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.46,
+   "peak": 0
+  },
+  {
+   "place": "Macedonia (Thessalonica)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.455,
+   "peak": 0
+  },
+  {
+   "place": "Aksum / Ethiopia",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Sub-Saharan Africa",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.57,
+   "peak": 0
+  },
+  {
+   "place": "Kievan Rus' (Kyiv)",
+   "name": "Post-Soviet nones",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.435,
+   "peak": 0
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Eastern Europe & Russia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.418,
+   "peak": 22627
+  },
+  {
+   "place": "Russia (Moscow)",
+   "name": "Post-Soviet nones",
+   "faith": "Secular",
+   "region": "Eastern Europe & Russia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.405,
+   "peak": 0
+  },
+  {
+   "place": "Ireland (Armagh)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Western Europe",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.37,
+   "peak": 0
+  },
+  {
+   "place": "Ceylon (Colombo)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "South Asia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.676,
+   "peak": 1270
+  },
+  {
+   "place": "Mongolia (Karakorum)",
+   "name": "Modern Protestant",
+   "faith": "Christian",
+   "region": "East Asia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.685,
+   "peak": 113
+  },
+  {
+   "place": "Vietnam (Hanoi)",
+   "name": "Pentecostal/Charismatic",
+   "faith": "Christian",
+   "region": "Southeast Asia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.726,
+   "peak": 703
+  },
+  {
+   "place": "Korea (Pyongyang)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "East Asia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.755,
+   "peak": 0
+  },
+  {
+   "place": "Philippines (Manila)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Southeast Asia",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.785,
+   "peak": 0
+  },
+  {
+   "place": "North America (NE seaboard)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "North America",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.225,
+   "peak": 0
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Latin America",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.2,
+   "peak": 0
+  },
+  {
+   "place": "Brazil (Bahia)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Latin America",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.22,
+   "peak": 0
+  },
+  {
+   "place": "Andes (Cusco)",
+   "name": "Secular/non-religious",
+   "faith": "Secular",
+   "region": "Latin America",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.11,
+   "peak": 0
+  },
+  {
+   "place": "Mexico (Tenochtitlan)",
+   "name": "Modern nones",
+   "faith": "Secular",
+   "region": "Latin America",
+   "start_year": 2000,
+   "end_year": 2025,
+   "x": 0.9937,
+   "y": 0.11,
+   "peak": 0
+  }
+ ],
+ "places": {
+  "Judaea (Jerusalem)": {
+   "x": 0.0,
+   "y": 0.5,
+   "region": "Middle East & North Africa"
+  },
+  "Galilee": {
+   "x": 0.0,
+   "y": 0.5,
+   "region": "Middle East & North Africa"
+  },
+  "Damascus": {
+   "x": 0.0,
+   "y": 0.5,
+   "region": "Middle East & North Africa"
+  },
+  "Syria (Antioch)": {
+   "x": 0.0,
+   "y": 0.5,
+   "region": "Middle East & North Africa"
+  },
+  "Cyprus": {
+   "x": 0.0,
+   "y": 0.485,
+   "region": "Roman/Mediterranean"
+  },
+  "Egypt (Alexandria)": {
+   "x": 0.0,
+   "y": 0.515,
+   "region": "Middle East & North Africa"
+  },
+  "Mesopotamia (Edessa)": {
+   "x": 0.0,
+   "y": 0.52,
+   "region": "Middle East & North Africa"
+  },
+  "Persia (Ctesiphon)": {
+   "x": 0.0,
+   "y": 0.53,
+   "region": "Middle East & North Africa"
+  },
+  "Galatia (Ancyra)": {
+   "x": 0.0,
+   "y": 0.47,
+   "region": "Middle East & North Africa"
+  },
+  "Asia Minor (Ephesus)": {
+   "x": 0.0,
+   "y": 0.47,
+   "region": "Middle East & North Africa"
+  },
+  "Crete": {
+   "x": 0.0,
+   "y": 0.47,
+   "region": "Roman/Mediterranean"
+  },
+  "Armenia (Etchmiadzin)": {
+   "x": 0.0,
+   "y": 0.54,
+   "region": "Middle East & North Africa"
+  },
+  "Greece (Corinth)": {
+   "x": 0.0,
+   "y": 0.46,
+   "region": "Eastern Europe & Russia"
+  },
+  "Macedonia (Thessalonica)": {
+   "x": 0.0,
+   "y": 0.455,
+   "region": "Eastern Europe & Russia"
+  },
+  "Nubia (Dongola)": {
+   "x": 0.0,
+   "y": 0.55,
+   "region": "Sub-Saharan Africa"
+  },
+  "Arabia (Najran)": {
+   "x": 0.0,
+   "y": 0.555,
+   "region": "Middle East & North Africa"
+  },
+  "Balkans (Belgrade)": {
+   "x": 0.0,
+   "y": 0.44,
+   "region": "Eastern Europe & Russia"
+  },
+  "Aksum / Ethiopia": {
+   "x": 0.0,
+   "y": 0.56,
+   "region": "Sub-Saharan Africa"
+  },
+  "Kievan Rus' (Kyiv)": {
+   "x": 0.0,
+   "y": 0.435,
+   "region": "Eastern Europe & Russia"
+  },
+  "Rome / Italy": {
+   "x": 0.0,
+   "y": 0.43,
+   "region": "Western Europe"
+  },
+  "Maghreb (Carthage)": {
+   "x": 0.0,
+   "y": 0.575,
+   "region": "Middle East & North Africa"
+  },
+  "Russia (Moscow)": {
+   "x": 0.0,
+   "y": 0.415,
+   "region": "Eastern Europe & Russia"
+  },
+  "Central Asia (Samarkand)": {
+   "x": 0.0,
+   "y": 0.595,
+   "region": "East Asia"
+  },
+  "Germania (Mainz)": {
+   "x": 0.0,
+   "y": 0.405,
+   "region": "Western Europe"
+  },
+  "Gaul (Lyon)": {
+   "x": 0.0,
+   "y": 0.405,
+   "region": "Western Europe"
+  },
+  "Scandinavia (Uppsala)": {
+   "x": 0.0,
+   "y": 0.395,
+   "region": "Western Europe"
+  },
+  "East Africa (Buganda)": {
+   "x": 0.0,
+   "y": 0.61,
+   "region": "Sub-Saharan Africa"
+  },
+  "Britain (London)": {
+   "x": 0.0,
+   "y": 0.385,
+   "region": "Western Europe"
+  },
+  "Iberia (Toledo)": {
+   "x": 0.0,
+   "y": 0.385,
+   "region": "Western Europe"
+  },
+  "North India (Delhi)": {
+   "x": 0.0,
+   "y": 0.625,
+   "region": "South Asia"
+  },
+  "Ireland (Armagh)": {
+   "x": 0.0,
+   "y": 0.37,
+   "region": "Western Europe"
+  },
+  "West Africa (Yorubaland)": {
+   "x": 0.0,
+   "y": 0.63,
+   "region": "Sub-Saharan Africa"
+  },
+  "Kongo (Mbanza-Kongo)": {
+   "x": 0.0,
+   "y": 0.65,
+   "region": "Sub-Saharan Africa"
+  },
+  "Malabar / Kerala": {
+   "x": 0.0,
+   "y": 0.65,
+   "region": "South Asia"
+  },
+  "Ceylon (Colombo)": {
+   "x": 0.0,
+   "y": 0.67,
+   "region": "South Asia"
+  },
+  "Mongolia (Karakorum)": {
+   "x": 0.0,
+   "y": 0.685,
+   "region": "East Asia"
+  },
+  "Tang China (Xi'an)": {
+   "x": 0.0,
+   "y": 0.71,
+   "region": "East Asia"
+  },
+  "Vietnam (Hanoi)": {
+   "x": 0.0,
+   "y": 0.72,
+   "region": "Southeast Asia"
+  },
+  "Southern Africa (Cape)": {
+   "x": 0.0,
+   "y": 0.735,
+   "region": "Sub-Saharan Africa"
+  },
+  "Korea (Pyongyang)": {
+   "x": 0.0,
+   "y": 0.745,
+   "region": "East Asia"
+  },
+  "China coast (Shanghai)": {
+   "x": 0.0,
+   "y": 0.75,
+   "region": "East Asia"
+  },
+  "Japan (Nagasaki)": {
+   "x": 0.0,
+   "y": 0.77,
+   "region": "East Asia"
+  },
+  "Indonesia (Java)": {
+   "x": 0.0,
+   "y": 0.77,
+   "region": "Southeast Asia"
+  },
+  "Mainland SE Asia (Bangkok)": {
+   "x": 0.0,
+   "y": 0.73,
+   "region": "Southeast Asia"
+  },
+  "Philippines (Manila)": {
+   "x": 0.0,
+   "y": 0.775,
+   "region": "Southeast Asia"
+  },
+  "North America (NE seaboard)": {
+   "x": 0.0,
+   "y": 0.225,
+   "region": "North America"
+  },
+  "Brazil (Bahia)": {
+   "x": 0.0,
+   "y": 0.21,
+   "region": "Latin America"
+  },
+  "Andes (Cusco)": {
+   "x": 0.0,
+   "y": 0.11,
+   "region": "Latin America"
+  },
+  "Mexico (Tenochtitlan)": {
+   "x": 0.0,
+   "y": 0.11,
+   "region": "Latin America"
+  },
+  "Pacific (Fiji)": {
+   "x": 0.0,
+   "y": 1.0,
+   "region": "Southeast Asia"
+  }
+ }
+}
