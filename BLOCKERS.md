@@ -27,3 +27,11 @@ Format: `[STEP] [LEVEL] (date) — message`. LEVEL ∈ {INFO, ASSUMPTION, WARNIN
   a compatibility shim (`sim/mesa_compat.py`) that also supports 2.x schedulers.
 - [2] INFO (2026-06-03) — `requirements.txt` now uses version floors (not exact pins)
   so CI / other Python versions resolve to whatever wheels exist there.
+
+<!-- VALIDATION:START -->
+
+## Validation (latest run, auto-managed)
+- HARD FAILS: 0 | WARNINGS: 0
+- (no warnings)
+
+<!-- VALIDATION:END -->
